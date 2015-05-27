@@ -49,7 +49,10 @@
 
 	function showpop1() {
 		document.getElementById("pop1").style.display = "block";
+<<<<<<< HEAD
 		document.getElementById("pop1").style.width = "500px";
+=======
+>>>>>>> 0d99b52a319e0ccb9ff0d0a2c6227da288dd2c29
 	}
 	function showout1() {
 		document.getElementById("pop1").style.display = "none";
@@ -72,14 +75,14 @@
 	}
 
 	function showpop4() {
-		document.getElementById("pop4").style.display = "inline";
+		document.getElementById("pop4").style.display = "block";
 	}
 	function showout4() {
 		document.getElementById("pop4").style.display = "none";
 	}
 
 	function showpop5() {
-		document.getElementById("pop5").style.display = "inline";
+		document.getElementById("pop5").style.display = "block";
 	}
 	function showout5() {
 		document.getElementById("pop5").style.display = "none";
