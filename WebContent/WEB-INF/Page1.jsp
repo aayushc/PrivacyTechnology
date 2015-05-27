@@ -399,8 +399,13 @@
 				<input required class="form-control" type="url" placeholder="" name="website1"> <br>
 			</div>
 			<br>
-			<button id="fat-btn" class="btn btn-primary" data-loading-text="Loading..." type="button" onclick="form.submit();">Next</button>
-		</div>
+			<!-- <button id="fat-btn" class="btn btn-primary"
+				data-loading-text="Loading..." type="button"
+				onclick="form.submit();" name="button">Next</button> -->
+				<input id="fat-btn" class="btn btn-primary"
+				data-loading-text="Loading..." type="submit" name= "button" value="Next"></input>
+		<input id="fat-btn" class="btn btn-primary"
+				data-loading-text="Loading..." type="submit" name= "download" value="Download"></input></div>
 	</form>
 </body>
 </html>
