@@ -250,6 +250,7 @@
 					</tbody> 
 				</table>
 			</div>
+			<c:if test="${page1.q17 == Yes}">
 			<div class="col-md-12 column">
 				<table class="table table-condensed table-bordered">
 					<tbody>
@@ -257,8 +258,7 @@
 							<td>Mail In Form</td>
 						</tr>
 						<tr>
-							<td>Leave Blank Or [If you have a joint account, your choice will apply to everyone on your account
-								unless you mark below
+							<td>Leave Blank Or [If you have a joint account, your choice will apply to everyone on your account unless you mark below
 								<label>
     								<input type="checkbox" value="">
     								Apply my choices only to me]
@@ -314,10 +314,10 @@
 										</td>
 										<td>
 											Mail to:
-											[Name of financial institution]
-											[Address1]
-											[Address2]
-											[City], [State] [ZIP]
+											<c:out value="${page1.institution}" /><br>
+											<c:out value="${page1.al1}" /><br>
+											<c:out value="${page1.al2}" /><br>
+											<c:out value="${page1.city}" />, <c:out value="${page1.state}" /> <c:out value="${page1.zip}" />
 										</td>
 									</tr>
 								</table>
@@ -326,6 +326,7 @@
 					</tbody> 
 				</table>
 			</div>
+			</c:if>
 		</div>
 	</div>
 </div>
