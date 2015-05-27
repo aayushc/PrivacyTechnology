@@ -48,6 +48,7 @@ public class Page2Action extends Action{
 			request.setAttribute("page2", p1);
 			System.out.println(p1.getInstitution());
 			System.out.println(form.getInstitution());
+			System.out.println(form.getQ1());
 		} catch (FormBeanException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();

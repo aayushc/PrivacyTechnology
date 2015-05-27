@@ -134,8 +134,7 @@
 					style="display: none; border: 1px solid; margin-left: 7px; padding: 2px;">Two
 					or more financial institutions that jointly provide the model form
 					must use this question to identify themselves. </span> <br> <br>
-				<textarea rows="4" cols="50">
-</textarea>
+				<textarea name="institution" rows="4" cols="50"></textarea>
 				<br>
 			</div>
 			<br>
@@ -156,9 +155,8 @@
 					practices such as information about the institution’s use of
 					cookies or other measures used by your institution to safeguard
 					personal information.</span> <br> <br>
-				<textarea rows="4" cols="50">
-</textarea>
-				<br> <br>
+				<textarea name="protect" rows="4" cols="50"></textarea>
+				<br><br>
 			</div>
 			<div class="cb">
 				<label for="what">How does your institution collect a
@@ -380,10 +378,10 @@
 				<br> <br>
 			</div>
 			<br>
-			<button id="fat-btn" class="btn btn-primary"
+			<!-- <button id="fat-btn" class="btn btn-primary"
 				data-loading-text="Loading..." type="button"
 				onclick="form.submit();">Previous</button>
-			<td valign="top">&nbsp; &nbsp; &nbsp;
+			<td valign="top">&nbsp; &nbsp; &nbsp; -->
 				<button id="fat-btn" class="btn btn-primary"
 					data-loading-text="Loading..." type="button"
 					onclick="form.submit();">Preview Form</button>
