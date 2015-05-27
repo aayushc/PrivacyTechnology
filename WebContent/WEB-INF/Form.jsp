@@ -1,5 +1,5 @@
-<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-	pageEncoding="ISO-8859-1"%>
+<%@ page language="java" contentType="text/html; charset=utf-8"
+	pageEncoding="utf-8"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
 <!DOCTYPE html>
@@ -14,7 +14,7 @@
 	<!--link rel="stylesheet/less" href="less/bootstrap.less" type="text/css" /-->
 	<!--link rel="stylesheet/less" href="less/responsive.less" type="text/css" /-->
 	<!--script src="js/less-1.3.3.min.js"></script-->
-	<!--append ‘#!watch’ to the browser URL, then refresh the page. -->
+	<!--append â#!watchâ to the browser URL, then refresh the page. -->
 
 	<link href="css/bootstrap.min.css" rel="stylesheet">
 	<link href="css/style.css" rel="stylesheet">
@@ -66,7 +66,7 @@
 						</tr>
 						<tr>
 							<td>How?</td>
-							<td>All financial companies need to share customers personal information to run their everyday business. In the section below, we list the reasons financial companies can share their customers’ personal information; the reasons  <c:out value="${page1.institution}" /> chooses to share; and whether you can limit this sharing.
+							<td>All financial companies need to share customers personal information to run their everyday business. In the section below, we list the reasons financial companies can share their customersâ personal information; the reasons  <c:out value="${page1.institution}" /> chooses to share; and whether you can limit this sharing.
 							</td>
 						</tr>
 					</tbody> 
@@ -88,7 +88,7 @@
 							<td><c:out value="${page1.q2}" /></td>
 						</tr>
 						<tr>
-							<td>For our marketing purposes�� with service providers we use to offer our products and services to you (please see below to limit the ways we contact you)</td>
+							<td>For our marketing purposes with service providers we use to offer our products and services to you (please see below to limit the ways we contact you)</td>
 							<td><c:out value="${page1.q3}" /></td>
 							<td><c:out value="${page1.q4}" /></td>
 						</tr>
@@ -98,12 +98,12 @@
 							<td><c:out value="${page1.q6}" /></td>
 						</tr>
 						<tr>
-							<td>For our affiliates’ everyday business purposes Information about your transactions and experiences</td>
+							<td>For our affiliatesâ everyday business purposes Information about your transactions and experiences</td>
 							<td><c:out value="${page1.q7}" /></td>
 							<td><c:out value="${page1.q8}" /></td>
 						</tr>
 						<tr>
-							<td>For our affiliates’ everyday business purposes�� Information about your creditworthiness</td>
+							<td>For our affiliatesâ everyday business purposes Information about your creditworthiness</td>
 							<td><c:out value="${page1.q9}" /></td>
 							<td><c:out value="${page1.q10}" /></td>
 						</tr>
@@ -187,10 +187,10 @@
 							</td>
 						</tr>
 						<tr>
-							<td>Why can’t I limit all sharing?</td>
+							<td>Why canât I limit all sharing?</td>
 							<td>Federal law gives you the right to limit some but not all sharing related to:
 								<ul>
-									<li>sharing for affiliates' everyday business purposes—information about your creditworthiness</li>
+									<li>sharing for affiliates' everyday business purposesâinformation about your creditworthiness</li>
 									<li>affiliates from using your information to market to you</li>
 									<li>sharing for nonaffiliates to market to you</li>
 								</ul>							
@@ -200,8 +200,7 @@
 						</tr>
 						<tr>
 							<td>What happens when I limit sharing for an account I hold jointly with someone else?</td>
-							<td><c:out value="${page2.q4}" />
-							</td>
+							<td><c:out value="${page2.q4}" /></td>
 						</tr>
 					</tbody> 
 				</table>
