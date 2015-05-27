@@ -47,7 +47,7 @@
 					<img src="./img/help2.png" onmouseover="showpop('pop');" onmouseout="showout('pop');"></img>
 				</span>
 				<span id="pop" style="display: none; border: 1px solid; margin-left: 7px; padding: 2px;">Two or more financial institutions that jointly provide the model form must use this question to identify themselves. </span> <br> <br>
-				<textarea name="institution" rows="4" cols="50"></textarea>
+				<textarea name="institution" rows="4" cols="50" required onkeyup="limitTextarea(this, 4, 50)"></textarea>
 				<br>
 			</div>
 			<br>
@@ -115,15 +115,15 @@
 					<img src="./img/help2.png" onmouseover="showpop('pop3');" onmouseout="showout('pop3');"></img>
 				</span>
 				<span id="pop3" style="display: none; border: 1px solid; margin-left: 7px; padding: 2px;">Please indicate if your institution collect personal information fromtheir affiliates and/or credit bureaus. </span> <br> 
-				<input type="radio" name="q1" value="We also collect your personal information from others, such as credit bureaus, affiliates, or other companies." checked> Yes <br> 
-				<input type="radio" name="q1" value=""> No <br> <br> 
+				<input type="radio" name="q1" value="We also collect your personal information from others, such as credit bureaus, affiliates, or other companies." onclick='wds9()'> Yes <br> 
+				<input type="radio" name="q1" value="" onclick='wds9()'> No <br> <br> 
 				<label for="q1">Does your institution collect personal information from other companies if it does not collect personal information from your affiliates and/or other credit bureaus?</label> 
 				<span id="help" style="margin-left: 20px;">
 					<img src="./img/help2.png" onmouseover="showpop('pop4');" onmouseout="showout('pop4');"></img>
 				</span>
 				<span id="pop4" style="display: none; border: 1px solid; margin-left: 7px; padding: 2px;">Please indicate if your institution does not collect personal information from their affiliates and/or credit bureaus but do collect information from other companies. </span> <br> 
-				<input type="radio" name="q2" value="We also collect your personal information from other companies." checked> Yes <br>
-				<input type="radio" name="q2" value=""> No <br> <br> 
+				<input type="radio" name="q2" value="We also collect your personal information from other companies." onclick='wds10()'> Yes <br>
+				<input type="radio" name="q2" value="" onclick='wds10()'> No <br> <br> 
 				<label for="q1">Does your institution describe state privacy law provisions in the Other important information box?</label>
 				<span id="help" style="margin-left: 20px;">
 					<img src="./img/help2.png" onmouseover="showpop('pop5');" onmouseout="showout('pop5');"></img>
