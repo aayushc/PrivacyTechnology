@@ -139,7 +139,7 @@
 				<table class="table table-condensed table-bordered">
 					<tbody>
 					<c:choose>
-					  <c:when test="${(page1.q2 == Yes) || (page1.q4 == Yes) || (page1.q6 == Yes) || (page1.q8 == Yes) (page1.q11 == Yes) || (page1.q12 == Yes) || (page1.q13 == Yes) || (page1.q14 == No) (page1.q15 == Yes)}">
+					  <c:when test="${(page1.q2 == Yes) || page1.q4 == Yes || page1.q6 == Yes || page1.q8 == Yes || page1.q11 == Yes || page1.q12 == Yes || page1.q13 == Yes || page1.q14 == No || page1.q15 == Yes}">
 						<tr>
 							<td>To limit our sharing</td>
 							<td>
@@ -324,10 +324,10 @@
 								<ul><li>
 								<c:choose>
 					  				<c:when test="${page2.q6 == 1}">
-										<c:out value="${page1.instution}" /> has no affiliates.
+										<c:out value="${page1.institution}" /> has no affiliates.
 									</c:when>
 									<c:when test="${page2.q6 == 2}">
-										<c:out value="${page1.instution}" /> does not share with our affiliates.
+										<c:out value="${page1.institution}" /> does not share with our affiliates.
 									</c:when>
 									<c:when test="${page2.q6 == 3}">
 										Our affiliates include companies with a <c:out value="${page2.ta1}" /> name; 
@@ -346,7 +346,7 @@
 								<ul><li>
 								<c:choose>
 					  				<c:when test="${page2.q7 == 1}">
-										<c:out value="${page1.instution}" /> does not share with nonaffiliates so they can market to you.
+										<c:out value="${page1.institution}" /> does not share with nonaffiliates so they can market to you.
 									</c:when>
 									<c:when test="${page2.q7 == 2}">
 										Nonaffiliates we share can include <c:out value="${page2.ta5}" />.
@@ -365,7 +365,7 @@
 										<c:out value="${page1.instution}" /> doesn't jointly market.
 									</c:when>
 									<c:when test="${page2.q7 == 2}">
-										Our joint marketing partners include  <c:out value="${page2.ta6}" />.
+										Our joint marketing partners include <c:out value="${page2.ta6}" />.
 									</c:when>
 								</c:choose>
 								</li></ul>
@@ -373,6 +373,7 @@
 						</tr>
 					</tbody> 
 				</table>
+			</div>
 			<div class="col-md-12 column">
 				<table class="table table-condensed table-bordered">
 					<tbody>
@@ -386,7 +387,6 @@
 					</tbody> 
 				</table>
 			</div>
-		</div>
 	</div>
 </div>
 </body>
