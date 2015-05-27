@@ -14,9 +14,8 @@
 	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
 
 <!-- Latest compiled and minified JavaScript -->
-<script
-	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
-
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/task.js"></script>	
 <style>
 .columns {
 	-moz-column-count: 3;
@@ -24,372 +23,10 @@
 	column-count: 3;
 }
 </style>
-
-<script type="text/javascript">
-	function chkcontrol(j) {
-		var total = 0;
-		for (var i = 0; i < document.form1.what.length; i++) {
-			if (document.form1.what[i].checked) {
-				total = total + 1;
-			}
-			if (total > 5) {
-				alert("Please Select only five")
-				document.form1.what[j].checked = false;
-				return false;
-			}
-		}
-	}
-
-	function showpop() {
-		document.getElementById("pop").style.display = "block";
-	}
-	function showout() {
-		document.getElementById("pop").style.display = "none";
-	}
-
-	function showpop1() {
-		document.getElementById("pop1").style.display = "block";
-<<<<<<< HEAD
-		document.getElementById("pop1").style.width = "500px";
-=======
->>>>>>> 0d99b52a319e0ccb9ff0d0a2c6227da288dd2c29
-	}
-	function showout1() {
-		document.getElementById("pop1").style.display = "none";
-	}
-
-	function showpop2() {
-		document.getElementById("pop2").style.display = "inline";
-		document.getElementById("pop2").style.width = "10px";
-	}
-	function showout2() {
-		document.getElementById("pop2").style.display = "none";
-	}
-
-	function showpop3() {
-		document.getElementById("pop3").style.display = "inline";
-		document.getElementById("pop3").style.width = "10px";
-	}
-	function showout3() {
-		document.getElementById("pop3").style.display = "none";
-	}
-
-	function showpop4() {
-		document.getElementById("pop4").style.display = "block";
-	}
-	function showout4() {
-		document.getElementById("pop4").style.display = "none";
-	}
-
-	function showpop5() {
-		document.getElementById("pop5").style.display = "block";
-	}
-	function showout5() {
-		document.getElementById("pop5").style.display = "none";
-	}
-	function showpop6() {
-		document.getElementById("pop6").style.display = "inline";
-	}
-	function showout6() {
-		document.getElementById("pop6").style.display = "none";
-	}
-	function showpop7() {
-		document.getElementById("pop7").style.display = "inline";
-	}
-	function showout7() {
-		document.getElementById("pop7").style.display = "none";
-	}
-	function showpop8() {
-		document.getElementById("pop8").style.display = "inline";
-	}
-	function showout8() {
-		document.getElementById("pop8").style.display = "none";
-	}
-	function showpop9() {
-		document.getElementById("pop9").style.display = "inline";
-	}
-	function showout9() {
-		document.getElementById("pop9").style.display = "none";
-	}
-	function showpop10() {
-		document.getElementById("pop10").style.display = "inline";
-	}
-	function showout10() {
-		document.getElementById("pop10").style.display = "none";
-	}
-	function showpop11() {
-		document.getElementById("pop11").style.display = "inline";
-	}
-	function showout11() {
-		document.getElementById("pop11").style.display = "none";
-	}
-
-	function showpop12() {
-		document.getElementById("pop12").style.display = "inline";
-	}
-	function showout12() {
-		document.getElementById("pop12").style.display = "none";
-	}
-
-	function showpop13() {
-		document.getElementById("pop13").style.display = "inline";
-	}
-	function showout13() {
-		document.getElementById("pop13").style.display = "none";
-	}
-
-	function showpop14() {
-		document.getElementById("pop14").style.display = "inline";
-	}
-	function showout14() {
-		document.getElementById("pop14").style.display = "none";
-	}
-
-	function showpop15() {
-		document.getElementById("pop15").style.display = "inline";
-	}
-	function showout15() {
-		document.getElementById("pop15").style.display = "none";
-	}
-	function showpop16() {
-		document.getElementById("pop16").style.display = "inline";
-	}
-	function showout16() {
-		document.getElementById("pop16").style.display = "none";
-	}
-	function showpop17() {
-		document.getElementById("pop17").style.display = "inline";
-	}
-	function showout17() {
-		document.getElementById("pop17").style.display = "none";
-	}
-	function showpop18() {
-		document.getElementById("pop18").style.display = "inline";
-	}
-	function showout18() {
-		document.getElementById("pop18").style.display = "none";
-	}
-	function showpop19() {
-		document.getElementById("pop19").style.display = "inline";
-	}
-	function showout19() {
-		document.getElementById("pop19").style.display = "none";
-	}
-	function showpop20() {
-		document.getElementById("pop20").style.display = "inline";
-	}
-	function showout20() {
-		document.getElementById("pop20").style.display = "none";
-	}
-	function showpop21() {
-		document.getElementById("pop21").style.display = "inline";
-	}
-	function showout21() {
-		document.getElementById("pop21").style.display = "none";
-	}
-	function showpop22() {
-		document.getElementById("pop22").style.display = "inline";
-	}
-	function showout22() {
-		document.getElementById("pop22").style.display = "none";
-
-	}
-	function showpop23() {
-		document.getElementById("pop23").style.display = "inline";
-	}
-	function showout23() {
-		document.getElementById("pop23").style.display = "none";
-	}
-	function showpop24() {
-		document.getElementById("pop24").style.display = "inline";
-	}
-	function showout24() {
-		document.getElementById("pop24").style.display = "none";
-	}
-	function showpop25() {
-		document.getElementById("pop25").style.display = "inline";
-	}
-	function showout25() {
-		document.getElementById("pop25").style.display = "none";
-	}
-
-	function validateForm() {
-		var x = document.forms["form1"]["institution"].value;
-		if (x == null || x == "") {
-			alert("Institution Name is required!");
-			return false;
-		}
-	}
-
-	function wds1() {
-		if (document.form1.q1[1].checked) {
-			document.form1.q2[2].checked = true;
-			document.form1.q2[1].disabled = true;
-			document.form1.q2[0].disabled = true;
-			return false;
-		} else if (document.form1.q1[0].checked) {
-			document.form1.q2[2].disabled = true;
-			document.form1.q2[1].disabled = false;
-			document.form1.q2[0].disabled = false;
-			document.form1.q2[2].checked = false;
-		}
-	}
-
-	function wds2() {
-		if (document.form1.q3[1].checked) {
-			document.form1.q4[2].checked = true;
-			document.form1.q4[1].disabled = true;
-			document.form1.q4[0].disabled = true;
-			return false;
-		} else if (document.form1.q3[0].checked) {
-			document.form1.q4[2].disabled = true;
-			document.form1.q4[1].disabled = false;
-			document.form1.q4[0].disabled = false;
-			document.form1.q2[2].checked = false;
-		}
-	}
-	function wds3() {
-		if (document.form1.q5[1].checked) {
-			document.form1.q6[2].checked = true;
-			document.form1.q6[1].disabled = true;
-			document.form1.q6[0].disabled = true;
-			return false;
-		} else if (document.form1.q5[0].checked) {
-			document.form1.q6[2].disabled = true;
-			document.form1.q6[1].disabled = false;
-			document.form1.q6[0].disabled = false;
-			document.form1.q2[2].checked = false;
-		}
-	}
-	function wds4() {
-		if (document.form1.q7[1].checked) {
-			document.form1.q8[2].checked = true;
-			document.form1.q8[1].disabled = true;
-			document.form1.q8[0].disabled = true;
-			return false;
-		} else if (document.form1.q7[0].checked) {
-			document.form1.q8[2].disabled = true;
-			document.form1.q8[1].disabled = false;
-			document.form1.q8[0].disabled = false;
-			document.form1.q2[2].checked = false;
-		}
-	}
-	function wds5() {
-		if (document.form1.q9[1].checked) {
-			document.form1.q10[2].checked = true;
-			document.form1.q10[1].disabled = true;
-			document.form1.q10[0].disabled = true;
-			return false;
-		} else if (document.form1.q9[0].checked) {
-			document.form1.q10[2].disabled = true;
-			document.form1.q10[1].disabled = false;
-			document.form1.q10[0].disabled = false;
-			document.form1.q2[2].checked = false;
-		}
-	}
-	function wds6() {
-		if (document.form1.q11[1].checked) {
-			document.form1.q12[1].disabled = true;
-			document.form1.q12[0].disabled = true;
-			document.form1.q12[0].checked = false;
-			document.form1.q12[1].checked = false;
-			document.form1.q13[1].disabled = true;
-			document.form1.q13[0].disabled = true;
-			document.form1.q13[0].checked = false;
-			document.form1.q13[1].checked = false;
-			document.form1.q14[1].disabled = true;
-			document.form1.q14[0].disabled = true;
-			document.form1.q14[0].checked = false;
-			document.form1.q14[1].checked = false;
-			return false;
-		} else if (document.form1.q11[0].checked) {
-			document.form1.q12[0].checked = false;
-			document.form1.q12[1].checked = false;
-			document.form1.q12[1].disabled = false;
-			document.form1.q12[0].disabled = false;
-			document.form1.q13[0].checked = false;
-			document.form1.q13[1].checked = false;
-			document.form1.q13[1].disabled = false;
-			document.form1.q13[0].disabled = false;
-			document.form1.q14[0].checked = false;
-			document.form1.q14[1].checked = false;
-			document.form1.q14[1].disabled = false;
-			document.form1.q14[0].disabled = false;
-
-		}
-	}
-	function wds7() {
-		if (document.form1.q12[1].checked) {
-			document.form1.q13[1].disabled = true;
-			document.form1.q13[0].disabled = true;
-			return false;
-		} else if (document.form1.q12[0].checked) {
-			document.form1.q13[0].checked = false;
-			document.form1.q13[1].checked = false;
-			document.form1.q13[1].disabled = false;
-			document.form1.q13[0].disabled = false;
-		}
-	}
-	function wds8() {
-		if (document.form1.q15[1].checked) {
-			document.form1.q16[2].checked = true;
-			document.form1.q16[1].disabled = true;
-			document.form1.q16[0].disabled = true;
-			return false;
-		} else if (document.form1.q15[0].checked) {
-			document.form1.q16[2].disabled = true;
-			document.form1.q16[1].disabled = false;
-			document.form1.q16[0].disabled = false;
-			document.form1.q16[2].checked = false;
-		}
-	}
-
-	function mailin() {
-		if (document.form1.q17[1].checked) {
-
-			document.form1.al1.disabled = true;
-			document.form1.al2.disabled = true;
-			document.form1.city.disabled = true;
-			document.form1.state.disabled = true;
-			document.form1.zip.disabled = true;
-			document.form1.accnt[0].disabled = true;
-			document.form1.accnt[1].disabled = true;
-			document.form1.days.disabled = true;
-			document.form1.reverse1[0].disabled = true;
-			document.form1.reverse1[1].disabled = true;
-			document.form1.reverse2[0].disabled = true;
-			document.form1.reverse2[1].disabled = true;
-			document.form1.reverse3[0].disabled = true;
-			document.form1.reverse3[1].disabled = true;
-			document.form1.reverse4[0].disabled = true;
-			document.form1.reverse4[1].disabled = true;
-
-			return false;
-		} else if (document.form1.q17[0].checked) {
-			document.form1.al1.disabled = false;
-			document.form1.al2.disabled = false;
-			document.form1.city.disabled = false;
-			document.form1.state.disabled = false;
-			document.form1.zip.disabled = false;
-			document.form1.accnt[0].disabled = false;
-			document.form1.accnt[1].disabled = false;
-			document.form1.days.disabled = false;
-			document.form1.reverse1[0].disabled = false;
-			document.form1.reverse1[1].disabled = false;
-			document.form1.reverse2[0].disabled = false;
-			document.form1.reverse2[1].disabled = false;
-			document.form1.reverse3[0].disabled = false;
-			document.form1.reverse3[1].disabled = false;
-			document.form1.reverse4[0].disabled = false;
-			document.form1.reverse4[1].disabled = false;
-		}
-	}
-</script>
 </head>
 <body>
 	<div>
 		<h2>Create Privacy Notice</h2>
-
 	</div>
 	<form name="form1" class="bs-example bs-example-form" role="form"
 		onsubmit="return validateForm()" method="post" action="page.do">
@@ -399,8 +36,8 @@
 			<div class="input-group">
 				<label for="revdate">Date of revision for privacy notice</label> <span
 					id="help" style="margin-left: 20px;"><img
-					src="./img/help2.png" onmouseover="showpop();"
-					onmouseout="showout();"></img></span><span id="pop"
+					src="./img/help2.png" onmouseover="showpop('pop');"
+					onmouseout="showout('pop');"></img></span><span id="pop"
 					style="display: none; border: 1px solid; margin-left: 7px; padding: 2px;">Insert
 					the date on which the notice was last revised in [month/year]
 					format using either the name or number of the month.</span> <br> <input
@@ -411,8 +48,8 @@
 			<div class="input-group">
 				<label for="institution">Name of your Institution</label> <span
 					id="help" style="margin-left: 20px;"><img
-					src="./img/help2.png" onmouseover="showpop1();"
-					onmouseout="showout1();"></img></span><span id="pop1"
+					src="./img/help2.png" onmouseover="showpop('pop1');"
+					onmouseout="showout('pop1');"></img></span><span id="pop1"
 					style="display: none; border: 1px solid; margin-left: 7px; padding: 2px;">Insert
 					the name of the financial institution providing the notice or a
 					common identity of affiliated institutions jointly providing the
@@ -430,7 +67,7 @@
 				<label for="what">What type of information will you collect
 					and share? (Choose any 5)</label> <span id="help"
 					style="margin-left: 20px;"><img src="./img/help2.png"
-					onmouseover="showpop2();" onmouseout="showout2();"></img></span><span
+					onmouseover="showpop('pop2');" onmouseout="showout('pop2');"></img></span><span
 					id="pop2"
 					style="display: none; border: 1px solid; margin-left: 7px; padding: 2px;">Provide
 					five(5) types of personal information that your institution
@@ -501,10 +138,10 @@
 						for="q1">Will your institution share customer's personal
 						information for your everday business purposes?</label> <span id="help"
 						style="margin-left: 20px;"><img src="./img/help2.png"
-						onmouseover="showpop3();" onmouseout="showout3();"></img></span><span
+						onmouseover="showpop('pop3');" onmouseout="showout('pop3');"></img></span><span
 						id="pop3"
 						style="display: none; border: 1px solid; margin-left: 7px; padding: 2px;">Provide
-						a ‚ÄúYes‚Äù or ‚ÄúNo‚Äù response that accurately reflects its information
+						a YesÄù or ÄúNoÄù response that accurately reflects its information
 						sharing policies and practices with respect to the reason
 						specified in this question.</span>
 				</div>
@@ -515,14 +152,14 @@
 					customers limit the personal information your institution share for
 					your everyday business purposes?</label> <span id="help"
 					style="margin-left: 20px;"><img src="./img/help2.png"
-					onmouseover="showpop4();" onmouseout="showout4();"></img></span><span
+					onmouseover="showpop('pop4');" onmouseout="showout('pop4');"></img></span><span
 					id="pop4"
 					style="display: none; border: 1px solid; margin-left: 7px; padding: 2px;">Provide
 					one of the three responses, as applicable, that reflects whether a
 					consumer can limit sharing for the reason mentioned in the
-					question: ‚ÄúYes‚Äù if it is required to or voluntarily provides an
-					opt-out; ‚ÄúNo‚Äù if it does not provide an opt-out; or ‚ÄúWe don‚Äôt
-					share‚Äù if your institution doesn't share the information for the
+					question: ÄúYesÄù if it is required to or voluntarily provides an
+					opt-out; ÄúNo if it does not provide an opt-out; or ÄúWe dont
+					share if your institution doesn't share the information for the
 					mentioned reason.</span> <br> <input type="radio" name="q2"
 					value="Yes" checked> Yes <br> <input type="radio"
 					name="q2" value="No"> No <br> <input type="radio"
@@ -531,10 +168,10 @@
 					for="q1">Will your institution share customer's personal
 					information for your marketing purposes?</label> <span id="help"
 					style="margin-left: 20px;"><img src="./img/help2.png"
-					onmouseover="showpop5();" onmouseout="showout5();"></img></span><span
+					onmouseover="showpop('pop5');" onmouseout="showout('pop5');"></img></span><span
 					id="pop5"
 					style="display: none; border: 1px solid; margin-left: 7px; padding: 2px;">Provide
-					a ‚ÄúYes‚Äù or ‚ÄúNo‚Äù response that accurately reflects its information
+					a Yes or No response that accurately reflects its information
 					sharing policies and practices with respect to the reason specified
 					in this question. An institution that shares for this reason may
 					choose to provide an opt-out.</span> <br> <input type="radio"
@@ -543,13 +180,13 @@
 				No <br> <br> <label for="q2">Can customers limit
 					the personal information your institution share for your everyday
 					marketing purposes?</label><span id="help" style="margin-left: 20px;"><img
-					src="./img/help2.png" onmouseover="showpop6();"
-					onmouseout="showout6();"></img></span><span id="pop6"
+					src="./img/help2.png" onmouseover="showpop('pop6');"
+					onmouseout="showout('pop6');"></img></span><span id="pop6"
 					style="display: none; border: 1px solid; margin-left: 7px; padding: 2px;">Provide
 					one of the three responses, as applicable, that reflects whether a
 					consumer can limit sharing for the reason mentioned in the
-					question: ‚ÄúYes‚Äù if it is required to or voluntarily provides an
-					opt-out; ‚ÄúNo‚Äù if it does not provide an opt-out; or ‚ÄúWe don‚Äôt
+					question: Yes if it is required to or voluntarily provides an
+					opt-out; No if it does not provide an opt-out; or We donÄôt
 					share‚Äù if your institution doesn't share the information for the
 					mentioned reason.</span> <br> <input type="radio" name="q4"
 					value="Yes" checked> Yes <br> <input type="radio"
@@ -559,10 +196,10 @@
 				<br> <label for="q1">Will your institution share
 					customer's personal information for joint marketing with other
 					financial companies?</label><span id="help" style="margin-left: 20px;"><img
-					src="./img/help2.png" onmouseover="showpop7();"
-					onmouseout="showout7();"></img></span><span id="pop7"
+					src="./img/help2.png" onmouseover="showpop('pop7');"
+					onmouseout="showout('pop7');"></img></span><span id="pop7"
 					style="display: none; border: 1px solid; margin-left: 7px; padding: 2px;">Provide
-					a ‚ÄúYes‚Äù or ‚ÄúNo‚Äù response that accurately reflects its information
+					a ÄúYes or ÄúNo response that accurately reflects its information
 					sharing policies and practices with respect to the reason specified
 					in this question. An institution that shares for this reason may
 					choose to provide an opt-out.</span> <br> <input type="radio"
@@ -572,13 +209,13 @@
 					the personal information your institution share for joint marketing
 					with other financial companies?</label> <span id="help"
 					style="margin-left: 20px;"><img src="./img/help2.png"
-					onmouseover="showpop8();" onmouseout="showout8();"></img></span><span
+					onmouseover="showpop('pop8');" onmouseout="showout('pop8');"></img></span><span
 					id="pop8"
 					style="display: none; border: 1px solid; margin-left: 7px; padding: 2px;">Provide
 					one of the three responses, as applicable, that reflects whether a
 					consumer can limit sharing for the reason mentioned in the
-					question: ‚ÄúYes‚Äù if it is required to or voluntarily provides an
-					opt-out; ‚ÄúNo‚Äù if it does not provide an opt-out; or ‚ÄúWe don‚Äôt
+					question: Yes if it is required to or voluntarily provides an
+					opt-out; ÄúNo if it does not provide an opt-out; or ÄúWe dont
 					share‚Äù if your institution doesn't share the information for the
 					mentioned reason.</span> <br> <input type="radio" name="q6"
 					value="Yes" checked> Yes <br> <input type="radio"
@@ -590,10 +227,10 @@
 					customer's personal information about their transactions and
 					experiences for your affiliates' everday business purposes?</label><span
 					id="help" style="margin-left: 20px;"><img
-					src="./img/help2.png" onmouseover="showpop9();"
-					onmouseout="showout9();"></img></span><span id="pop9"
+					src="./img/help2.png" onmouseover="showpop('pop9');"
+					onmouseout="showout('pop9');"></img></span><span id="pop9"
 					style="display: none; border: 1px solid; margin-left: 7px; padding: 2px;">Provide
-					a ‚ÄúYes‚Äù or ‚ÄúNo‚Äù response that accurately reflects its information
+					a ÄúYesÄù or ÄúNo response that accurately reflects its information
 					sharing policies and practices with respect to the reason specified
 					in this question. An institution that shares for this reason may
 					choose to provide an opt-out.</span> <br> <input type="radio"
@@ -603,14 +240,14 @@
 					the personal information aboout their transactions and experiences
 					your institution share for your affiliates' everyday business
 					purposes?</label> <span id="help" style="margin-left: 20px;"><img
-					src="./img/help2.png" onmouseover="showpop10();"
-					onmouseout="showout10();"></img></span><span id="pop10"
+					src="./img/help2.png" onmouseover="showpop('pop10');"
+					onmouseout="showout('pop10');"></img></span><span id="pop10"
 					style="display: none; border: 1px solid; margin-left: 7px; padding: 2px;">Provide
 					one of the three responses, as applicable, that reflects whether a
 					consumer can limit sharing for the reason mentioned in the
-					question: ‚ÄúYes‚Äù if it is required to or voluntarily provides an
-					opt-out; ‚ÄúNo‚Äù if it does not provide an opt-out; or ‚ÄúWe don‚Äôt
-					share‚Äù if your institution doesn't share the information for the
+					question: ÄúYesÄù if it is required to or voluntarily provides an
+					opt-out; No if it does not provide an opt-out; or ÄúWe donÄôt
+					share if your institution doesn't share the information for the
 					mentioned reason.</span> <br> <input type="radio" name="q8"
 					value="Yes" checked> Yes <br> <input type="radio"
 					name="q8" value="No"> No <br> <input type="radio"
@@ -621,10 +258,10 @@
 					information about their creditworthiness for your affiliates'
 					everday business purposes?</label> <span id="help"
 					style="margin-left: 20px;"><img src="./img/help2.png"
-					onmouseover="showpop11();" onmouseout="showout11();"></img></span><span
+					onmouseover="showpop('pop11');" onmouseout="showout('pop11');"></img></span><span
 					id="pop11"
 					style="display: none; border: 1px solid; margin-left: 7px; padding: 2px;">Provide
-					a ‚ÄúYes‚Äù or ‚ÄúNo‚Äù response that accurately reflects its information
+					a ÄúYes or NoÄù response that accurately reflects its information
 					sharing policies and practices with respect to the reason specified
 					in this question. An institution that shares for this reason may
 					choose to provide an opt-out.</span> <br> <input type="radio"
@@ -634,14 +271,14 @@
 					the personal information aboout their creditworthiness your
 					institution share for your affiliates' everyday business purposes?</label><span
 					id="help" style="margin-left: 20px;"><img
-					src="./img/help2.png" onmouseover="showpop12();"
-					onmouseout="showout12();"></img></span><span id="pop12"
+					src="./img/help2.png" onmouseover="showpop('pop12');"
+					onmouseout="showout('pop12');"></img></span><span id="pop12"
 					style="display: none; border: 1px solid; margin-left: 7px; padding: 2px;">Provide
 					one of the three responses, as applicable, that reflects whether a
 					consumer can limit sharing for the reason mentioned in the
-					question: ‚ÄúYes‚Äù if it is required to or voluntarily provides an
-					opt-out; ‚ÄúNo‚Äù if it does not provide an opt-out; or ‚ÄúWe don‚Äôt
-					share‚Äù if your institution doesn't share the information for the
+					question: ÄúYes if it is required to or voluntarily provides an
+					opt-out; ÄúNo if it does not provide an opt-out; or ÄúWe dont
+					share if your institution doesn't share the information for the
 					mentioned reason.</span> <br> <input type="radio" name="q10"
 					value="Yes" checked> Yes <br> <input type="radio"
 					name="q10" value="No"> No <br> <input type="radio"
@@ -649,14 +286,14 @@
 				<br> <i>For institution's affiliates to market to
 					customers:</i> <br> <label for="q1">Does your institution
 					have affiliates?</label> <span id="help" style="margin-left: 20px;"><img
-					src="./img/help2.png" onmouseover="showpop13();"
-					onmouseout="showout13();"></img></span><span id="pop13"
+					src="./img/help2.png" onmouseover="showpop('pop13');"
+					onmouseout="showout('pop13');"></img></span><span id="pop13"
 					style="display: none; border: 1px solid; margin-left: 7px; padding: 2px;">Please
 					select 'Yes' if your institution has affiliates, select 'No' if
 					your institution does not have affiliates. For our affiliates to
 					market to you- reason may be omitted from the disclosure table when
 					the institution does not have affiliates (or does not disclose
-					personal information to its affiliates); the institution‚Äôs
+					personal information to its affiliates); the institutionÄôs
 					affiliates do not use personal information in a manner that
 					requires an opt-out; or the institution provides the affiliate
 					marketing notice separately. Institutions that include this reason
@@ -668,8 +305,8 @@
 				<br> <br> <label for="q1">Does your institution
 					disclose customer's personal information to your affiliates?</label><span
 					id="help" style="margin-left: 20px;"><img
-					src="./img/help2.png" onmouseover="showpop14();"
-					onmouseout="showout14();"></img></span><span id="pop14"
+					src="./img/help2.png" onmouseover="showpop('pop14');"
+					onmouseout="showout('pop14');"></img></span><span id="pop14"
 					style="display: none; border: 1px solid; margin-left: 7px; padding: 2px;">Please
 					select 'Yes' if your institution disclose customer's personal
 					information to your affiliates, select 'No' if your institution
@@ -682,7 +319,7 @@
 					your institution's affiliate use customer's personal information in
 					a manner that requires an opt-out?</label><span id="help"
 					style="margin-left: 20px;"><img src="./img/help2.png"
-					onmouseover="showpop15();" onmouseout="showout15();"></img></span><span
+					onmouseover="showpop('pop15');" onmouseout="showout('pop15');"></img></span><span
 					id="pop15"
 					style="display: none; border: 1px solid; margin-left: 7px; padding: 2px;">Please
 					select 'Yes' if your institution's affiliate use customer's
@@ -693,7 +330,7 @@
 					for="q1">Does your institution provides the affiliate
 					marketing notice separately?</label><span id="help"
 					style="margin-left: 20px;"><img src="./img/help2.png"
-					onmouseover="showpop16();" onmouseout="showout16();"></img></span><span
+					onmouseover="showpop('pop16');" onmouseout="showout('pop16');"></img></span><span
 					id="pop16"
 					style="display: none; border: 1px solid; margin-left: 7px; padding: 2px;">Please
 					select 'Yes' if your institution provides the affiliate marketing
@@ -704,10 +341,10 @@
 					for="q1">Does your institution share customer's personal
 					information for non-affiliates to market to customers?</label><span
 					id="help" style="margin-left: 20px;"><img
-					src="./img/help2.png" onmouseover="showpop17();"
-					onmouseout="showout17();"></img></span><span id="pop17"
+					src="./img/help2.png" onmouseover="showpop('pop17');"
+					onmouseout="showout('pop17');"></img></span><span id="pop17"
 					style="display: none; border: 1px solid; margin-left: 7px; padding: 2px;">Provide
-					a ‚ÄúYes‚Äù or ‚ÄúNo‚Äù response that accurately reflects its information
+					a Yes or ÄúNo response that accurately reflects its information
 					sharing policies and practices with respect to the reason specified
 					in this question. An institution that shares personal information
 					for this reason must provide an opt-out.</span> <br> <br> <input
@@ -717,7 +354,7 @@
 					customers limit the personal information your institution share for
 					non-affiliates to market to them?</label> <span id="help"
 					style="margin-left: 20px;"><img src="./img/help2.png"
-					onmouseover="showpop18();" onmouseout="showout18();"></img></span><span
+					onmouseover="showpop('pop18');" onmouseout="showout('pop18');"></img></span><span
 					id="pop18"
 					style="display: none; border: 1px solid; margin-left: 7px; padding: 2px;">Provide
 					one of the three responses, as applicable, that reflects whether a
@@ -748,7 +385,7 @@
 				<input type="radio" name="q" value="No">No <br> <br>
 				<label for="optout">Website URL</label> <span id="help"
 					style="margin-left: 20px;"><img src="./img/help2.png"
-					onmouseover="showpop19();" onmouseout="showout19();"></img></span><span
+					onmouseover="showpop('pop19');" onmouseout="showout('pop19');"></img></span><span
 					id="pop19"
 					style="display: none; border: 1px solid; margin-left: 7px; padding: 2px;">Please
 					provide either a specific Web address that takes consumers directly
@@ -830,7 +467,7 @@
 					customers with multiple accounts to identify each account to which
 					the opt-out should apply. </label> <span id="help"
 					style="margin-left: 20px;"><img src="./img/help2.png"
-					onmouseover="showpop20();" onmouseout="showout20();"></img></span><span
+					onmouseover="showpop('pop20');" onmouseout="showout('pop20');"></img></span><span
 					id="pop20"
 					style="display: none; border: 1px solid; margin-left: 7px; padding: 2px;">Select
 					'Yes' if your institution require additional or different
@@ -842,8 +479,8 @@
 					which your institution will begin sharing customer's information
 					from the date of sending privacy notice to a new customer. </label><span
 					id="help" style="margin-left: 20px;"><img
-					src="./img/help2.png" onmouseover="showpop21();"
-					onmouseout="showout21();"></img></span><span id="pop21"
+					src="./img/help2.png" onmouseover="showpop('pop21');"
+					onmouseout="showout('pop21');"></img></span><span id="pop21"
 					style="display: none; border: 1px solid; margin-left: 7px; padding: 2px;">Please
 					insert a number that is 30 or greater in the field below.</span> <br>
 				<input required class="form-control" type="text" placeholder=""
@@ -851,8 +488,8 @@
 				<label for="q1">Does your institution provide your joint
 					accountholders the choice to opt out for only one accountholder?</label> <span
 					id="help" style="margin-left: 20px;"><img
-					src="./img/help2.png" onmouseover="showpop22();"
-					onmouseout="showout22();"></img></span><span id="pop22"
+					src="./img/help2.png" onmouseover="showpop('pop22');"
+					onmouseout="showout('pop22');"></img></span><span id="pop22"
 					style="display: none; border: 1px solid; margin-left: 7px; padding: 2px;">Select
 					'Yes' if your institution provide your joint accountholders the
 					choice to opt out for only one accountholder , otherwise select
@@ -866,8 +503,8 @@
 				<br> <br> <label for="q1">Does your institution
 					shares personal information pursuant to section 603(d)(2)(A)(iii)
 					of the FCRA? </label> <span id="help" style="margin-left: 20px;"><img
-					src="./img/help2.png" onmouseover="showpop23();"
-					onmouseout="showout23();"></img></span><span id="pop23"
+					src="./img/help2.png" onmouseover="showpop('pop23');"
+					onmouseout="showout('pop23');"></img></span><span id="pop23"
 					style="display: none; border: 1px solid; margin-left: 7px; padding: 2px;">Select
 					'Yes' if your institution shares personal information pursuant to
 					section 603(d)(2)(A)(iii) of the FCRA, otherwise select 'No'. This
@@ -882,7 +519,7 @@ their everyday business purposes">Yes
 				<br> <br> <label for="q1">Does your institution
 					incorporates section 624 of the FCRA? </label> <span id="help"
 					style="margin-left: 20px;"><img src="./img/help2.png"
-					onmouseover="showpop24();" onmouseout="showout24();"></img></span><span
+					onmouseover="showpop('pop24');" onmouseout="showout('pop24');"></img></span><span
 					id="pop24"
 					style="display: none; border: 1px solid; margin-left: 7px; padding: 2px;">Select
 					'Yes' if your institution incorporates section 624 of the FCRA,
@@ -896,8 +533,8 @@ to use my personal information to market to me">Yes
 				<br> <br> <label for="q1">Does your financial
 					institution share personal information pursuant to ¬ß 313.10(a) of
 					this part? </label> <span id="help" style="margin-left: 20px;"><img
-					src="./img/help2.png" onmouseover="showpop25();"
-					onmouseout="showout25();"></img></span><span id="pop25"
+					src="./img/help2.png" onmouseover="showpop('pop25');"
+					onmouseout="showout('pop25');"></img></span><span id="pop25"
 					style="display: none; border: 1px solid; margin-left: 7px; padding: 2px;">Select
 					'Yes' if your institution shares personal information pursuant to ¬ß
 					313.10(a), otherwise select 'No'. This will include in the mail-in
