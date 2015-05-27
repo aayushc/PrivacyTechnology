@@ -41,6 +41,42 @@
 		}
 	}
 
+	function showpop() {
+		document.getElementById("pop").style.display = "inline";
+	}
+	function showout() {
+		document.getElementById("pop").style.display = "none";
+	}
+
+	function showpop1() {
+		document.getElementById("pop1").style.display = "inline";
+	}
+	function showout1() {
+		document.getElementById("pop1").style.display = "none";
+	}
+
+	function showpop2() {
+		document.getElementById("pop2").style.display = "inline";
+	}
+	function showout2() {
+		document.getElementById("pop2").style.display = "none";
+	}
+
+	function showpop3() {
+		document.getElementById("pop3").style.display = "inline";
+	}
+	function showout3() {
+		document.getElementById("pop3").style.display = "none";
+	}
+
+	function showpop4() {
+		document.getElementById("pop4").style.display = "inline";
+	}
+	function showout4() {
+		document.getElementById("pop4").style.display = "none";
+	}
+
+	
 	function validateForm() {
 		var x = document.forms["form1"]["institution"].value;
 		if (x == null || x == "") {
@@ -255,14 +291,24 @@
 			<br>
 			<div class="rb">
 				<label for="q1">Does your institution collect personal
-					information from your affiliates and/or other credit bureaus?</label> <br>
+					information from your affiliates and/or other credit bureaus?</label>  <span id="help"
+					style="margin-left: 20px;"><img src="./img/help2.png"
+					onmouseover="showpop3();" onmouseout="showout3();"></img></span><span
+					id="pop3"
+					style="display: none; border: 1px solid; margin-left: 7px; padding: 2px;">Please indicate if your institution collect personal information from their affiliates and/or credit bureaus. </span>
+					<br>
 				<input type="radio" name="q1"
 					value="We also collect your personal information from others, such as credit bureaus, affiliates, or other companies."
 					checked> Yes <br> <input type="radio" name="q1"
 					value=""> No <br> <br> <label for="q1">Does
 					your institution collect personal information from other companies
 					if it does not collect personal information from your affiliates
-					and/or other credit bureaus?</label> <br> <input type="radio"
+					and/or other credit bureaus?</label> <span id="help"
+					style="margin-left: 20px;"><img src="./img/help2.png"
+					onmouseover="showpop4();" onmouseout="showout4();"></img></span><span
+					id="pop4"
+					style="display: none; border: 1px solid; margin-left: 7px; padding: 2px;">Please indicate if your institution does not collect personal information from their affiliates and/or credit bureaus but do collect information from other companies. </span>
+					<br> <input type="radio"
 					name="q2"
 					value="We also collect your personal information from other companies."
 					checked> Yes <br> <input type="radio" name="q2"
