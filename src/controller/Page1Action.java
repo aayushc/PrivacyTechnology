@@ -6,6 +6,7 @@ import java.util.List;
 
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpSession;
 
 import org.mybeans.form.FormBeanException;
 import org.mybeans.form.FormBeanFactory;
@@ -62,6 +63,8 @@ public class Page1Action  extends Action{
 			p1.setState(form.getState());
 			p1.setZip(form.getZip());
 			request.setAttribute("page1", p1);
+			HttpSession session= request.getSession();
+			session.setAttribute("page1", p1);
 			System.out.println(p1.getInstitution());
 		} catch (FormBeanException e) {
 			// TODO Auto-generated catch block
