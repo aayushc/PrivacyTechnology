@@ -26,6 +26,8 @@ public class Page2Action extends Action{
 		List<String> errors = new ArrayList<String>();
         request.setAttribute("errors",errors);
         try {
+        	Page1Bean bean1=(Page1Bean) request.getAttribute("page1");
+        	request.setAttribute("page1", bean1);
 			Page2Form form= formBeanFactory.create(request);
 			if(!form.isPresent()) {
 				return "Page2.jsp";
