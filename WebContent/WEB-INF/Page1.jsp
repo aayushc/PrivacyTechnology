@@ -41,14 +41,15 @@
 	}
 
 	function showpop() {
-		document.getElementById("pop").style.display = "inline";
+		document.getElementById("pop").style.display = "block";
 	}
 	function showout() {
 		document.getElementById("pop").style.display = "none";
 	}
 
 	function showpop1() {
-		document.getElementById("pop1").style.display = "inline";
+		document.getElementById("pop1").style.display = "block";
+		document.getElementById("pop1").style.width = "500px";
 	}
 	function showout1() {
 		document.getElementById("pop1").style.display = "none";
@@ -56,6 +57,7 @@
 
 	function showpop2() {
 		document.getElementById("pop2").style.display = "inline";
+		document.getElementById("pop2").style.width = "10px";
 	}
 	function showout2() {
 		document.getElementById("pop2").style.display = "none";
@@ -63,6 +65,7 @@
 
 	function showpop3() {
 		document.getElementById("pop3").style.display = "inline";
+		document.getElementById("pop3").style.width = "10px";
 	}
 	function showout3() {
 		document.getElementById("pop3").style.display = "none";
@@ -410,8 +413,9 @@
 					style="display: none; border: 1px solid; margin-left: 7px; padding: 2px;">Insert
 					the name of the financial institution providing the notice or a
 					common identity of affiliated institutions jointly providing the
-					notice.</span> <input required class="form-control" type="text"
-					placeholder="" name="institution" required />
+					notice.</span>
+					<span><input required class="form-control" type="text"
+					placeholder="" name="institution" required /></span>
 			</div>
 			<br>
 			<div>
