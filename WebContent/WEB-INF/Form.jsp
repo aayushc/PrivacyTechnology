@@ -106,6 +106,7 @@
 							<td><c:out value="${page1.q9}" /></td>
 							<td><c:out value="${page1.q10}" /></td>
 						</tr>
+						<c:choose>
 						<c:when test="${page1.q11 == Yes}"> <!--  what is the purpose of q12?? -->
 						<tr>
 							<td>For our affiliates to market to you</td>
@@ -113,6 +114,7 @@
 							<td><c:out value="${page1.q14}" /></td>
 						</tr>
 						</c:when>
+						</c:choose>
 						<tr>
 							<td>For nonaffiliates to market to you</td>
 							<td><c:out value="${page1.q15}" /></td>
@@ -125,7 +127,7 @@
 				<table class="table table-condensed table-bordered">
 					<tbody>
 					<c:choose>
-						<c:when test="${page1.q15 == Yes}">
+						<c:when test="${page1.q15 eq 'Yes'}">
 						<tr>
 							<td>To limit our sharing</td>
 							<td>Call <c:out value="${page1.phone}" /> - our menu will prompt you through your choice(s) or

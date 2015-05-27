@@ -46,6 +46,8 @@ public class Page2Action extends Action{
 			p1.setFcomp(form.getFcomp());
 			p1.setOther(form.getOther());
 			request.setAttribute("page2", p1);
+			System.out.println(p1.getInstitution());
+			System.out.println(form.getInstitution());
 		} catch (FormBeanException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
