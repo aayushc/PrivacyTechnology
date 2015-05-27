@@ -41,14 +41,14 @@
 	}
 
 	function showpop() {
-		document.getElementById("pop").style.display = "inline";
+		document.getElementById("pop").style.display = "block";
 	}
 	function showout() {
 		document.getElementById("pop").style.display = "none";
 	}
 
 	function showpop1() {
-		document.getElementById("pop1").style.display = "inline";
+		document.getElementById("pop1").style.display = "block";
 	}
 	function showout1() {
 		document.getElementById("pop1").style.display = "none";
@@ -69,14 +69,14 @@
 	}
 
 	function showpop4() {
-		document.getElementById("pop4").style.display = "inline";
+		document.getElementById("pop4").style.display = "block";
 	}
 	function showout4() {
 		document.getElementById("pop4").style.display = "none";
 	}
 
 	function showpop5() {
-		document.getElementById("pop5").style.display = "inline";
+		document.getElementById("pop5").style.display = "block";
 	}
 	function showout5() {
 		document.getElementById("pop5").style.display = "none";
