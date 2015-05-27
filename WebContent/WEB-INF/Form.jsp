@@ -142,7 +142,7 @@
 					</c:choose>
 						<tr>
 							<td>Questions?</td>
-							<td>Call <c:out value="${page1.phone1}" /> or go to <c:out value="${page1.website1}" /></td>
+							<td>Call <c:out value="${page1.phone1}" /> or go to <a href="<c:out value="${page1.website1}" />"><c:out value="${page1.website1}" /></a></td>
 						</tr>
 					</tbody> 
 				</table>
@@ -187,10 +187,10 @@
 							</td>
 						</tr>
 						<tr>
-							<td>Why canât I limit all sharing?</td>
+							<td>Why can't I limit all sharing?</td>
 							<td>Federal law gives you the right to limit some but not all sharing related to:
 								<ul>
-									<li>sharing for affiliates' everyday business purposesâinformation about your creditworthiness</li>
+									<li>sharing for affiliates' everyday business purposes information about your creditworthiness</li>
 									<li>affiliates from using your information to market to you</li>
 									<li>sharing for nonaffiliates to market to you</li>
 								</ul>							
@@ -216,7 +216,7 @@
 							<td>Affiliates</td>
 							<td>Companies related by common ownership or control. They can be Financial and nonfinancial companies.
 								<ul>
-									<li>[affiliate information]</li>
+									<li><c:out value="${page2.ta1}" /></li>
 								</ul>
 							</td>
 						</tr>
@@ -224,7 +224,7 @@
 							<td>Nonaffiliates</td>
 							<td>Companies not related by common ownership or control. They can be Financial and nonfinancial companies.
 								<ul>
-									<li>[non affiliate information]</li>
+									<li><c:out value="${page2.ta2}" /></li>
 								</ul>
 							</td>
 						</tr>
@@ -232,7 +232,7 @@
 							<td>Joint Marketing</td>
 							<td>A formal agreement between nonaffiliated financial companies that together market financial products or services to you.
 								<ul>
-									<li>[joint marketing information]</li>
+									<li><c:out value="${page2.ta3}" /></li>
 								</ul>
 							</td>
 						</tr>
@@ -245,7 +245,7 @@
 							<td>Other important information</td>
 						</tr>
 						<tr>
-							<td>[insert other important information]</td>
+							<td><c:out value="${page2.other}" /></td>
 						</tr>
 					</tbody> 
 				</table>

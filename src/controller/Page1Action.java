@@ -68,10 +68,10 @@ public class Page1Action  extends Action{
 			request.setAttribute("page1", p1);
 			HttpSession session= request.getSession();
 			session.setAttribute("page1", p1);
-			System.out.println(p1.getInstitution());
+			/*System.out.println(p1.getInstitution());
 			System.out.println("button: "+form.getDownload());
-			System.out.println("button: "+form.getButton());
-			if(form.getDownload().equals("Download")) {
+			System.out.println("button: "+form.getButton());*/
+			if(form.getDownload()!=null && form.getDownload().equals("Download")) {
 				return "download.do";
 			}
 		} catch (FormBeanException e) {

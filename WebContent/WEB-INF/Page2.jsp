@@ -144,7 +144,7 @@
 				</span>
 				<span id="pop7" style="display: none; border: 1px solid; margin-left: 7px; padding: 2px;"> Please select one of the options provided below to indicate what will happen when a customer limit sharing for an account he/she hold jointly with someone else. </span>  <br>
 				<input type="radio" name="q4" value="Your choices will apply to everyone on your account."> Customer's choices will apply to everyone on their account <br>
-				<input type="radio" name="q4" value="Your choices will apply to everyone on your accountâunless you tell us otherwise."> Customer's choices will apply to everyone on their account unless they tell us otherwise <br> <br> 
+				<input type="radio" name="q4" value="Your choices will apply to everyone on your account unless you tell us otherwise."> Customer's choices will apply to everyone on their account unless they tell us otherwise <br> <br> 
 				<label for="q1">Does your institution provide insurance products or services?</label> <br>
 				<input type="radio" name="q5" value="Yes"> Yes <br> 
 				<input type="radio" name="q5" value="No" checked> No <br> <br>
@@ -220,7 +220,7 @@
 				</span>
 				<span id="pop15" style="display: none; border: 1px solid; margin-left: 7px; padding: 2px;">Please include only the "Acknowledgment of receipt form" in the text area provided below.</span>
 				<br> <br>
-				<textarea rows="4" cols="50"></textarea>
+				<textarea name="other" rows="4" cols="50"></textarea>
 				<br> <br>
 			</div>
 			<br>
