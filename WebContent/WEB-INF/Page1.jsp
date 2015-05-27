@@ -187,7 +187,7 @@
 				<input type="radio" name="q9" value="Yes" checked onclick='wds5()'>Yes<br>
 				<input type="radio" name="q9" value="No" onclick='wds5()'>No<br>
 				<br>
-				<label for="q2">Can customers limit	the personal information aboout their creditworthiness your institution share for your affiliates' everyday business purposes?</label>
+			<!-- 	<label for="q2">Can customers limit	the personal information aboout their creditworthiness your institution share for your affiliates' everyday business purposes?</label>
 				<span id="help" style="margin-left: 20px;">
 					<img src="./img/help2.png" onmouseover="showpop('pop12');" onmouseout="showout('pop12');"></img>
 				</span>
@@ -195,7 +195,7 @@
 				<input type="radio" name="q10" value="Yes" checked>Yes<br>
 				<input type="radio" name="q10" value="No">No<br>
 				<input type="radio" name="q10" value="We don't share">We don't share<br>
-				<br> 
+				<br>  -->
 				<i>For institution's affiliates to market to customers:</i><br>
 				<label for="q1">Does your institution have affiliates?</label>
 				<span id="help" style="margin-left: 20px;">
@@ -241,7 +241,7 @@
 				<input type="radio" name="q15" value="Yes" checked onclick='wds8()'>Yes<br>
 				<input type="radio" name="q15" value="No" onclick='wds8()'>No<br>
 				<br>
-				<label for="q2">Can customers limit the personal information your institution share for non-affiliates to market to them?</label>
+				<!-- <label for="q2">Can customers limit the personal information your institution share for non-affiliates to market to them?</label>
 				<span id="help" style="margin-left: 20px;">
 					<img src="./img/help2.png" onmouseover="showpop('pop18');" onmouseout="showout('pop18');"></img>
 				</span>
@@ -249,7 +249,7 @@
 				<input type="radio" name="q16" value="Yes" checked>Yes<br>
 				<input type="radio" name="q16" value="No">No<br>
 				<input type="radio" name="q16" value="We don't share">We don't share<br>
-				<br>
+				<br> -->
 			</div>
 			<br>
 
@@ -260,7 +260,7 @@
 			<div class="input-group">
 				Please enter details of your institution's applicable <u><i>opt-out</i></u>method(s) below: <br> <br> 
 				<label for="optout">Phone Number</label> <br> 
-				<input required class="form-control" type="number" placeholder="" name="phone" style="width: 200px;"> <br> <br> <br> 
+				<input class="form-control" type="number" placeholder="" name="phone" style="width: 200px;"> <br> <br> <br> 
 				<label for="q1">Is the telephone number you provided above a toll-free number? </label> <br>
 				<input type="radio" name="q" value="Toll-free" checked>Yes<br>
 				<input type="radio" name="q" value="No">No <br> <br>
@@ -269,7 +269,7 @@
 					<img src="./img/help2.png" onmouseover="showpop('pop19');" onmouseout="showout('pop19');"></img>
 				</span>
 				<span id="pop19" style="display: none; border: 1px solid; margin-left: 7px; padding: 2px;">Please provide either a specific Web address that takes consumers directly to the opt-out page or a general Web address that provides a clear and conspicuous direct link to the opt-out page.</span> <br> 
-				<input required class="form-control" type="url" placeholder="" name="website"> <br> <br> <br> 
+				<input class="form-control" type="url" placeholder="" name="website"> <br> <br> <br> 
 				<label for="q1">Would your institution like to provide mail-in opt-out form for the customers?</label> <br> 
 				<input type="radio" name="q17" value="Yes"  onclick='mailin()'>Yes <br>
 				<input type="radio" name="q17" value="No" onclick='mailin()'>No
@@ -343,8 +343,8 @@
 					<img src="./img/help2.png" onmouseover="showpop('pop20');" onmouseout="showout('pop20');"></img>
 				</span>
 				<span id="pop20" style="display: none; border: 1px solid; margin-left: 7px; padding: 2px;">Select 'Yes' if your institution require additional or different information, such as a random opt-out number or a truncated account number, to implement an opt-out election, otherwise select 'No'.</span> <br>
-				<input type="radio" name="accnt" value="â[account #]">Yes <br>
-				<input type="radio" name="accnt" value="No">No <br> <br>
+				<input type="radio" name="accnt" value="Yes">Yes <br>
+				<input type="radio" name="accnt" value="">No <br> <br>
 				<label for="optout">Please enter the number of days after which your institution will begin sharing customer's information from the date of sending privacy notice to a new customer. </label>
 				<span id="help" style="margin-left: 20px;">
 					<img src="./img/help2.png" onmouseover="showpop('pop21');" onmouseout="showout('pop21');"></img>
@@ -356,7 +356,7 @@
 					<img src="./img/help2.png" onmouseover="showpop('pop22');" onmouseout="showout('pop22');"></img>
 				</span>
 				<span id="pop22" style="display: none; border: 1px solid; margin-left: 7px; padding: 2px;">Select 'Yes' if your institution provide your joint accountholders the choice to opt out for only one accountholder , otherwise select 'No'. This will include in the mail-in opt-out form the following statement: If you have a joint account, your choice(s) will apply to everyone on your account unless you mark below. Apply my choice(s) only to me.</span> <br> 
-				<input type="radio" name="reverse1" value="If you have a joint account, your choice(s) will apply to everyone on your account unless you mark below. â¡ Apply my choice(s) only to me.">Yes
+				<input type="radio" name="reverse1" value="Yes">Yes
 				<br> <input type="radio" name="reverse1" value="">No <br>
 				<br> <br> 
 				<label for="q1">Does your institution shares personal information pursuant to section 603(d)(2)(A)(iii) of the FCRA? </label>
@@ -364,24 +364,24 @@
 					<img src="./img/help2.png" onmouseover="showpop('pop23');" onmouseout="showout('pop23');"></img>
 				</span>
 				<span id="pop23" style="display: none; border: 1px solid; margin-left: 7px; padding: 2px;">Select 'Yes' if your institution shares personal information pursuant to section 603(d)(2)(A)(iii) of the FCRA, otherwise select 'No'. This will include in the mail-in opt-out form the following statement: Do not share information about my creditworthiness with your affiliates for their everyday business purposes.â</span> <br> 
-				<input type="radio" name="reverse2" value="Do not share information about my creditworthiness with your affiliates for their everyday business purposes">Yes
-				<br> <input type="radio" name="reverse2" value="">No <br>
+				<input type="radio" name="reverse2" value="Yes">Yes
+				<br> <input type="radio" name="reverse2" value="No">No <br>
 				<br> <br> 
 				<label for="q1">Does your institution incorporates section 624 of the FCRA? </label> 
 				<span id="help" style="margin-left: 20px;">
 					<img src="./img/help2.png" onmouseover="showpop('pop24');" onmouseout="showout('pop24');"></img>
 				</span>
 				<span id="pop24" style="display: none; border: 1px solid; margin-left: 7px; padding: 2px;">Select 'Yes' if your institution incorporates section 624 of the FCRA, otherwise select 'No'. This will include in the mail-in opt-out form the following statement: ââ¡ Do not allow your affiliates to use my personal information to market to me.â</span> <br> 
-				<input type="radio" name="reverse3" value="Do not allow your affiliates to use my personal information to market to me">Yes
-				<br> <input type="radio" name="reverse3" value="">No <br>
+				<input type="radio" name="reverse3" value="Yes">Yes
+				<br> <input type="radio" name="reverse3" value="No">No <br>
 				<br> <br> 
 				<label for="q1">Does your financial institution share personal information pursuant to Â§ 313.10(a) of this part? </label>
 				<span id="help" style="margin-left: 20px;">
 					<img src="./img/help2.png" onmouseover="showpop('pop25');" onmouseout="showout('pop25');"></img>
 				</span>
 				<span id="pop25" style="display: none; border: 1px solid; margin-left: 7px; padding: 2px;">Select 'Yes' if your institution shares personal information pursuant to Â§ 313.10(a), otherwise select 'No'. This will include in the mail-in opt-out form the following statement: ââ¡ Do not share my personal information with nonaffiliates to market their products and services to me."</span> <br> 
-				<input type="radio" name="reverse4" value="Do not share my personal information with nonaffiliates to market their products and services to me.">Yes
-				<br> <input type="radio" name="reverse4" value="">No <br>
+				<input type="radio" name="reverse4" value="Yes">Yes
+				<br> <input type="radio" name="reverse4" value="No">No <br>
 				<br>
 			</div>
 			<br>
