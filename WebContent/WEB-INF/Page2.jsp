@@ -137,7 +137,7 @@
 				></span>
 				<span id="pop6" style="display: none; border: 1px solid; margin-left: 7px; padding: 2px;"> If your institution describe state privacy law provisions, then add them in the space provided below. This information will appear in the “Other important information” block. </span> <br>
 				<textarea name="provision" rows="4" cols="50"></textarea>
-				&nbsp; &nbsp;<u>Add</u> <br> <br> Please answer the following question if your institution provide opt-out options. <br>
+				<br> <br> Please answer the following question if your institution provide opt-out options. <br>
 				<br> <label for="q1">What happens when a customer limit sharing for an account he/she hold jointly with someone else?</label>
 				<span id="help" style="margin-left: 20px;">
 					<img src="./img/help2.png" onmouseover="showpop('pop7');" onmouseout="showout('pop7');"></img>
@@ -145,26 +145,26 @@
 				<span id="pop7" style="display: none; border: 1px solid; margin-left: 7px; padding: 2px;"> Please select one of the options provided below to indicate what will happen when a customer limit sharing for an account he/she hold jointly with someone else. </span>  <br>
 				<input type="radio" name="q4" value="Your choices will apply to everyone on your account."> Customer's choices will apply to everyone on their account <br>
 				<input type="radio" name="q4" value="Your choices will apply to everyone on your account unless you tell us otherwise."> Customer's choices will apply to everyone on their account unless they tell us otherwise <br> <br> 
-				<label for="q1">Does your institution provide insurance products or services?</label> <br>
+				<!-- <label for="q1">Does your institution provide insurance products or services?</label> <br>
 				<input type="radio" name="q5" value="Yes"> Yes <br> 
-				<input type="radio" name="q5" value="No" checked> No <br> <br>
+				<input type="radio" name="q5" value="No" checked> No <br> <br> -->
 			</div>
 			<div>
 				<b><font size="4">Definitions</font></b>
 			</div>
 			<br> <i><u>Affiliates</u></i> <br> <br> 
 			<label for="q6">Does your institution : </label> <br> 
-			<input type="radio" name="q6" value="has no affiliates" onclick='enabletextarea2()'> has no affiliates 
+			<input type="radio" name="q6" value="1" onclick='enabletextarea2()'> has no affiliates 
 			<span id="help" style="margin-left: 20px;">
 				<img src="./img/help2.png" onmouseover="showpop('pop8');" onmouseout="showout('pop8');"></img>
 			</span>
 			<span id="pop8" style="display: none; border: 1px solid; margin-left: 7px; padding: 2px;"> This option will state: “[name of financial institution] has no affiliates” </span> <br> 
-			<input type="radio" name="q6" value="has affiliates but does not share personal information" onclick='enabletextarea2()'> has affiliates but does not share personal information
+			<input type="radio" name="q6" value="2" onclick='enabletextarea2()'> has affiliates but does not share personal information
 			<span id="help" style="margin-left: 20px;">
 				<img src="./img/help2.png" onmouseover="showpop('pop9');" onmouseout="showout('pop9');"></img>
 			</span>
 			<span id="pop9" style="display: none; border: 1px solid; margin-left: 7px; padding: 2px;"> This option will state: “[name of financial institution] does not share with our affiliates”</span> <br> 
-			<input type="radio" name="q6" value="shares with its affiliates" onclick='enabletextarea2()'> shares with its affiliates
+			<input type="radio" name="q6" value="3" onclick='enabletextarea2()'> shares with its affiliates
 			<span id="help" style="margin-left: 20px;">
 				<img src="./img/help2.png" onmouseover="showpop('pop10');" onmouseout="showout('pop10');"></img>
 			</span>
@@ -181,12 +181,12 @@
 				<textarea name="ta4" rows="4" cols="50"></textarea>
 				<br> <br> <i><u>Nonaffiliates</u></i> <br> <br> Please select an appropriate choice: <br> <br> 
 				<label for="q6">Our financial institution : </label> <br> 
-				<input type="radio" name="q7" value="does not share with nonaffiliated third parties"  onclick='enabletextarea3()'> does not share with nonaffiliated third parties 
+				<input type="radio" name="q7" value="1"  onclick='enabletextarea3()'> does not share with nonaffiliated third parties 
 				<span id="help" style="margin-left: 20px;">
 					<img src="./img/help2.png" onmouseover="showpop('pop11');" onmouseout="showout('pop11');"></img>
 				</span>
 				<span id="pop11" style="display: none; border: 1px solid; margin-left: 7px; padding: 2px;"> This option will state: “[name of financial institution] does not share with nonaffiliates so they can market to you”</span><br> 
-				<input type="radio" name="q7" value="shares with nonaffiliated third parties" onclick='enabletextarea3()'> shares with nonaffiliated third parties 
+				<input type="radio" name="q7" value="2" onclick='enabletextarea3()'> shares with nonaffiliated third parties 
 				<span id="help" style="margin-left: 20px;">
 					<img src="./img/help2.png" onmouseover="showpop('pop12');" onmouseout="showout('pop12');"></img>
 				</span>
@@ -196,12 +196,12 @@
 				<textarea name="ta5" rows="4" cols="50"></textarea>
 				<br> <br> <i><u>Joint Marketing</u></i> <br> <br> Please select an appropriate choice: <br> <br> 
 				<label for="q6">Our financial institution : </label> <br> 
-				<input type="radio" name="q8" value="does not engage in joint marketing" onclick='enabletextarea4()'> does not engage in joint marketing
+				<input type="radio" name="q8" value="1" onclick='enabletextarea4()'> does not engage in joint marketing
 				<span id="help" style="margin-left: 20px;">
 					<img src="./img/help2.png" onmouseover="showpop('pop13');" onmouseout="showout('pop13');"></img>
 				</span>
 				<span id="pop13" style="display: none; border: 1px solid; margin-left: 7px; padding: 2px;"> This option will state: “[name of financial institution] doesn’t jointly market”</span><br> 
-				<input type="radio" name="q8" value="shares personal information for joint marketing" onclick='enabletextarea4()'> shares personal information for joint marketing 
+				<input type="radio" name="q8" value="2" onclick='enabletextarea4()'> shares personal information for joint marketing 
 				<span id="help" style="margin-left: 20px;">
 					<img src="./img/help2.png" onmouseover="showpop('pop14');" onmouseout="showout('pop14');"></img>
 				</span>
