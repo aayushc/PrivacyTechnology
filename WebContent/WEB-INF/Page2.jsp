@@ -129,7 +129,7 @@
 					<img src="./img/help2.png" onmouseover="showpop('pop5');" onmouseout="showout('pop5');"></img>
 				</span>
 				<span id="pop5" style="display: none; border: 1px solid; margin-left: 7px; padding: 2px;">Please select "Yes" if your institution describe state privacy law provisions, otherwise select "No". This will add a bracketed sentence: “See below for more on your rights under state law.” </span> <br>
-				<input type="radio" name="q3" value="See below for more on your rights under state law." checked onclick='enabletextarea()'> Yes <br> 
+				<input type="radio" name="q3" value="See below for more on your rights under state law." checked onclick='enabletextarea1()'> Yes <br> 
 				<input type="radio" name="q3" value="" onclick='enabletextarea1()'> No <br> 
 				<br> If you answered YES to the previous question, please enter the state privacy law provisions described by your institution below: </label>
 				<span id="help" style="margin-left: 20px;">
