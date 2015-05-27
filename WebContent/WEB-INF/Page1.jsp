@@ -181,6 +181,32 @@
 	function showout21() {
 		document.getElementById("pop21").style.display = "none";
 	}
+	function showpop22() {
+		document.getElementById("pop22").style.display = "inline";
+	}
+	function showout22() {
+		document.getElementById("pop22").style.display = "none";
+
+	}
+	function showpop23() {
+		document.getElementById("pop23").style.display = "inline";
+	}
+	function showout23() {
+		document.getElementById("pop23").style.display = "none";
+	}
+	function showpop24() {
+		document.getElementById("pop24").style.display = "inline";
+	}
+	function showout24() {
+		document.getElementById("pop24").style.display = "none";
+	}
+	function showpop25() {
+		document.getElementById("pop25").style.display = "inline";
+	}
+	function showout25() {
+		document.getElementById("pop25").style.display = "none";
+	}
+
 	function validateForm() {
 		var x = document.forms["form1"]["institution"].value;
 		if (x == null || x == "") {
@@ -311,6 +337,47 @@
 			document.form1.q16[2].checked = false;
 		}
 	}
+
+	function mailin() {
+		if (document.form1.q17[1].checked) {
+
+			document.form1.al1.disabled = true;
+			document.form1.al2.disabled = true;
+			document.form1.city.disabled = true;
+			document.form1.state.disabled = true;
+			document.form1.zip.disabled = true;
+			document.form1.q[0].disabled = true;
+			document.form1.q[1].disabled = true;
+			document.form1.days.disabled = true;
+			document.form1.reverse1[0].disabled = true;
+			document.form1.reverse1[1].disabled = true;
+			document.form1.reverse2[0].disabled = true;
+			document.form1.reverse2[1].disabled = true;
+			document.form1.reverse3[0].disabled = true;
+			document.form1.reverse3[1].disabled = true;
+			document.form1.reverse4[0].disabled = true;
+			document.form1.reverse4[1].disabled = true;
+
+			return false;
+		} else if (document.form1.q17[0].checked) {
+			document.form1.al1.disabled = false;
+			document.form1.al2.disabled = false;
+			document.form1.city.disabled = false;
+			document.form1.state.disabled = false;
+			document.form1.zip.disabled = false;
+			document.form1.q[0].disabled = false;
+			document.form1.q[1].disabled = false;
+			document.form1.days.disabled = false;
+			document.form1.reverse1[0].disabled = false;
+			document.form1.reverse1[1].disabled = false;
+			document.form1.reverse2[0].disabled = false;
+			document.form1.reverse2[1].disabled = false;
+			document.form1.reverse3[0].disabled = false;
+			document.form1.reverse3[1].disabled = false;
+			document.form1.reverse4[0].disabled = false;
+			document.form1.reverse4[1].disabled = false;
+		}
+	}
 </script>
 </head>
 <body>
@@ -358,9 +425,10 @@
 					style="margin-left: 20px;"><img src="./img/help2.png"
 					onmouseover="showpop2();" onmouseout="showout2();"></img></span><span
 					id="pop2"
-					style="display: none; border: 1px solid; margin-left: 7px; padding: 2px;">Provide five(5) types of personal information that your
-					institution collects and shares. All institutions must use the term
-					'Social Security number' in the first bullet.  </span>
+					style="display: none; border: 1px solid; margin-left: 7px; padding: 2px;">Provide
+					five(5) types of personal information that your institution
+					collects and shares. All institutions must use the term 'Social
+					Security number' in the first bullet. </span>
 			</div>
 			<div class="columns">
 				<input type="checkbox" name="xyz" value="Social Security number"
@@ -683,12 +751,12 @@
 					name="website"> <br> <br> <br> <label
 					for="q1">Would your institution like to provide mail-in
 					opt-out form for the customers?</label> <br> <input type="radio"
-					name="q17" value="Yes" checked>Yes <br> <input
-					type="radio" name="q17" value="No">No <br> <br>If
-				you answered YES for the previous question, then please enter your
-				institution's address information below: <br> <br> <label
-					for="optout">Address Line 1</label> <br> <input required
-					class="form-control" type="text" placeholder="" name="al1">
+					name="q17" value="Yes"  onclick='mailin()'>Yes <br>
+				<input type="radio" name="q17" value="No" onclick='mailin()'>No
+				<br> <br>If you answered YES for the previous question,
+				then please enter your institution's address information below: <br>
+				<br> <label for="optout">Address Line 1</label> <br> <input
+					required class="form-control" type="text" placeholder="" name="al1">
 				<br> <br> <label for="optout">Address Line 2</label> <br>
 				<input required class="form-control" type="text" placeholder=""
 					name="al2"> <br> <br> <label for="optout">City</label>
@@ -761,7 +829,7 @@
 					'Yes' if your institution require additional or different
 					information, such as a random opt-out number or a truncated account
 					number, to implement an opt-out election, otherwise select 'No'.</span> <br>
-				<input type="radio" name="q" value="Toll-free" checked>Yes <br>
+				<input type="radio" name="q" value="“[account #]">Yes <br>
 				<input type="radio" name="q" value="No">No <br> <br>
 				<label for="optout">Please enter the number of days after
 					which your institution will begin sharing customer's information
@@ -772,62 +840,67 @@
 					style="display: none; border: 1px solid; margin-left: 7px; padding: 2px;">Please
 					insert a number that is 30 or greater in the field below.</span> <br>
 				<input required class="form-control" type="text" placeholder=""
-					name="days" style="width: 60px;"> <br>
-					<br> 
-					<br>
-					<label for="q1">Does your institution provide your joint accountholders the choice to opt out for only one accountholder?</label> <span id="help"
-					style="margin-left: 20px;"><img src="./img/help2.png"
-					onmouseover="showpop22();" onmouseout="showout22();"></img></span><span
-					id="pop22"
+					name="days" style="width: 60px;"> <br> <br> <br>
+				<label for="q1">Does your institution provide your joint
+					accountholders the choice to opt out for only one accountholder?</label> <span
+					id="help" style="margin-left: 20px;"><img
+					src="./img/help2.png" onmouseover="showpop22();"
+					onmouseout="showout22();"></img></span><span id="pop22"
 					style="display: none; border: 1px solid; margin-left: 7px; padding: 2px;">Select
-					'Yes' if your institution provide your joint accountholders the choice to opt out for only one accountholder , otherwise select 'No'. This will include in the mail-in opt-out form the following statement:“If you have a joint account, your choice(s) will apply to everyone on your account unless you mark below. □ Apply my choice(s) only
-to me.”</span> <br>
-				<input type="radio" name="reverse1" value="If you have a joint account, your choice(s) will apply to everyone on your account unless you mark below. □ Apply my choice(s) only to me." checked>Yes <br>
-				<input type="radio" name="reverse1" value="">No <br> <br>
-				
-				<br>
-					<label for="q1">Does your institution shares personal information pursuant to section
-603(d)(2)(A)(iii) of the FCRA? </label> <span id="help"
-					style="margin-left: 20px;"><img src="./img/help2.png"
-					onmouseover="showpop23();" onmouseout="showout23();"></img></span><span
-					id="pop23"
+					'Yes' if your institution provide your joint accountholders the
+					choice to opt out for only one accountholder , otherwise select
+					'No'. This will include in the mail-in opt-out form the following
+					statement:“If you have a joint account, your choice(s) will apply
+					to everyone on your account unless you mark below. □ Apply my
+					choice(s) only to me.”</span> <br> <input type="radio"
+					name="reverse1"
+					value="If you have a joint account, your choice(s) will apply to everyone on your account unless you mark below. □ Apply my choice(s) only to me.">Yes
+				<br> <input type="radio" name="reverse1" value="">No <br>
+				<br> <br> <label for="q1">Does your institution
+					shares personal information pursuant to section 603(d)(2)(A)(iii)
+					of the FCRA? </label> <span id="help" style="margin-left: 20px;"><img
+					src="./img/help2.png" onmouseover="showpop23();"
+					onmouseout="showout23();"></img></span><span id="pop23"
 					style="display: none; border: 1px solid; margin-left: 7px; padding: 2px;">Select
-					'Yes' if your institution shares personal information pursuant to section
-603(d)(2)(A)(iii) of the FCRA, otherwise select 'No'. This will include in the mail-in opt-out form the following statement: “□ Do not share
+					'Yes' if your institution shares personal information pursuant to
+					section 603(d)(2)(A)(iii) of the FCRA, otherwise select 'No'. This
+					will include in the mail-in opt-out form the following statement:
+					“□ Do not share information about my creditworthiness with your
+					affiliates for their everyday business purposes.”</span> <br> <input
+					type="radio" name="reverse2"
+					value="□ Do not share
 information about my creditworthiness with your affiliates for
-their everyday business purposes.”</span> <br>
-				<input type="radio" name="reverse2" value="□ Do not share
-information about my creditworthiness with your affiliates for
-their everyday business purposes" checked>Yes <br>
-				<input type="radio" name="reverse2" value="">No <br> <br>
-
-<br>
-					<label for="q1">Does your institution incorporates
-section 624 of the FCRA? </label> <span id="help"
+their everyday business purposes">Yes
+				<br> <input type="radio" name="reverse2" value="">No <br>
+				<br> <br> <label for="q1">Does your institution
+					incorporates section 624 of the FCRA? </label> <span id="help"
 					style="margin-left: 20px;"><img src="./img/help2.png"
 					onmouseover="showpop24();" onmouseout="showout24();"></img></span><span
 					id="pop24"
 					style="display: none; border: 1px solid; margin-left: 7px; padding: 2px;">Select
-					'Yes' if your institution incorporates
-section 624 of the FCRA, otherwise select 'No'. This will include in the mail-in opt-out form the following statement: “□ Do not allow your affiliates
-to use my personal information to market to me.”</span> <br>
-				<input type="radio" name="reverse3" value="□ Do not allow your affiliates
-to use my personal information to market to me" checked>Yes <br>
-				<input type="radio" name="reverse3" value="">No <br> <br>
-				
-				<br>
-					<label for="q1">Does your financial institution share
-personal information pursuant to § 313.10(a) of this part? </label> <span id="help"
-					style="margin-left: 20px;"><img src="./img/help2.png"
-					onmouseover="showpop25();" onmouseout="showout25();"></img></span><span
-					id="pop25"
+					'Yes' if your institution incorporates section 624 of the FCRA,
+					otherwise select 'No'. This will include in the mail-in opt-out
+					form the following statement: “□ Do not allow your affiliates to
+					use my personal information to market to me.”</span> <br> <input
+					type="radio" name="reverse3"
+					value="□ Do not allow your affiliates
+to use my personal information to market to me">Yes
+				<br> <input type="radio" name="reverse3" value="">No <br>
+				<br> <br> <label for="q1">Does your financial
+					institution share personal information pursuant to § 313.10(a) of
+					this part? </label> <span id="help" style="margin-left: 20px;"><img
+					src="./img/help2.png" onmouseover="showpop25();"
+					onmouseout="showout25();"></img></span><span id="pop25"
 					style="display: none; border: 1px solid; margin-left: 7px; padding: 2px;">Select
-					'Yes' if your institution shares
-personal information pursuant to § 313.10(a), otherwise select 'No'. This will include in the mail-in opt-out form the following statement: “□ Do not share my personal information with
-nonaffiliates to market their products and services to me."</span> <br>
-				<input type="radio" name="reverse4" value="□ Do not share my personal information with
-nonaffiliates to market their products and services to me." checked>Yes <br>
-				<input type="radio" name="reverse4" value="">No <br> <br>
+					'Yes' if your institution shares personal information pursuant to §
+					313.10(a), otherwise select 'No'. This will include in the mail-in
+					opt-out form the following statement: “□ Do not share my personal
+					information with nonaffiliates to market their products and
+					services to me."</span> <br> <input type="radio" name="reverse4"
+					value="□ Do not share my personal information with
+nonaffiliates to market their products and services to me.">Yes
+				<br> <input type="radio" name="reverse4" value="">No <br>
+				<br>
 			</div>
 			<br>
 
