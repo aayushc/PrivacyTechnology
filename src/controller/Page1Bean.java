@@ -5,6 +5,7 @@ public class Page1Bean {
 	private String institution;
 	private String revdate;
 	private String[] what;
+	private String days;
 	private String q1;
 	private String q2;
 	private String q3;
@@ -48,6 +49,12 @@ public class Page1Bean {
 	}
 	public void setWhat(String[] what) {
 		this.what = what;
+	}
+	public void setDays(String days) {
+		this.days = days;
+	}
+	public String getDays() {
+		return days;
 	}
 	public String getQ1() {
 		return q1;

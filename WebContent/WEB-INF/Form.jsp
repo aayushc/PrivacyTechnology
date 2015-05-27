@@ -18,6 +18,7 @@
 
 	<link href="css/bootstrap.min.css" rel="stylesheet">
 	<link href="css/style.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/form.css">
 
 	<!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
 	<!--[if lt IE 9]>
@@ -40,7 +41,7 @@
 	<div class="container">
 		<div class="row clearfix">
 			<div class="col-md-12 column">
-				<span>Rev. <c:out value="${page1.revdate}" /></span>
+				<caption><span>Rev. <c:out value="${page1.revdate}" /></span></caption>
 				<table class="table table-condensed table-bordered">
 					<tbody>
 						<tr>
