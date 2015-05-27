@@ -185,6 +185,21 @@
 			document.form1.q16[2].checked = false;
 		}
 	}
+	
+	function wds9() {
+		if (document.form1.q1[1].checked) {
+			
+			document.form1.q2[1].disabled = false;
+			document.form1.q2[0].disabled = false;
+			return false;
+		} else if (document.form1.q1[0].checked) {
+			
+			document.form1.q2[1].disabled = true;
+			document.form1.q2[0].disabled = true;
+		}
+	}
+	
+	
 
 	function mailin() {
 		if (document.form1.q17[1].checked) {
