@@ -55,8 +55,9 @@ public class Page1Action  extends Action{
 			p1.setQ14(form.getQ14());
 			p1.setQ15(form.getQ15());
 			p1.setQ16(form.getQ16());
+			p1.setQ(form.getQ());
 			p1.setQ17(form.getQ17());
-			p1.setPhone(form.getPhone());
+			p1.setPhone(form.getPhone());			
 			p1.setPhone1(form.getPhone1());
 			p1.setWebsite(form.getWebsite());
 			p1.setWebsite1(form.getWebsite1());
@@ -65,6 +66,12 @@ public class Page1Action  extends Action{
 			p1.setCity(form.getCity());
 			p1.setState(form.getState());
 			p1.setZip(form.getZip());
+			p1.setAccnt(form.getAccnt());
+			p1.setDays(form.getDays());
+			p1.setReverse1(form.getReverse1());
+			p1.setReverse2(form.getReverse2());
+			p1.setReverse3(form.getReverse3());
+			p1.setReverse4(form.getReverse4());			
 			request.setAttribute("page1", p1);
 			HttpSession session= request.getSession();
 			session.setAttribute("page1", p1);

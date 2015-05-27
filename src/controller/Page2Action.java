@@ -42,11 +42,16 @@ public class Page2Action extends Action{
 			p1.setQ4(form.getQ4());
 			p1.setQ5(form.getQ5());
 			p1.setQ6(form.getQ6());
+			p1.setTa1(form.getTa1());
+			p1.setTa2(form.getTa2());
+			p1.setTa3(form.getTa3());
+			p1.setTa4(form.getTa4());
 			p1.setQ7(form.getQ7());
+			p1.setQ8(form.getQ8());
+			p1.setOther(form.getOther());
 			p1.setCorpid(form.getCorpid());
 			p1.setNfcomp(form.getNfcomp());
-			p1.setFcomp(form.getFcomp());
-			p1.setOther(form.getOther());
+			p1.setFcomp(form.getFcomp());			
 			request.setAttribute("page2", p1);
 			HttpSession session= request.getSession();
 			session.setAttribute("page2", p1);

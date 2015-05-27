@@ -40,9 +40,11 @@
 <body>
 	<div class="container">
 		<div class="row clearfix">
+			<h1>U.S Consumer Privacy Notice</h1>
 			<div class="col-md-12 column">				
 				<table class="table table-condensed table-bordered">
-				<caption><span>Rev. <c:out value="${page1.revdate}" /></span></caption>
+				<fmt:parseDate value="${page1.revdate}" var="parsedDate" pattern="yyyy-MM" />
+				<caption><span>Rev. <fmt:formatDate pattern="MM/yy" value="${parsedDate}" /></span></caption>
 					<tbody>
 						<tr>
 							<td>FACTS</td>
@@ -61,7 +63,6 @@
 									<li><c:out value="${page1.what[1]}" /> and <c:out value="${page1.what[2]}" /></li>
 									<li><c:out value="${page1.what[3]}" /> and <c:out value="${page1.what[4]}" /></li>
 								</ul>
-								When you are no longer our customer, we continue to share your information as described in this notice.
 							</td>
 						</tr>
 						<tr>
@@ -98,20 +99,25 @@
 							<td><c:out value="${page1.q6}" /></td>
 						</tr>
 						<tr>
-							<td>For our affiliatesâ everyday business purposes Information about your transactions and experiences</td>
+							<td>For our affiliates everyday business purposes Information about your transactions and experiences</td>
 							<td><c:out value="${page1.q7}" /></td>
 							<td><c:out value="${page1.q8}" /></td>
 						</tr>
 						<tr>
-							<td>For our affiliatesâ everyday business purposes Information about your creditworthiness</td>
+							<td>For our affiliates everyday business purposes Information about your creditworthiness</td>
 							<td><c:out value="${page1.q9}" /></td>
-							<td><c:out value="${page1.q10}" /></td>
+							<td>
+								<c:choose>
+									<c:when test="${page1.q9 == Yes}">Yes</c:when>
+									<c:otherwise>We don't share</c:otherwise>
+								</c:choose>
+							</td>
 						</tr>
 						<c:choose>
-						<c:when test="${page1.q11 == Yes}"> <!--  what is the purpose of q12?? -->
+						<c:when test="${(page1.q11 == Yes) || (page1.q12 == Yes) || (page1.q13 == Yes) || (page1.q14 == No)}">
 						<tr>
 							<td>For our affiliates to market to you</td>
-							<td><c:out value="${page1.q13}" /></td>
+							<td>Yes</td>
 							<td><c:out value="${page1.q14}" /></td>
 						</tr>
 						</c:when>
@@ -119,7 +125,12 @@
 						<tr>
 							<td>For nonaffiliates to market to you</td>
 							<td><c:out value="${page1.q15}" /></td>
-							<td><c:out value="${page1.q16}" /></td>
+							<td>
+								<c:choose>
+									<c:when test="${page1.q15 == Yes}">Yes</c:when>
+									<c:otherwise>We don't share</c:otherwise>
+								</c:choose>
+							</td>
 						</tr>
 					</tbody> 
 				</table>
@@ -128,17 +139,22 @@
 				<table class="table table-condensed table-bordered">
 					<tbody>
 					<c:choose>
-						<c:when test="${page1.q15 eq 'Yes'}">
+					  <c:when test="${(page1.q2 == Yes) || (page1.q4 == Yes) || (page1.q6 == Yes) || (page1.q8 == Yes) (page1.q11 == Yes) || (page1.q12 == Yes) || (page1.q13 == Yes) || (page1.q14 == No) (page1.q15 == Yes)}">
 						<tr>
 							<td>To limit our sharing</td>
-							<td>Call <c:out value="${page1.phone}" /> - our menu will prompt you through your choice(s) or
-								Visit us online: <c:out value="${page1.website}" />
-								Please note:
+							<td>
+								<ul>
+									<li>Call <c:if test="${page1.q == Yes}">toll-free&nbsp;</c:if><c:out value="${page1.phone}" /> - our menu will prompt you through your choice(s) or</li>
+									<li>Visit us online: <a href="<c:out value="${page1.website}" />"><c:out value="${page1.website}" /></a></li>
+									<c:if test="${page1.q17 == Yes}"><li>Mail the <b>form</b> below</li></c:if>
+								</ul>
+								Please note: <br>
 								If you are a new customer, we can begin sharing your information <c:out value="${page1.days}" /> days from the date we sent this notice. When you are no longer our customer, we continue to share your information as described in this notice. 
+								<br>
 								However, you can contact us at any time to limit our sharing.
 							</td>
 						</tr>
-						</c:when>
+					  </c:when>
 					</c:choose>
 						<tr>
 							<td>Questions?</td>
@@ -147,12 +163,101 @@
 					</tbody> 
 				</table>
 			</div>
+			<c:if test="${page1.q17 == Yes}">
+			<hr>
+			<div class="col-md-12 column">
+				<table class="table table-condensed table-bordered">
+					<tbody>
+						<tr>
+							<td>Mail In Form</td>
+						</tr>
+						<tr>
+							<td>Leave Blank 
+							<c:if test="${page1.reverse1 == Yes}"><b>Or</b><br>
+								If you have a joint account, your choice will apply to everyone on your account unless you mark below<br>
+								<label>
+    								<input type="checkbox" value=""> Apply my choices only to me
+  								</label>
+  							</c:if>									
+							</td>
+							<td>
+								<table class="table table-condensed table-bordered">
+									<tr>
+										<td> Mark any or all you want to limit:<br>
+											<label>
+	    										<input type="checkbox" value=""> Do not share information about my creditworthiness with your affiliates for their everyday business purposes.
+	  										</label><br>
+	  										<label>
+	    										<input type="checkbox" value=""> Do not allow your affiliates to use my personal information to market to me.
+	  										</label><br>
+	  										<label>
+	    										<input type="checkbox" value=""> Do not share my personal information with nonaffiliates to market their products and services to me.
+	  										</label>											
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<table class="table table-condensed table-bordered"> 
+												<tr>
+													<td>Name
+													</td>
+													<td>
+													</td>
+												</tr>
+												<tr>
+													<td>
+														Address
+													</td>
+													<td>
+													</td>
+												</tr>
+												<tr>
+													<td>&nbsp;
+													</td>
+													<td>
+													</td>
+												</tr>
+												<tr>
+													<td>
+														City, State, Zip
+													</td>
+													<td>
+													</td>
+												</tr>
+												<c:if test="${page1.accnt == Yes}">
+													<tr>
+														<td>
+															[Account #]
+														</td>
+														<td>
+														
+														</td>
+													</tr>
+												</c:if>
+											</table>
+										</td>
+										<td>
+											Mail to:
+											<c:out value="${page1.institution}" /><br>
+											<c:out value="${page1.al1}" /><br>
+											<c:out value="${page1.al2}" /><br>
+											<c:out value="${page1.city}" />, <c:out value="${page1.state}" /> <c:out value="${page1.zip}" />
+										</td>
+									</tr>
+								</table>
+							</td>
+						</tr>
+					</tbody> 
+				</table>
+			</div>
+			</c:if>
+			<!-- Page 2 -->
 			<div class="col-md-12 column">
 				<table class="table table-condensed table-bordered">
 					<tbody>
 						<tr>
 							<td>Who we are</td>
-							<td></td>
+							<td>&nbsp;</td>
 						</tr>
 						<tr>
 							<td>Who is providing this notice?</td>
@@ -171,19 +276,19 @@
 						<tr>
 							<td>How does <c:out value="${page1.institution}" /> protect my personal information?</td>
 							<td>To protect your personal information from unauthorized access and use, we use security measures that comply with federal law. These measures include computer safeguards and secured files and buildings. 
+								<br>
 								<c:out value="${page2.protect}" />
 							</td>
 						</tr>
 						<tr>
 							<td>How does <c:out value="${page1.institution}" /> collect my personal information?</td>
-							<td>We collect your personal information, for example, when you:
+							<td>We collect your personal information, for example, when you:<br>
 								<ul>
 									<li><c:out value="${page2.what[0]}" /> or <c:out value="${page2.what[1]}" /></li>
 									<li><c:out value="${page2.what[2]}" /> or <c:out value="${page2.what[3]}" /></li>
 									<li><c:out value="${page2.what[4]}" /></li>
-								</ul>
-								<c:out value="${page2.q1}" /> OR							
-								<c:out value="${page2.q2}" />
+								</ul><br>
+									<c:out value="${page2.q1}" /><c:out value="${page2.q2}" />
 							</td>
 						</tr>
 						<tr>
@@ -250,83 +355,6 @@
 					</tbody> 
 				</table>
 			</div>
-			<c:if test="${page1.q17 == Yes}">
-			<div class="col-md-12 column">
-				<table class="table table-condensed table-bordered">
-					<tbody>
-						<tr>
-							<td>Mail In Form</td>
-						</tr>
-						<tr>
-							<td>Leave Blank Or [If you have a joint account, your choice will apply to everyone on your account unless you mark below
-								<label>
-    								<input type="checkbox" value="">
-    								Apply my choices only to me]
-  								</label>								
-							</td>
-							<td>
-								<table class="table table-condensed table-bordered">
-									<tr>
-										<td> Mark any or all you want to limit:
-											Do not share information about my creditworthiness with your affiliates for their everyday business purposes.
-											Do not allow your affiliates to use my personal information to market to me.
-											Do not share my personal information with nonaffiliates to market their products and services to me.
-										</td>
-									</tr>
-									<tr>
-										<td>
-											<table class="table table-condensed table-bordered"> 
-												<tr>
-													<td>
-														Name
-													</td>
-													<td>
-													</td>
-												</tr>
-												<tr>
-													<td>
-														Address
-													</td>
-													<td>
-													</td>
-												</tr>
-												<tr>
-													<td>
-													</td>
-													<td>
-													</td>
-												</tr>
-												<tr>
-													<td>
-														City, State, Zip
-													</td>
-													<td>
-													</td>
-												</tr>
-												<tr>
-													<td>
-														[Account #]
-													</td>
-													<td>
-													</td>
-												</tr>
-											</table>
-										</td>
-										<td>
-											Mail to:
-											<c:out value="${page1.institution}" /><br>
-											<c:out value="${page1.al1}" /><br>
-											<c:out value="${page1.al2}" /><br>
-											<c:out value="${page1.city}" />, <c:out value="${page1.state}" /> <c:out value="${page1.zip}" />
-										</td>
-									</tr>
-								</table>
-							</td>
-						</tr>
-					</tbody> 
-				</table>
-			</div>
-			</c:if>
 		</div>
 	</div>
 </div>

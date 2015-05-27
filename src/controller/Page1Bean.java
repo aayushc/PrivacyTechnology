@@ -5,7 +5,6 @@ public class Page1Bean {
 	private String institution;
 	private String revdate;
 	private String[] what;
-	private String days;
 	private String q1;
 	private String q2;
 	private String q3;
@@ -23,6 +22,7 @@ public class Page1Bean {
 	private String q15;
 	private String q16;
 	private String phone;
+	private String q;
 	private String website;
 	private String q17;
 	private String al1;
@@ -30,6 +30,12 @@ public class Page1Bean {
 	private String city;
 	private String state;
 	private String zip;
+	private String accnt;
+	private String days;
+	private String reverse1;
+	private String reverse2;
+	private String reverse3;
+	private String reverse4;
 	private String phone1;
 	private String website1;
 	public String getInstitution() {
@@ -158,6 +164,12 @@ public class Page1Bean {
 	public void setPhone(String phone) {
 		this.phone = phone;
 	}
+	public String getQ() {
+		return q;
+	}
+	public void setQ(String q) {
+		this.q = q;
+	}
 	public String getWebsite() {
 		return website;
 	}
@@ -211,5 +223,35 @@ public class Page1Bean {
 	}
 	public void setWebsite1(String website1) {
 		this.website1 = website1;
+	}
+	public String getAccnt() {
+		return accnt;
+	}
+	public void setAccnt(String accnt) {
+		this.accnt = accnt;
+	}
+	public String getReverse1() {
+		return reverse1;
+	}
+	public void setReverse1(String reverse1) {
+		this.reverse1 = reverse1;
+	}
+	public String getReverse3() {
+		return reverse3;
+	}
+	public void setReverse3(String reverse3) {
+		this.reverse3 = reverse3;
+	}
+	public String getReverse4() {
+		return reverse4;
+	}
+	public void setReverse4(String reverse4) {
+		this.reverse4 = reverse4;
+	}
+	public String getReverse2() {
+		return reverse2;
+	}
+	public void setReverse2(String reverse2) {
+		this.reverse2 = reverse2;
 	}
 }

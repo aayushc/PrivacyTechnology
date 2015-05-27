@@ -1,3 +1,37 @@
+	$(document).ready(function() {
+	    $("#protect").on('keyup', function() {
+	        var words = this.value.match(/\S+/g).length;
+	        if (words > 30) {
+	            // Split the string on first 200 words and rejoin on spaces
+	            var trimmed = $(this).val().split(/\s+/, 200).join(" ");
+	            // Add a space at the end to keep new typing making new words
+	            $(this).val(trimmed + " ");
+	        }
+	        else {
+	           /* $('#display_count').text(words);
+	            $('#word_left').text(200-words);*/
+	        }
+	    });
+	 });
+	
+	function limitTextarea(textarea, maxLines, maxChar) {
+        var lines = textarea.value.replace(/\r/g, '').split('\n'), lines_removed, char_removed, i;
+        if (maxLines && lines.length > maxLines) {
+            lines = lines.slice(0, maxLines);
+            lines_removed = 1
+        }
+        if (maxChar) {
+            i = lines.length;
+            while (i-- > 0) if (lines[i].length > maxChar) {
+                lines[i] = lines[i].slice(0, maxChar);
+                char_removed = 1
+            }
+            if (char_removed || lines_removed) {
+                textarea.value = lines.join('\n')
+            }
+        }
+    }
+
 	function chkcontrol(j) {
 		var total = 0;
 		for (var i = 0; i < document.form1.what.length; i++) {

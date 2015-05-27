@@ -13,11 +13,16 @@ public class Page2Form extends FormBean{
 	private String q4;
 	private String q5;
 	private String q6;
+	private String ta1;
+	private String ta2;
+	private String ta3;
+	private String ta4;
 	private String q7;
+	private String q8;
+	private String other;
 	private String corpid;
 	private String fcomp;
-	private String nfcomp;
-	private String other;
+	private String nfcomp;	
 	public String getInstitution() {
 		return institution;
 	}
@@ -119,6 +124,36 @@ public class Page2Form extends FormBean{
 	}
 	public void setOinfo(String oinfo) {
 		this.oinfo = oinfo;
+	}
+	public String getTa2() {
+		return ta2;
+	}
+	public void setTa2(String ta2) {
+		this.ta2 = ta2;
+	}
+	public String getTa1() {
+		return ta1;
+	}
+	public void setTa1(String ta1) {
+		this.ta1 = ta1;
+	}
+	public String getTa4() {
+		return ta4;
+	}
+	public void setTa4(String ta4) {
+		this.ta4 = ta4;
+	}
+	public String getTa3() {
+		return ta3;
+	}
+	public void setTa3(String ta3) {
+		this.ta3 = ta3;
+	}
+	public String getQ8() {
+		return q8;
+	}
+	public void setQ8(String q8) {
+		this.q8 = q8;
 	}
 	private String nacomp;
 	private String jmcomp;
