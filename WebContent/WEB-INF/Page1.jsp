@@ -1,6 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
 	pageEncoding="ISO-8859-1"%>
 <!DOCTYPE html>
+
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
@@ -41,9 +42,143 @@
 function showpop() {
 	document.getElementById("pop").style.display="inline";
 }
-
 function showout() {
 	document.getElementById("pop").style.display="none";
+}
+
+function showpop1() {
+	document.getElementById("pop1").style.display="inline";
+}
+function showout1() {
+	document.getElementById("pop1").style.display="none";
+}
+
+function showpop2() {
+	document.getElementById("pop2").style.display="inline";
+}
+function showout2() {
+	document.getElementById("pop2").style.display="none";
+}
+
+function showpop3() {
+	document.getElementById("pop3").style.display="inline";
+}
+function showout3() {
+	document.getElementById("pop3").style.display="none";
+}
+
+function showpop4() {
+	document.getElementById("pop4").style.display="inline";
+}
+function showout4() {
+	document.getElementById("pop4").style.display="none";
+}
+
+function showpop5() {
+	document.getElementById("pop5").style.display="inline";
+}
+function showout5() {
+	document.getElementById("pop5").style.display="none";
+}
+function showpop6() {
+	document.getElementById("pop6").style.display="inline";
+}
+function showout6() {
+	document.getElementById("pop6").style.display="none";
+}
+function showpop7() {
+	document.getElementById("pop7").style.display="inline";
+}
+function showout7() {
+	document.getElementById("pop7").style.display="none";
+}
+function showpop8() {
+	document.getElementById("pop8").style.display="inline";
+}
+function showout8() {
+	document.getElementById("pop8").style.display="none";
+}
+function showpop9() {
+	document.getElementById("pop9").style.display="inline";
+}
+function showout9() {
+	document.getElementById("pop9").style.display="none";
+}
+function showpop10() {
+	document.getElementById("pop10").style.display="inline";
+}
+function showout10() {
+	document.getElementById("pop10").style.display="none";
+}
+function showpop11() {
+	document.getElementById("pop11").style.display="inline";
+}
+function showout11() {
+	document.getElementById("pop11").style.display="none";
+}
+
+function showpop12() {
+	document.getElementById("pop12").style.display="inline";
+}
+function showout12() {
+	document.getElementById("pop12").style.display="none";
+}
+
+function showpop13() {
+	document.getElementById("pop13").style.display="inline";
+}
+function showout13() {
+	document.getElementById("pop13").style.display="none";
+}
+
+function showpop14() {
+	document.getElementById("pop14").style.display="inline";
+}
+function showout14() {
+	document.getElementById("pop14").style.display="none";
+}
+
+function showpop15() {
+	document.getElementById("pop15").style.display="inline";
+}
+function showout15() {
+	document.getElementById("pop15").style.display="none";
+}
+function showpop16() {
+	document.getElementById("pop16").style.display="inline";
+}
+function showout16() {
+	document.getElementById("pop16").style.display="none";
+}
+function showpop17() {
+	document.getElementById("pop17").style.display="inline";
+}
+function showout17() {
+	document.getElementById("pop17").style.display="none";
+}
+function showpop18() {
+	document.getElementById("pop18").style.display="inline";
+}
+function showout18() {
+	document.getElementById("pop18").style.display="none";
+}
+function showpop19() {
+	document.getElementById("pop19").style.display="inline";
+}
+function showout19() {
+	document.getElementById("pop19").style.display="none";
+}
+function showpop20() {
+	document.getElementById("pop20").style.display="inline";
+}
+function showout20() {
+	document.getElementById("pop20").style.display="none";
+}
+function showpop21() {
+	document.getElementById("pop21").style.display="inline";
+}
+function showout21() {
+	document.getElementById("pop21").style.display="none";
 }
 function validateForm() {
     var x = document.forms["form1"]["institution"].value;
@@ -203,7 +338,7 @@ function wds8() {
 					onmouseover="showpop();" onmouseout="showout();"></img></span><span
 					id="pop"
 					style="display: none; border: 1px solid; margin-left: 7px; padding: 2px;">Insert
-					the date on which the notice was last revised in [month/year] format using either the name or number of the month, such as “rev. July 2009” or “rev. 7/09”.</span>
+					the date on which the notice was last revised in [month/year] format using either the name or number of the month.</span>
 				 <br>
 				<input class="form-control" type="month" placeholder=mm/yyyy
 					name="revdate" style="width: 200px;" required />
@@ -213,8 +348,8 @@ function wds8() {
 				<label for="institution">Name of your Institution</label>
 				 <span id="help"
 					style="margin-left: 20px;"><img src="./img/help2.png"
-					onmouseover="showpop();" onmouseout="showout();"></img></span><span
-					id="pop"
+					onmouseover="showpop1();" onmouseout="showout1();"></img></span><span
+					id="pop1"
 					style="display: none; border: 1px solid; margin-left: 7px; padding: 2px;">Insert
 					the name of the financial institution providing the notice or a
 					common identity of affiliated institutions jointly providing the
@@ -231,7 +366,11 @@ function wds8() {
 			<br>
 			<div class="input-group">
 				<label for="what">What type of information will you collect
-					and share? (Choose any 5)</label>
+					and share? (Choose any 5)</label>  <span id="help"
+					style="margin-left: 20px;"><img src="./img/help2.png"
+					onmouseover="showpop2();" onmouseout="showout2();"></img></span><span
+					id="pop2"
+					style="display: none; border: 1px solid; margin-left: 7px; padding: 2px;">This list identifies the types of personal information that the institution collects and shares. All institutions must use the term 'Social Security number' in the first bullet. Choose five terms from the list below to complete the bulleted list. </span>
 			</div>
 			<div class="columns">
 				<input type="checkbox" name="xyz" value="Social Security number"
@@ -288,8 +427,7 @@ function wds8() {
 			<br>
 
 			<div>
-				<b><font size="4">Reasons your institution can share
-						customer's personal information</font></b>
+				<b><font size="4">Disclosure Table</font></b>
 			</div>
 			<br>
 			<div class="rb">
@@ -298,40 +436,63 @@ function wds8() {
 						for="q1">Will your institution share customer's personal
 						information for your everday business purposes?</label> <span id="help"
 						style="margin-left: 20px;"><img src="./img/help2.png"
-						onmouseover="showpop();" onmouseout="showout();"></img></span><span
-						id="pop"
-						style="display: none; border: 1px solid; margin-left: 7px; padding: 2px;">Hello
-						How are you</span>
+						onmouseover="showpop3();" onmouseout="showout3();"></img></span><span
+						id="pop3"
+						style="display: none; border: 1px solid; margin-left: 7px; padding: 2px;">Provide a “Yes” or “No” response that accurately reflects its information sharing policies and practices with respect to the reason specified in this question.</span>
 				</div>
 
 				<input type="radio" name="q1" value="Yes" checked onclick='wds1()'>
 				Yes <br> <input type="radio" name="q1" value="No"
 					onclick='wds1()'> No <br> <br> <label for="q2">Can
 					customers limit the personal information your institution share for
-					your everyday business purposes?</label> <br> <input type="radio"
+					your everyday business purposes?</label> <span id="help"
+						style="margin-left: 20px;"><img src="./img/help2.png"
+						onmouseover="showpop4();" onmouseout="showout4();"></img></span><span
+						id="pop4"
+						style="display: none; border: 1px solid; margin-left: 7px; padding: 2px;">Provide one of the three responses, as applicable, that reflects whether a consumer can limit sharing for the reason mentioned in the question: “Yes” if it is required to or voluntarily provides an opt-out; “No” if it does not provide an opt-out; or “We don’t share” if your institution doesn't share the information for the mentioned reason.</span>
+<br> <input type="radio"
 					name="q2" value="Yes" checked> Yes <br> <input
 					type="radio" name="q2" value="No"> No <br> <input
 					type="radio" name="q2" value="We don't share"> We don't
 				share <br> <br> <i>For institution's marketing
 					purposes:</i> <br> <label for="q1">Will your institution
-					share customer's personal information for your marketing purposes?</label>
+					share customer's personal information for your marketing purposes?</label> <span id="help"
+						style="margin-left: 20px;"><img src="./img/help2.png"
+						onmouseover="showpop5();" onmouseout="showout5();"></img></span><span
+						id="pop5"
+						style="display: none; border: 1px solid; margin-left: 7px; padding: 2px;">Provide a “Yes” or “No” response that accurately reflects its information sharing policies and practices with respect to the reason specified in this question. An institution that shares for this reason may choose to provide an opt-out.</span>
 				<br> <input type="radio" name="q3" value="Yes" checked
 					onclick='wds2()'> Yes <br> <input type="radio"
 					name="q3" value="No" onclick='wds2()'> No <br> <br>
 				<label for="q2">Can customers limit the personal information
-					your institution share for your everyday marketing purposes?</label> <br>
+					your institution share for your everyday marketing purposes?</label><span id="help"
+						style="margin-left: 20px;"><img src="./img/help2.png"
+						onmouseover="showpop6();" onmouseout="showout6();"></img></span><span
+						id="pop6"
+						style="display: none; border: 1px solid; margin-left: 7px; padding: 2px;">Provide one of the three responses, as applicable, that reflects whether a consumer can limit sharing for the reason mentioned in the question: “Yes” if it is required to or voluntarily provides an opt-out; “No” if it does not provide an opt-out; or “We don’t share” if your institution doesn't share the information for the mentioned reason.</span>
+ <br>
 				<input type="radio" name="q4" value="Yes" checked> Yes <br>
 				<input type="radio" name="q4" value="No"> No <br> <input
 					type="radio" name="q4" value="We don't share"> We don't
 				share <br> <br> <i>For joint marketing with other
 					financial companies:</i> <br> <label for="q1">Will your
 					institution share customer's personal information for joint
-					marketing with other financial companies?</label> <br> <input
+					marketing with other financial companies?</label><span id="help"
+						style="margin-left: 20px;"><img src="./img/help2.png"
+						onmouseover="showpop7();" onmouseout="showout7();"></img></span><span
+						id="pop7"
+						style="display: none; border: 1px solid; margin-left: 7px; padding: 2px;">Provide a “Yes” or “No” response that accurately reflects its information sharing policies and practices with respect to the reason specified in this question. An institution that shares for this reason may choose to provide an opt-out.</span>
+ <br> <input
 					type="radio" name="q5" value="Yes" checked onclick='wds3()'>
 				Yes <br> <input type="radio" name="q5" value="No"
 					onclick='wds3()'> No <br> <br> <label for="q2">Can
 					customers limit the personal information your institution share for
-					joint marketing with other financial companies?</label> <br> <input
+					joint marketing with other financial companies?</label> <span id="help"
+						style="margin-left: 20px;"><img src="./img/help2.png"
+						onmouseover="showpop8();" onmouseout="showout8();"></img></span><span
+						id="pop8"
+						style="display: none; border: 1px solid; margin-left: 7px; padding: 2px;">Provide one of the three responses, as applicable, that reflects whether a consumer can limit sharing for the reason mentioned in the question: “Yes” if it is required to or voluntarily provides an opt-out; “No” if it does not provide an opt-out; or “We don’t share” if your institution doesn't share the information for the mentioned reason.</span>
+<br> <input
 					type="radio" name="q6" value="Yes" checked> Yes <br> <input
 					type="radio" name="q6" value="No"> No <br> <input
 					type="radio" name="q6" value="We don't share"> We don't
@@ -340,12 +501,22 @@ function wds8() {
 					experiences:</i> <br> <label for="q1">Will your
 					institution share customer's personal information about their
 					transactions and experiences for your affiliates' everday business
-					purposes?</label> <br> <input type="radio" name="q7" value="Yes"
+					purposes?</label><span id="help"
+						style="margin-left: 20px;"><img src="./img/help2.png"
+						onmouseover="showpop9();" onmouseout="showout9();"></img></span><span
+						id="pop9"
+						style="display: none; border: 1px solid; margin-left: 7px; padding: 2px;">Provide a “Yes” or “No” response that accurately reflects its information sharing policies and practices with respect to the reason specified in this question. An institution that shares for this reason may choose to provide an opt-out.</span>
+ <br> <input type="radio" name="q7" value="Yes"
 					checked onclick='wds4()'> Yes <br> <input type="radio"
 					name="q7" value="No" onclick='wds4()'> No <br> <br>
 				<label for="q2">Can customers limit the personal information
 					aboout their transactions and experiences your institution share
-					for your affiliates' everyday business purposes?</label> <br> <input
+					for your affiliates' everyday business purposes?</label> <span id="help"
+						style="margin-left: 20px;"><img src="./img/help2.png"
+						onmouseover="showpop10();" onmouseout="showout10();"></img></span><span
+						id="pop10"
+						style="display: none; border: 1px solid; margin-left: 7px; padding: 2px;">Provide one of the three responses, as applicable, that reflects whether a consumer can limit sharing for the reason mentioned in the question: “Yes” if it is required to or voluntarily provides an opt-out; “No” if it does not provide an opt-out; or “We don’t share” if your institution doesn't share the information for the mentioned reason.</span>
+ <br> <input
 					type="radio" name="q8" value="Yes" checked> Yes <br> <input
 					type="radio" name="q8" value="No"> No <br> <input
 					type="radio" name="q8" value="We don't share"> We don't
@@ -353,47 +524,89 @@ function wds8() {
 					everyday business purposes- information about creditworthiness:</i> <br>
 				<label for="q1">Will your institution share customer's
 					personal information about their creditworthiness for your
-					affiliates' everday business purposes?</label> <br> <input
+					affiliates' everday business purposes?</label> <span id="help"
+						style="margin-left: 20px;"><img src="./img/help2.png"
+						onmouseover="showpop11();" onmouseout="showout11();"></img></span><span
+						id="pop11"
+						style="display: none; border: 1px solid; margin-left: 7px; padding: 2px;">Provide a “Yes” or “No” response that accurately reflects its information sharing policies and practices with respect to the reason specified in this question. An institution that shares for this reason may choose to provide an opt-out.</span>
+<br> <input
 					type="radio" name="q9" value="Yes" checked onclick='wds5()'>
 				Yes <br> <input type="radio" name="q9" value="No"
 					onclick='wds5()'> No <br> <br> <label for="q2">Can
 					customers limit the personal information aboout their
 					creditworthiness your institution share for your affiliates'
-					everyday business purposes?</label> <br> <input type="radio"
+					everyday business purposes?</label><span id="help"
+						style="margin-left: 20px;"><img src="./img/help2.png"
+						onmouseover="showpop12();" onmouseout="showout12();"></img></span><span
+						id="pop12"
+						style="display: none; border: 1px solid; margin-left: 7px; padding: 2px;">Provide one of the three responses, as applicable, that reflects whether a consumer can limit sharing for the reason mentioned in the question: “Yes” if it is required to or voluntarily provides an opt-out; “No” if it does not provide an opt-out; or “We don’t share” if your institution doesn't share the information for the mentioned reason.</span>
+ <br> <input type="radio"
 					name="q10" value="Yes" checked> Yes <br> <input
 					type="radio" name="q10" value="No"> No <br> <input
 					type="radio" name="q10" value="We don't share"> We don't
 				share <br> <br> <i>For institution's affiliates to
 					market to customers:</i> <br> <label for="q1">Does your
-					institution have affiliates?</label> <br> <input type="radio"
+					institution have affiliates?</label> <span id="help"
+						style="margin-left: 20px;"><img src="./img/help2.png"
+						onmouseover="showpop13();" onmouseout="showout13();"></img></span><span
+						id="pop13"
+						style="display: none; border: 1px solid; margin-left: 7px; padding: 2px;">Please select 'Yes' if your institution has affiliates, select 'No' if your institution does not have affiliates. For our affiliates to market to you- reason may be omitted from the disclosure table when the institution does not have affiliates (or does not disclose personal information to its affiliates); the institution’s affiliates do not use personal information in a manner that requires an opt-out; or the institution provides the affiliate marketing notice separately. Institutions that include this reason must provide an opt-out of indefinite duration.</span>
+<br> <input type="radio"
 					name="q11" value="Yes" checked onclick='wds6()'> Yes <br>
 				<input type="radio" name="q11" value="No" onclick='wds6()'>
 				No <br> <br>Please answer the following question if you
 				answered 'YES' for the previous question. <br> <br> <label
 					for="q1">Does your institution disclose customer's personal
-					information with your affiliates?</label> <br> <input type="radio"
+					information to your affiliates?</label><span id="help"
+						style="margin-left: 20px;"><img src="./img/help2.png"
+						onmouseover="showpop14();" onmouseout="showout14();"></img></span><span
+						id="pop14"
+						style="display: none; border: 1px solid; margin-left: 7px; padding: 2px;">Please select 'Yes' if your institution disclose customer's personal
+					information to your affiliates, select 'No' if your institution does not disclose customer's personal
+					information to your affiliates.</span>
+ <br> <input type="radio"
 					name="q12" value="Yes" onclick='wds7()'> Yes <br> <input
 					type="radio" name="q12" value="No" onclick='wds7()'> No <br>
 				<br> Please answer the following question if you answered 'YES'
 				for the previous question. <br> <br> <label for="q1">Does
 					your institution's affiliate use customer's personal information in
-					a manner that requires an opt-out?</label> <br> <input type="radio"
+					a manner that requires an opt-out?</label><span id="help"
+						style="margin-left: 20px;"><img src="./img/help2.png"
+						onmouseover="showpop15();" onmouseout="showout15();"></img></span><span
+						id="pop15"
+						style="display: none; border: 1px solid; margin-left: 7px; padding: 2px;">Please select 'Yes' if your institution's affiliate use customer's personal information in
+					a manner that requires an opt-out, otherwise select 'No'.</span>
+ <br> <input type="radio"
 					name="q13" value="Yes" checked> Yes <br> <input
 					type="radio" name="q13" value="No"> No <br> <br>
 				<label for="q1">Does your institution provides the affiliate
-					marketing notice separately?</label> <br> <input type="radio"
+					marketing notice separately?</label><span id="help"
+						style="margin-left: 20px;"><img src="./img/help2.png"
+						onmouseover="showpop16();" onmouseout="showout16();"></img></span><span
+						id="pop16"
+						style="display: none; border: 1px solid; margin-left: 7px; padding: 2px;">Please select 'Yes' if your institution provides the affiliate
+					marketing notice separately, otherwise select 'No'.</span>
+ <br> <input type="radio"
 					name="q14" value="Yes"> Yes <br> <input type="radio"
 					name="q14" value="No"> No <br> <br> <i>For
 					nonaffiliates to market to customers:</i> <br> <label for="q1">Does
 					your institution share customer's personal information for
-					non-affiliates to market to customers?</label><br> (If your answer to
-				this question is YES, then your institution must provide an
-				opt-out.) <br> <br> <input type="radio" name="q15"
+					non-affiliates to market to customers?</label><span id="help"
+						style="margin-left: 20px;"><img src="./img/help2.png"
+						onmouseover="showpop17();" onmouseout="showout17();"></img></span><span
+						id="pop17"
+						style="display: none; border: 1px solid; margin-left: 7px; padding: 2px;">Provide a “Yes” or “No” response that accurately reflects its information sharing policies and practices with respect to the reason specified in this question. An institution that shares personal information for this reason must provide an opt-out.</span>
+<br> <br> <input type="radio" name="q15"
 					value="Yes" checked onclick='wds8()'> Yes <br> <input
 					type="radio" name="q15" value="No" onclick='wds8()'> No <br>
 				<br> <label for="q2">Can customers limit the personal
 					information your institution share for non-affiliates to market to
-					them?</label> <br> <input type="radio" name="q16" value="Yes" checked>
+					them?</label> <span id="help"
+						style="margin-left: 20px;"><img src="./img/help2.png"
+						onmouseover="showpop18();" onmouseout="showout18();"></img></span><span
+						id="pop18"
+						style="display: none; border: 1px solid; margin-left: 7px; padding: 2px;">Provide one of the three responses, as applicable, that reflects whether a consumer can limit sharing for the reason mentioned in the question: “Yes” if it is required to or voluntarily provides an opt-out; “No” if it does not provide an opt-out; or “We don’t share” if your institution doesn't share the information for the mentioned reason.</span>
+<br> <input type="radio" name="q16" value="Yes" checked>
 				Yes <br> <input type="radio" name="q16" value="No"> No
 				<br> <input type="radio" name="q16" value="We don't share">
 				We don't share <br> <br>
@@ -413,7 +626,12 @@ function wds8() {
 					you provided above a toll-free number? </label> <br> <input
 					type="radio" name="q" value="Toll-free" checked>Yes <br>
 				<input type="radio" name="q" value="No">No <br> <br>
-				<label for="optout">Website URL</label> <br> <input required
+				<label for="optout">Website URL</label>  <span id="help"
+					style="margin-left: 20px;"><img src="./img/help2.png"
+					onmouseover="showpop19();" onmouseout="showout19();"></img></span><span
+					id="pop19"
+					style="display: none; border: 1px solid; margin-left: 7px; padding: 2px;">Please provide either a specific Web address that takes consumers directly to the opt-out page or a general Web address that provides a clear and conspicuous direct link to the opt-out page.</span>
+<br> <input required
 					class="form-control" type="url" placeholder="" name="website">
 				<br> <br>
 				<br> <label for="q1">Would your institution like to
@@ -486,10 +704,25 @@ function wds8() {
 				</select> <br> <br> <label for="optout">Zipcode</label> <br> <input
 					required class="form-control" type="text" placeholder="" name="zip"
 					style="width: 120px;"> <br>
-				<br> <br> <label for="optout">Please enter the
+				<br> <br>
+<label for="q1">Please indicate if your institution requires the customers with multiple accounts to identify each account to which the opt-out should apply.  </label> 
+<span id="help"
+					style="margin-left: 20px;"><img src="./img/help2.png"
+					onmouseover="showpop20();" onmouseout="showout20();"></img></span><span
+					id="pop20"
+					style="display: none; border: 1px solid; margin-left: 7px; padding: 2px;">Select 'Yes' if your institution require additional or different information, such as a random opt-out number or a truncated account number, to implement an opt-out election, otherwise select 'No'.</span>
+<br> <input
+					type="radio" name="q" value="Toll-free" checked>Yes <br>
+				<input type="radio" name="q" value="No">No <br> <br>
+ <label for="optout">Please enter the
 					number of days after which your institution will begin sharing
 					customer's information from the date of sending privacy notice to a
-					new customer. </label> <br> <input required class="form-control"
+					new customer. </label><span id="help"
+						style="margin-left: 20px;"><img src="./img/help2.png"
+						onmouseover="showpop21();" onmouseout="showout21();"></img></span><span
+						id="pop21"
+						style="display: none; border: 1px solid; margin-left: 7px; padding: 2px;">Please insert a number that is 30 or greater in the field below.</span>
+ <br> <input required class="form-control"
 					type="text" placeholder="" name="days" style="width: 60px;">
 				<br>
 
