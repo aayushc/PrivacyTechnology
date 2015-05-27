@@ -494,10 +494,10 @@
 				<br> <br>
 			</div>
 			<br>
-			<!-- <button id="fat-btn" class="btn btn-primary"
+			<button id="fat-btn" class="btn btn-primary"
 				data-loading-text="Loading..." type="button"
-				onclick="form.submit();">Previous</button>
-			<td valign="top">&nbsp; &nbsp; &nbsp; -->
+				onclick="history.back(-1)">Previous</button>
+			<td valign="top">&nbsp; &nbsp; &nbsp;</td>
 			<button id="fat-btn" class="btn btn-primary"
 				data-loading-text="Loading..." type="button"
 				onclick="form.submit();">Preview Form</button>

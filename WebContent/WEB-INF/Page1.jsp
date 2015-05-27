@@ -1,5 +1,5 @@
-<%@ page language="java" contentType="text/html; charset=utf-8"
-	pageEncoding="utf-8"%>
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+	pageEncoding="ISO-8859-1"%>
 <!DOCTYPE html>
 
 <html>
@@ -34,52 +34,45 @@
 			<p>Please enter the details requested below:</p>
 			<br>
 			<div class="input-group">
-				<label for="revdate">Date of revision for privacy notice</label> <span
-					id="help" style="margin-left: 20px;"><img
-					src="./img/help2.png" onmouseover="showpop('pop');"
-					onmouseout="showout('pop');"></img></span><span id="pop"
-					style="display: none; border: 1px solid; margin-left: 7px; padding: 2px;">Insert
-					the date on which the notice was last revised in [month/year]
-					format using either the name or number of the month.</span> <br> <input
-					class="form-control" type="month" placeholder=mm/yyyy
-					name="revdate" style="width: 200px;" required />
+				<label for="revdate">Date of revision for privacy notice</label>
+				<span id="help" style="margin-left: 20px;">
+					<img src="./img/help2.png" onmouseover="showpop('pop');" onmouseout="showout('pop');"></img>
+				</span>
+				<span id="pop" style="display: none; border: 1px solid; margin-left: 7px; padding: 2px;">
+					Insert the date on which the notice was last revised in [month/year] format using either the name or number of the month.
+				</span>
+				<br>
+				<input class="form-control" type="month" placeholder=mm/yyyy name="revdate" style="width: 200px;" required />
 			</div>
 			<br>
 			<div class="input-group">
-				<label for="institution">Name of your Institution</label> <span
-					id="help" style="margin-left: 20px;"><img
-					src="./img/help2.png" onmouseover="showpop('pop1');"
-					onmouseout="showout('pop1');"></img></span><span id="pop1"
-					style="display: none; border: 1px solid; margin-left: 7px; padding: 2px;">Insert
-					the name of the financial institution providing the notice or a
-					common identity of affiliated institutions jointly providing the
-					notice.</span>
-					<span><input required class="form-control" type="text"
-					placeholder="" name="institution" required /></span>
+				<label for="institution">Name of your Institution</label>
+				<span id="help" style="margin-left: 20px;">
+					<img src="./img/help2.png" onmouseover="showpop('pop1');" onmouseout="showout('pop1');"></img>
+				</span>
+				<span id="pop1" style="display: none; border: 1px solid; margin-left: 7px; padding: 2px;">
+					Insert the name of the financial institution providing the notice or a common identity of affiliated institutions jointly providing the notice.
+				</span>
+				<span><input required class="form-control" type="text" placeholder="" name="institution" required /></span>
 			</div>
 			<br>
 			<div>
-				<b><font size="4">What does your financial institution do
-						with customer's personal information?</font></b>
+				<b><font size="4">What does your financial institution do with customer's personal information?</font></b>
 			</div>
 			<br>
 			<div class="input-group">
-				<label for="what">What type of information will you collect
-					and share? (Choose any 5)</label> <span id="help"
-					style="margin-left: 20px;"><img src="./img/help2.png"
-					onmouseover="showpop('pop2');" onmouseout="showout('pop2');"></img></span><span
-					id="pop2"
-					style="display: none; border: 1px solid; margin-left: 7px; padding: 2px;">Provide
-					five(5) types of personal information that your institution
-					collects and shares. All institutions must use the term 'Social
-					Security number' in the first bullet. </span>
+				<label for="what">What type of information will you collect and share? (Choose any 5)</label>
+				<span id="help" style="margin-left: 20px;">
+					<img src="./img/help2.png" onmouseover="showpop('pop2');" onmouseout="showout('pop2');"></img>
+				</span>
+				<span id="pop2" style="display: none; border: 1px solid; margin-left: 7px; padding: 2px;">
+					Provide five(5) types of personal information that your institution collects and shares. All institutions must use the term 'Social Security number' in the first bullet.
+				</span>
 			</div>
 			<div class="columns">
-				<input type="checkbox" name="xyz" value="Social Security number"
-					disabled checked> Social Security Number <br> <input
-					type="checkbox" name="what" value="income" onclick='chkcontrol(0)'>
-				Income <br> <input type="checkbox" name="what"
-					value="account balances" onclick='chkcontrol(1)'> Account
+				<input type="checkbox" name="xyz" value="Social Security number" disabled checked> Social Security Number<br>
+				<input type="checkbox" name="what" value="income" onclick='chkcontrol(0)'>Income<br>
+				<input type="checkbox" name="what" value="account balances" onclick='chkcontrol(1)'> Account
 				Balances <br> <input type="checkbox" name="what"
 					value="payment history" onclick='chkcontrol(2)'> Payment
 				History <br> <input type="checkbox" name="what"
@@ -134,16 +127,12 @@
 			<br>
 			<div class="rb">
 				<div id="">
-					<i>For institution's everyday business purposes:</i> <br> <label
-						for="q1">Will your institution share customer's personal
-						information for your everday business purposes?</label> <span id="help"
-						style="margin-left: 20px;"><img src="./img/help2.png"
-						onmouseover="showpop('pop3');" onmouseout="showout('pop3');"></img></span><span
-						id="pop3"
-						style="display: none; border: 1px solid; margin-left: 7px; padding: 2px;">Provide
-						a YesÄù or ÄúNoÄù response that accurately reflects its information
-						sharing policies and practices with respect to the reason
-						specified in this question.</span>
+					<i>For institution's everyday business purposes:</i> 
+					<br> 
+					<label for="q1">Will your institution share customer's personal information for your everday business purposes?</label> 
+					<span id="help" style="margin-left: 20px;">
+					<img src="./img/help2.png" onmouseover="showpop('pop3');" onmouseout="showout('pop3');"></img></span>
+					<span id="pop3" style="display: none; border: 1px solid; margin-left: 7px; padding: 2px;">Provide a YesÄù or ÄúNoÄù response that accurately reflects its information sharing policies and practices with respect to the reason specified in this question.</span>
 				</div>
 
 				<input type="radio" name="q1" value="Yes" checked onclick='wds1()'>

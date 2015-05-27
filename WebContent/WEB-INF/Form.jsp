@@ -40,9 +40,9 @@
 <body>
 	<div class="container">
 		<div class="row clearfix">
-			<div class="col-md-12 column">
-				<caption><span>Rev. <c:out value="${page1.revdate}" /></span></caption>
+			<div class="col-md-12 column">				
 				<table class="table table-condensed table-bordered">
+				<caption><span>Rev. <c:out value="${page1.revdate}" /></span></caption>
 					<tbody>
 						<tr>
 							<td>FACTS</td>
