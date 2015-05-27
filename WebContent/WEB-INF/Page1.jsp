@@ -1,5 +1,5 @@
-<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-	pageEncoding="ISO-8859-1"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+	pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 
 <html>
@@ -72,55 +72,31 @@
 			<div class="columns">
 				<input type="checkbox" name="xyz" value="Social Security number" disabled checked> Social Security Number<br>
 				<input type="checkbox" name="what" value="income" onclick='chkcontrol(0)'>Income<br>
-				<input type="checkbox" name="what" value="account balances" onclick='chkcontrol(1)'> Account
-				Balances <br> <input type="checkbox" name="what"
-					value="payment history" onclick='chkcontrol(2)'> Payment
-				History <br> <input type="checkbox" name="what"
-					value="transaction history" onclick='chkcontrol(3)'>
-				Transaction History <br> <input type="checkbox" name="what"
-					value="transaction or loss history" onclick='chkcontrol(4)'>
-				Transaction or Loss History <br> <input type="checkbox"
-					name="what" value="credit history" onclick='chkcontrol(5)'>
-				Credit History <br> <input type="checkbox" name="what"
-					value="credit scores" onclick='chkcontrol(6)'> Credit
-				Scores <br> <input type="checkbox" name="what" value="assets"
-					onclick='chkcontrol(7)'> Assets <br> <input
-					type="checkbox" name="what" value="investment experience"
-					onclick='chkcontrol(8)'> Investment Experience <br> <input
-					type="checkbox" name="what" value="credit-based insurance scores"
-					onclick='chkcontrol(9)'> Credit-based Insurance Scores <br>
-				<input type="checkbox" name="what" value="transaction history"
-					onclick='chkcontrol(10)'> Transaction History <br> <input
-					type="checkbox" name="what" value="insurance claim history"
-					onclick='chkcontrol(11)'> Insurance Claim History <br>
-				<input type="checkbox" name="what" value="medical information"
-					onclick='chkcontrol(12)'> Medical Information <br> <input
-					type="checkbox" name="what" value="overdraft history"
-					onclick='chkcontrol(13)'> Overdraft History <br> <input
-					type="checkbox" name="what" value="purchase history"
-					onclick='chkcontrol(14)'> Purchase History <br> <input
-					type="checkbox" name="what" value="account transactions"
-					onclick='chkcontrol(15)'> Account Transactions <br> <input
-					type="checkbox" name="what" value="risk tolerance"
-					onclick='chkcontrol(16)'> Risk Tolerance <br> <input
-					type="checkbox" name="what" value="medical-related debts"
-					onclick='chkcontrol(17)'> Medical-related Debts <br> <input
-					type="checkbox" name="what" value="credit card or other debt"
-					onclick='chkcontrol(18)'> Credit Card or Other Debt <br>
-				<input type="checkbox" name="what"
-					value="mortgage rates and payments" onclick='chkcontrol(19)'>
-				Mortgage rates and Payments <br> <input type="checkbox"
-					name="what" value="retirement assets" onclick='chkcontrol(20)'>
-				Retirement Assets <br> <input type="checkbox" name="what"
-					value="checking account information" onclick='chkcontrol(21)'>
-				Checking Account Information <br> <input type="checkbox"
-					name="what" value="employment information" onclick='chkcontrol(22)'>
-				Employment Information <br> <input type="checkbox" name="what"
-					value="wire transfer instructions" onclick='chkcontrol(23)'>
-				Wire Transfer Instructions <br>
+				<input type="checkbox" name="what" value="account balances" onclick='chkcontrol(1)'>Account Balances<br> 
+				<input type="checkbox" name="what" value="payment history" onclick='chkcontrol(2)'>Payment History<br> 
+				<input type="checkbox" name="what" value="transaction history" onclick='chkcontrol(3)'>Transaction History<br> 
+				<input type="checkbox" name="what" value="transaction or loss history" onclick='chkcontrol(4)'>Transaction or Loss History<br> 
+				<input type="checkbox" name="what" value="credit history" onclick='chkcontrol(5)'>Credit History<br> 
+				<input type="checkbox" name="what" value="credit scores" onclick='chkcontrol(6)'>Credit Scores <br> 
+				<input type="checkbox" name="what" value="assets" onclick='chkcontrol(7)'>Assets<br>
+				<input type="checkbox" name="what" value="investment experience" onclick='chkcontrol(8)'>Investment Experience<br>
+				<input type="checkbox" name="what" value="credit-based insurance scores" onclick='chkcontrol(9)'>Credit-based Insurance Scores<br>
+				<input type="checkbox" name="what" value="transaction history" onclick='chkcontrol(10)'>Transaction History<br>
+				<input type="checkbox" name="what" value="insurance claim history" onclick='chkcontrol(11)'>Insurance Claim History<br>
+				<input type="checkbox" name="what" value="medical information" onclick='chkcontrol(12)'>Medical Information<br>
+				<input type="checkbox" name="what" value="overdraft history" onclick='chkcontrol(13)'>Overdraft History<br>
+				<input type="checkbox" name="what" value="purchase history" onclick='chkcontrol(14)'>Purchase History<br>
+				<input type="checkbox" name="what" value="account transactions" onclick='chkcontrol(15)'>Account Transactions<br>
+				<input type="checkbox" name="what" value="risk tolerance" onclick='chkcontrol(16)'>Risk Tolerance<br>
+				<input type="checkbox" name="what" value="medical-related debts" onclick='chkcontrol(17)'>Medical-related Debts<br>
+				<input type="checkbox" name="what" value="credit card or other debt" onclick='chkcontrol(18)'>Credit Card or Other Debt<br>
+				<input type="checkbox" name="what" value="mortgage rates and payments" onclick='chkcontrol(19)'>Mortgage rates and Payments<br>
+				<input type="checkbox" name="what" value="retirement assets" onclick='chkcontrol(20)'>Retirement Assets<br>
+				<input type="checkbox" name="what" value="checking account information" onclick='chkcontrol(21)'>Checking Account Information<br>
+				<input type="checkbox" name="what" value="employment information" onclick='chkcontrol(22)'>Employment Information<br>
+				<input type="checkbox" name="what" value="wire transfer instructions" onclick='chkcontrol(23)'>Wire Transfer Instructions<br>
 			</div>
 			<br>
-
 			<div>
 				<b><font size="4">Disclosure Table</font></b>
 			</div>
@@ -132,129 +108,83 @@
 					<label for="q1">Will your institution share customer's personal information for your everday business purposes?</label> 
 					<span id="help" style="margin-left: 20px;">
 					<img src="./img/help2.png" onmouseover="showpop('pop3');" onmouseout="showout('pop3');"></img></span>
-					<span id="pop3" style="display: none; border: 1px solid; margin-left: 7px; padding: 2px;">Provide a Yes�� or ��No�� response that accurately reflects its information sharing policies and practices with respect to the reason specified in this question.</span>
+					<span id="pop3" style="display: none; border: 1px solid; margin-left: 7px; padding: 2px;">Provide a Yes or No response that accurately reflects its information sharing policies and practices with respect to the reason specified in this question.</span>
 				</div>
 
-				<input type="radio" name="q1" value="Yes" checked onclick='wds1()'>
-				Yes <br> <input type="radio" name="q1" value="No"
-					onclick='wds1()'> No <br> <br> <label for="q2">Can
-					customers limit the personal information your institution share for
-					your everyday business purposes?</label> <span id="help"
-					style="margin-left: 20px;"><img src="./img/help2.png"
-					onmouseover="showpop('pop4');" onmouseout="showout('pop4');"></img></span><span
-					id="pop4"
-					style="display: none; border: 1px solid; margin-left: 7px; padding: 2px;">Provide
-					one of the three responses, as applicable, that reflects whether a
-					consumer can limit sharing for the reason mentioned in the
-					question: ��Yes�� if it is required to or voluntarily provides an
-					opt-out; ��No if it does not provide an opt-out; or ��We dont
-					share if your institution doesn't share the information for the
-					mentioned reason.</span> <br> <input type="radio" name="q2"
-					value="Yes" checked> Yes <br> <input type="radio"
-					name="q2" value="No"> No <br> <input type="radio"
-					name="q2" value="We don't share"> We don't share <br>
-				<br> <i>For institution's marketing purposes:</i> <br> <label
-					for="q1">Will your institution share customer's personal
-					information for your marketing purposes?</label> <span id="help"
-					style="margin-left: 20px;"><img src="./img/help2.png"
-					onmouseover="showpop('pop5');" onmouseout="showout('pop5');"></img></span><span
-					id="pop5"
-					style="display: none; border: 1px solid; margin-left: 7px; padding: 2px;">Provide
-					a Yes or No response that accurately reflects its information
-					sharing policies and practices with respect to the reason specified
-					in this question. An institution that shares for this reason may
-					choose to provide an opt-out.</span> <br> <input type="radio"
-					name="q3" value="Yes" checked onclick='wds2()'> Yes <br>
-				<input type="radio" name="q3" value="No" onclick='wds2()'>
-				No <br> <br> <label for="q2">Can customers limit
-					the personal information your institution share for your everyday
-					marketing purposes?</label><span id="help" style="margin-left: 20px;"><img
-					src="./img/help2.png" onmouseover="showpop('pop6');"
-					onmouseout="showout('pop6');"></img></span><span id="pop6"
-					style="display: none; border: 1px solid; margin-left: 7px; padding: 2px;">Provide
-					one of the three responses, as applicable, that reflects whether a
-					consumer can limit sharing for the reason mentioned in the
-					question: Yes if it is required to or voluntarily provides an
-					opt-out; No if it does not provide an opt-out; or We don��t
-					share” if your institution doesn't share the information for the
-					mentioned reason.</span> <br> <input type="radio" name="q4"
-					value="Yes" checked> Yes <br> <input type="radio"
-					name="q4" value="No"> No <br> <input type="radio"
-					name="q4" value="We don't share"> We don't share <br>
-				<br> <i>For joint marketing with other financial companies:</i>
-				<br> <label for="q1">Will your institution share
-					customer's personal information for joint marketing with other
-					financial companies?</label><span id="help" style="margin-left: 20px;"><img
-					src="./img/help2.png" onmouseover="showpop('pop7');"
-					onmouseout="showout('pop7');"></img></span><span id="pop7"
-					style="display: none; border: 1px solid; margin-left: 7px; padding: 2px;">Provide
-					a ��Yes or ��No response that accurately reflects its information
-					sharing policies and practices with respect to the reason specified
-					in this question. An institution that shares for this reason may
-					choose to provide an opt-out.</span> <br> <input type="radio"
-					name="q5" value="Yes" checked onclick='wds3()'> Yes <br>
-				<input type="radio" name="q5" value="No" onclick='wds3()'>
-				No <br> <br> <label for="q2">Can customers limit
-					the personal information your institution share for joint marketing
-					with other financial companies?</label> <span id="help"
-					style="margin-left: 20px;"><img src="./img/help2.png"
-					onmouseover="showpop('pop8');" onmouseout="showout('pop8');"></img></span><span
-					id="pop8"
-					style="display: none; border: 1px solid; margin-left: 7px; padding: 2px;">Provide
-					one of the three responses, as applicable, that reflects whether a
-					consumer can limit sharing for the reason mentioned in the
-					question: Yes if it is required to or voluntarily provides an
-					opt-out; ��No if it does not provide an opt-out; or ��We dont
-					share” if your institution doesn't share the information for the
-					mentioned reason.</span> <br> <input type="radio" name="q6"
-					value="Yes" checked> Yes <br> <input type="radio"
-					name="q6" value="No"> No <br> <input type="radio"
-					name="q6" value="We don't share"> We don't share <br>
-				<br> <i>For your institution's affiliates' everyday
-					business purposes- information about transactions and experiences:</i>
-				<br> <label for="q1">Will your institution share
-					customer's personal information about their transactions and
-					experiences for your affiliates' everday business purposes?</label><span
-					id="help" style="margin-left: 20px;"><img
-					src="./img/help2.png" onmouseover="showpop('pop9');"
-					onmouseout="showout('pop9');"></img></span><span id="pop9"
-					style="display: none; border: 1px solid; margin-left: 7px; padding: 2px;">Provide
-					a ��Yes�� or ��No response that accurately reflects its information
-					sharing policies and practices with respect to the reason specified
-					in this question. An institution that shares for this reason may
-					choose to provide an opt-out.</span> <br> <input type="radio"
-					name="q7" value="Yes" checked onclick='wds4()'> Yes <br>
-				<input type="radio" name="q7" value="No" onclick='wds4()'>
-				No <br> <br> <label for="q2">Can customers limit
-					the personal information aboout their transactions and experiences
-					your institution share for your affiliates' everyday business
-					purposes?</label> <span id="help" style="margin-left: 20px;"><img
-					src="./img/help2.png" onmouseover="showpop('pop10');"
-					onmouseout="showout('pop10');"></img></span><span id="pop10"
-					style="display: none; border: 1px solid; margin-left: 7px; padding: 2px;">Provide
-					one of the three responses, as applicable, that reflects whether a
-					consumer can limit sharing for the reason mentioned in the
-					question: ��Yes�� if it is required to or voluntarily provides an
-					opt-out; No if it does not provide an opt-out; or ��We don��t
-					share if your institution doesn't share the information for the
-					mentioned reason.</span> <br> <input type="radio" name="q8"
-					value="Yes" checked> Yes <br> <input type="radio"
-					name="q8" value="No"> No <br> <input type="radio"
-					name="q8" value="We don't share"> We don't share <br>
-				<br> <i>For your institution's affiliates' everyday
-					business purposes- information about creditworthiness:</i> <br> <label
-					for="q1">Will your institution share customer's personal
-					information about their creditworthiness for your affiliates'
-					everday business purposes?</label> <span id="help"
-					style="margin-left: 20px;"><img src="./img/help2.png"
-					onmouseover="showpop('pop11');" onmouseout="showout('pop11');"></img></span><span
-					id="pop11"
-					style="display: none; border: 1px solid; margin-left: 7px; padding: 2px;">Provide
-					a ��Yes or No�� response that accurately reflects its information
-					sharing policies and practices with respect to the reason specified
-					in this question. An institution that shares for this reason may
-					choose to provide an opt-out.</span> <br> <input type="radio"
-					name="q9" value="Yes" checked onclick='wds5()'> Yes <br>
+				<input type="radio" name="q1" value="Yes" checked onclick='wds1()'>Yes<br>
+				<input type="radio" name="q1" value="No" onclick='wds1()'>No<br><br>
+				<label for="q2">Can	customers limit the personal information your institution share for your everyday business purposes?</label>
+				<span id="help" style="margin-left: 20px;">
+					<img src="./img/help2.png" onmouseover="showpop('pop4');" onmouseout="showout('pop4');"></img></span>
+				<span id="pop4" style="display: none; border: 1px solid; margin-left: 7px; padding: 2px;">Provide one of the three responses, as applicable, that reflects whether a consumer can limit sharing for the reason mentioned in the question: Yes if it is required to or voluntarily provides an opt-out; No if it does not provide an opt-out; or We dont share if your institution doesn't share the information for the mentioned reason.</span><br>
+				<input type="radio" name="q2" value="Yes" checked>Yes<br>
+				<input type="radio" name="q2" value="No">No<br>
+				<input type="radio" name="q2" value="We don't share">We don't share<br>
+				<br> 
+				<i>For institution's marketing purposes:</i>
+				<br> 
+				<label for="q1">Will your institution share customer's personal information for your marketing purposes?</label>
+				<span id="help" style="margin-left: 20px;">
+					<img src="./img/help2.png" onmouseover="showpop('pop5');" onmouseout="showout('pop5');"></img>
+				</span>
+				<span id="pop5" style="display: none; border: 1px solid; margin-left: 7px; padding: 2px;">Provide a Yes or No response that accurately reflects its information sharing policies and practices with respect to the reason specified in this question. An institution that shares for this reason may choose to provide an opt-out.</span><br>
+				<input type="radio" name="q3" value="Yes" checked onclick='wds2()'>Yes<br>
+				<input type="radio" name="q3" value="No" onclick='wds2()'>No<br>
+				<br>
+				<label for="q2">Can customers limit the personal information your institution share for your everyday marketing purposes?</label>
+				<span id="help" style="margin-left: 20px;">
+					<img src="./img/help2.png" onmouseover="showpop('pop6');" onmouseout="showout('pop6');"></img>
+				</span>
+				<span id="pop6" style="display: none; border: 1px solid; margin-left: 7px; padding: 2px;">Provide one of the three responses, as applicable, that reflects whether a consumer can limit sharing for the reason mentioned in the question: Yes if it is required to or voluntarily provides an opt-out; No if it does not provide an opt-out; or We dont share if your institution doesn't share the information for the mentioned reason.</span><br>
+				<input type="radio" name="q4" value="Yes" checked>Yes<br>
+				<input type="radio" name="q4" value="No">No<br>
+				<input type="radio" name="q4" value="We don't share">We don't share<br>
+				<br> 
+				<i>For joint marketing with other financial companies:</i>
+				<br>
+				<label for="q1">Will your institution share customer's personal information for joint marketing with other financial companies?</label>
+				<span id="help" style="margin-left: 20px;">
+					<img src="./img/help2.png" onmouseover="showpop('pop7');" onmouseout="showout('pop7');"></img>
+				</span>\
+				<span id="pop7" style="display: none; border: 1px solid; margin-left: 7px; padding: 2px;">Provide a Yes or No response that accurately reflects its information sharing policies and practices with respect to the reason specified in this question. An institution that shares for this reason may choose to provide an opt-out.</span><br>
+				<input type="radio" name="q5" value="Yes" checked onclick='wds3()'>Yes<br>
+				<input type="radio" name="q5" value="No" onclick='wds3()'>No<br>
+				<br>
+				<label for="q2">Can customers limit the personal information your institution share for joint marketing with other financial companies?</label>
+				<span id="help" style="margin-left: 20px;">
+					<img src="./img/help2.png" onmouseover="showpop('pop8');" onmouseout="showout('pop8');"></img>
+				</span>
+				<span id="pop8" style="display: none; border: 1px solid; margin-left: 7px; padding: 2px;">Provide one of the three responses, as applicable, that reflects whether a consumer can limit sharing for the reason mentioned in the question: Yes if it is required to or voluntarily provides an opt-out; No if it does not provide an opt-out; or We dont share if your institution doesn't share the information for the mentioned reason.</span><br>
+				<input type="radio" name="q6" value="Yes" checked>Yes<br>
+				<input type="radio" name="q6" value="No">No<br>
+				<input type="radio" name="q6" value="We don't share">We don't share<br>
+				<br> 
+				<i>For your institution's affiliates' everyday business purposes- information about transactions and experiences:</i>
+				<br> 
+				<label for="q1">Will your institution share customer's personal information about their transactions and experiences for your affiliates' everday business purposes?</label>
+				<span id="help" style="margin-left: 20px;">
+					<img src="./img/help2.png" onmouseover="showpop('pop9');" onmouseout="showout('pop9');"></img>
+				</span>
+				<span id="pop9"	style="display: none; border: 1px solid; margin-left: 7px; padding: 2px;">Provide a Yes or No response that accurately reflects its information sharing policies and practices with respect to the reason specified in this question. An institution that shares for this reason may choose to provide an opt-out.</span><br>
+				<input type="radio" name="q7" value="Yes" checked onclick='wds4()'>Yes<br>
+				<input type="radio" name="q7" value="No" onclick='wds4()'>No<br>
+				<br>
+				<label for="q2">Can customers limit the personal information aboout their transactions and experiences purposes?</label>
+				<span id="help" style="margin-left: 20px;">
+					<img src="./img/help2.png" onmouseover="showpop('pop10');" onmouseout="showout('pop10');"></img>
+				</span>
+				<span id="pop10" style="display: none; border: 1px solid; margin-left: 7px; padding: 2px;">Provide one of the three responses, as applicable, that reflects whether a consumer can limit sharing for the reason mentioned in the question: Yes if it is required to or voluntarily provides an opt-out; No if it does not provide an opt-out; or We dont share if your institution doesn't share the information for the mentioned reason.</span><br>
+				<input type="radio" name="q8" value="Yes" checked>Yes<br>
+				<input type="radio" name="q8" value="No">No<br>
+				<input type="radio" name="q8" value="We don't share">We don't share<br>
+				<br>
+				<i>For your institution's affiliates' everyday business purposes- information about creditworthiness:</i><br>
+				<label for="q1">Will your institution share customer's personal information about their creditworthiness for your affiliates' everday business purposes?</label>
+				<span id="help" style="margin-left: 20px;">
+					<img src="./img/help2.png" onmouseover="showpop('pop11');" onmouseout="showout('pop11');"></img>
+				</span>
+				<span id="pop11" style="display: none; border: 1px solid; margin-left: 7px; padding: 2px;">Provide a Yes or No response that accurately reflects its information sharing policies and practices with respect to the reason specified in this question. An institution that shares for this reason may choose to provide an opt-out.</span><br>
+				<input type="radio" name="q9" value="Yes" checked onclick='wds5()'> Yes <br>
 				<input type="radio" name="q9" value="No" onclick='wds5()'>
 				No <br> <br> <label for="q2">Can customers limit
 					the personal information aboout their creditworthiness your
@@ -265,8 +195,8 @@
 					style="display: none; border: 1px solid; margin-left: 7px; padding: 2px;">Provide
 					one of the three responses, as applicable, that reflects whether a
 					consumer can limit sharing for the reason mentioned in the
-					question: ��Yes if it is required to or voluntarily provides an
-					opt-out; ��No if it does not provide an opt-out; or ��We dont
+					question: Yes if it is required to or voluntarily provides an
+					opt-out; No if it does not provide an opt-out; or We dont
 					share if your institution doesn't share the information for the
 					mentioned reason.</span> <br> <input type="radio" name="q10"
 					value="Yes" checked> Yes <br> <input type="radio"
@@ -282,7 +212,7 @@
 					your institution does not have affiliates. For our affiliates to
 					market to you- reason may be omitted from the disclosure table when
 					the institution does not have affiliates (or does not disclose
-					personal information to its affiliates); the institution��s
+					personal information to its affiliates); the institutions
 					affiliates do not use personal information in a manner that
 					requires an opt-out; or the institution provides the affiliate
 					marketing notice separately. Institutions that include this reason
@@ -333,7 +263,7 @@
 					src="./img/help2.png" onmouseover="showpop('pop17');"
 					onmouseout="showout('pop17');"></img></span><span id="pop17"
 					style="display: none; border: 1px solid; margin-left: 7px; padding: 2px;">Provide
-					a Yes or ��No response that accurately reflects its information
+					a Yes or No response that accurately reflects its information
 					sharing policies and practices with respect to the reason specified
 					in this question. An institution that shares personal information
 					for this reason must provide an opt-out.</span> <br> <br> <input
@@ -348,9 +278,9 @@
 					style="display: none; border: 1px solid; margin-left: 7px; padding: 2px;">Provide
 					one of the three responses, as applicable, that reflects whether a
 					consumer can limit sharing for the reason mentioned in the
-					question: “Yes” if it is required to or voluntarily provides an
-					opt-out; “No” if it does not provide an opt-out; or “We don’t
-					share” if your institution doesn't share the information for the
+					question: âYesâ if it is required to or voluntarily provides an
+					opt-out; âNoâ if it does not provide an opt-out; or âWe donât
+					shareâ if your institution doesn't share the information for the
 					mentioned reason.</span> <br> <input type="radio" name="q16"
 					value="Yes" checked> Yes <br> <input type="radio"
 					name="q16" value="No"> No <br> <input type="radio"
@@ -366,7 +296,7 @@
 			<div class="input-group">
 				Please enter details of your institution's applicable <u><i>opt-out</i></u>
 				method(s) below: <br> <br> <label for="optout">Phone
-					Number</label> <br> <input required class="form-control" type="text"
+					Number</label> <br> <input required class="form-control" type="number"
 					placeholder="" name="phone" style="width: 200px;"> <br>
 				<br> <br> <label for="q1">Is the telephone number
 					you provided above a toll-free number? </label> <br> <input
@@ -462,7 +392,7 @@
 					'Yes' if your institution require additional or different
 					information, such as a random opt-out number or a truncated account
 					number, to implement an opt-out election, otherwise select 'No'.</span> <br>
-				<input type="radio" name="accnt" value="“[account #]">Yes <br>
+				<input type="radio" name="accnt" value="â[account #]">Yes <br>
 				<input type="radio" name="accnt" value="No">No <br> <br>
 				<label for="optout">Please enter the number of days after
 					which your institution will begin sharing customer's information
@@ -472,7 +402,7 @@
 					onmouseout="showout('pop21');"></img></span><span id="pop21"
 					style="display: none; border: 1px solid; margin-left: 7px; padding: 2px;">Please
 					insert a number that is 30 or greater in the field below.</span> <br>
-				<input required class="form-control" type="text" placeholder=""
+				<input required class="form-control" type="number" min="30" placeholder=""
 					name="days" style="width: 60px;"> <br> <br> <br>
 				<label for="q1">Does your institution provide your joint
 					accountholders the choice to opt out for only one accountholder?</label> <span
@@ -483,11 +413,11 @@
 					'Yes' if your institution provide your joint accountholders the
 					choice to opt out for only one accountholder , otherwise select
 					'No'. This will include in the mail-in opt-out form the following
-					statement:“If you have a joint account, your choice(s) will apply
-					to everyone on your account unless you mark below. □ Apply my
-					choice(s) only to me.”</span> <br> <input type="radio"
+					statement:âIf you have a joint account, your choice(s) will apply
+					to everyone on your account unless you mark below. â¡ Apply my
+					choice(s) only to me.â</span> <br> <input type="radio"
 					name="reverse1"
-					value="If you have a joint account, your choice(s) will apply to everyone on your account unless you mark below. □ Apply my choice(s) only to me.">Yes
+					value="If you have a joint account, your choice(s) will apply to everyone on your account unless you mark below. â¡ Apply my choice(s) only to me.">Yes
 				<br> <input type="radio" name="reverse1" value="">No <br>
 				<br> <br> <label for="q1">Does your institution
 					shares personal information pursuant to section 603(d)(2)(A)(iii)
@@ -498,10 +428,10 @@
 					'Yes' if your institution shares personal information pursuant to
 					section 603(d)(2)(A)(iii) of the FCRA, otherwise select 'No'. This
 					will include in the mail-in opt-out form the following statement:
-					“□ Do not share information about my creditworthiness with your
-					affiliates for their everyday business purposes.”</span> <br> <input
+					ââ¡ Do not share information about my creditworthiness with your
+					affiliates for their everyday business purposes.â</span> <br> <input
 					type="radio" name="reverse2"
-					value="□ Do not share
+					value="â¡ Do not share
 information about my creditworthiness with your affiliates for
 their everyday business purposes">Yes
 				<br> <input type="radio" name="reverse2" value="">No <br>
@@ -513,24 +443,24 @@ their everyday business purposes">Yes
 					style="display: none; border: 1px solid; margin-left: 7px; padding: 2px;">Select
 					'Yes' if your institution incorporates section 624 of the FCRA,
 					otherwise select 'No'. This will include in the mail-in opt-out
-					form the following statement: “□ Do not allow your affiliates to
-					use my personal information to market to me.”</span> <br> <input
+					form the following statement: ââ¡ Do not allow your affiliates to
+					use my personal information to market to me.â</span> <br> <input
 					type="radio" name="reverse3"
-					value="□ Do not allow your affiliates
+					value="â¡ Do not allow your affiliates
 to use my personal information to market to me">Yes
 				<br> <input type="radio" name="reverse3" value="">No <br>
 				<br> <br> <label for="q1">Does your financial
-					institution share personal information pursuant to § 313.10(a) of
+					institution share personal information pursuant to Â§ 313.10(a) of
 					this part? </label> <span id="help" style="margin-left: 20px;"><img
 					src="./img/help2.png" onmouseover="showpop('pop25');"
 					onmouseout="showout('pop25');"></img></span><span id="pop25"
 					style="display: none; border: 1px solid; margin-left: 7px; padding: 2px;">Select
-					'Yes' if your institution shares personal information pursuant to §
+					'Yes' if your institution shares personal information pursuant to Â§
 					313.10(a), otherwise select 'No'. This will include in the mail-in
-					opt-out form the following statement: “□ Do not share my personal
+					opt-out form the following statement: ââ¡ Do not share my personal
 					information with nonaffiliates to market their products and
 					services to me."</span> <br> <input type="radio" name="reverse4"
-					value="□ Do not share my personal information with
+					value="â¡ Do not share my personal information with
 nonaffiliates to market their products and services to me.">Yes
 				<br> <input type="radio" name="reverse4" value="">No <br>
 				<br>
@@ -544,7 +474,7 @@ nonaffiliates to market their products and services to me.">Yes
 			<div class="input-group">
 				Please enter your institution's <u><i>customer service</i></u>
 				contact information : <br> <br> <label for="optout">Phone
-					Number</label> <br> <input required class="form-control" type="text"
+					Number</label> <br> <input required class="form-control" type="number"
 					placeholder="" name="phone1" style="width: 200px;"> <br>
 				<br> <label for="optout">Website URL</label> <br> <input
 					required class="form-control" type="url" placeholder=""
