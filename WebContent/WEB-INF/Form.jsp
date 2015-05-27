@@ -56,16 +56,16 @@
 							<td>The types of personal information we collect and share depend on the product or service you have 	with us.
 								This information can include:
 								<ul>
-									<li>Social Security number and  <c:out value="${page1.what[1]}" /></li>
-									<li><c:out value="${page1.what[2]}" /> and <c:out value="${page1.what[3]}" /></li>
-									<li><c:out value="${page1.what[4]}" /> and <c:out value="${page1.what[5]}" /></li>
+									<li>Social Security number and  <c:out value="${page1.what[0]}" /></li>
+									<li><c:out value="${page1.what[1]}" /> and <c:out value="${page1.what[2]}" /></li>
+									<li><c:out value="${page1.what[3]}" /> and <c:out value="${page1.what[4]}" /></li>
 								</ul>
 								When you are no longer our customer, we continue to share your information as described in this notice.
 							</td>
 						</tr>
 						<tr>
 							<td>How?</td>
-							<td>All financial companies need to share customers’ personal information to run their everyday business. In the section below, we list the reasons financial companies can share their customers’ personal information; the reasons  <c:out value="${page1.institution}" /> chooses to share; and whether you can limit this sharing.
+							<td>All financial companies need to share customers personal information to run their everyday business. In the section below, we list the reasons financial companies can share their customers’ personal information; the reasons  <c:out value="${page1.institution}" /> chooses to share; and whether you can limit this sharing.
 							</td>
 						</tr>
 					</tbody> 
@@ -82,12 +82,12 @@
 					</thead>
 					<tbody>
 						<tr>
-							<td>For our everyday business purposes — such as to process your transactions, maintain your account(s), respond to court orders and legal investigations, or report to credit bureaus</td>
+							<td>For our everyday business purposes such as to process your transactions, maintain your account(s), respond to court orders and legal investigations, or report to credit bureaus</td>
 							<td><c:out value="${page1.q1}" /></td>
 							<td><c:out value="${page1.q2}" /></td>
 						</tr>
 						<tr>
-							<td>For our marketing purposes — with service providers we use to offer our products and services to you (please see below to limit the ways we contact you)</td>
+							<td>For our marketing purposes�� with service providers we use to offer our products and services to you (please see below to limit the ways we contact you)</td>
 							<td><c:out value="${page1.q3}" /></td>
 							<td><c:out value="${page1.q4}" /></td>
 						</tr>
@@ -97,15 +97,16 @@
 							<td><c:out value="${page1.q6}" /></td>
 						</tr>
 						<tr>
-							<td>For our affiliates’ everyday business purposes — Information about your transactions and experiences</td>
+							<td>For our affiliates’ everyday business purposes Information about your transactions and experiences</td>
 							<td><c:out value="${page1.q7}" /></td>
 							<td><c:out value="${page1.q8}" /></td>
 						</tr>
 						<tr>
-							<td>For our affiliates’ everyday business purposes — Information about your creditworthiness</td>
+							<td>For our affiliates’ everyday business purposes�� Information about your creditworthiness</td>
 							<td><c:out value="${page1.q9}" /></td>
 							<td><c:out value="${page1.q10}" /></td>
 						</tr>
+						<c:choose>
 						<c:when test="${page1.q11 == Yes}"> <!--  what is the purpose of q12?? -->
 						<tr>
 							<td>For our affiliates to market to you</td>
@@ -113,6 +114,7 @@
 							<td><c:out value="${page1.q14}" /></td>
 						</tr>
 						</c:when>
+						</c:choose>
 						<tr>
 							<td>For nonaffiliates to market to you</td>
 							<td><c:out value="${page1.q15}" /></td>
@@ -124,7 +126,8 @@
 			<div class="col-md-12 column">
 				<table class="table table-condensed table-bordered">
 					<tbody>
-						<c:when test="${page1.q15 == Yes}">
+					<c:choose>
+						<c:when test="${page1.q15 eq 'Yes'}">
 						<tr>
 							<td>To limit our sharing</td>
 							<td>Call <c:out value="${page1.phone}" /> - our menu will prompt you through your choice(s) or
@@ -135,6 +138,7 @@
 							</td>
 						</tr>
 						</c:when>
+					</c:choose>
 						<tr>
 							<td>Questions?</td>
 							<td>Call <c:out value="${page1.phone1}" /> or go to <c:out value="${page1.website1}" /></td>
@@ -173,9 +177,9 @@
 							<td>How does <c:out value="${page1.institution}" /> collect my personal information?</td>
 							<td>We collect your personal information, for example, when you:
 								<ul>
-									<li><c:out value="${page2.what[1]}" /> or <c:out value="${page2.what[2]}" /></li>
-									<li><c:out value="${page2.what[3]}" /> or <c:out value="${page2.what[4]}" /></li>
-									<li><c:out value="${page2.what[5]}" /></li>
+									<li><c:out value="${page2.what[0]}" /> or <c:out value="${page2.what[1]}" /></li>
+									<li><c:out value="${page2.what[2]}" /> or <c:out value="${page2.what[3]}" /></li>
+									<li><c:out value="${page2.what[4]}" /></li>
 								</ul>
 								<c:out value="${page2.q1}" /> OR							
 								<c:out value="${page2.q2}" />

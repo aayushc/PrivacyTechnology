@@ -26,6 +26,8 @@ public class Page2Action extends Action{
 		List<String> errors = new ArrayList<String>();
         request.setAttribute("errors",errors);
         try {
+        	Page1Bean bean1=(Page1Bean) request.getAttribute("page1");
+        	request.setAttribute("page1", bean1);
 			Page2Form form= formBeanFactory.create(request);
 			if(!form.isPresent()) {
 				return "Page2.jsp";
@@ -46,6 +48,9 @@ public class Page2Action extends Action{
 			p1.setFcomp(form.getFcomp());
 			p1.setOther(form.getOther());
 			request.setAttribute("page2", p1);
+			/*System.out.println(p1.getInstitution());
+			System.out.println(form.getInstitution());
+			System.out.println(form.getQ1());*/
 		} catch (FormBeanException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
