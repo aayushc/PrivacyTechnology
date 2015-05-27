@@ -346,8 +346,8 @@
 			document.form1.city.disabled = true;
 			document.form1.state.disabled = true;
 			document.form1.zip.disabled = true;
-			document.form1.q[0].disabled = true;
-			document.form1.q[1].disabled = true;
+			document.form1.accnt[0].disabled = true;
+			document.form1.accnt[1].disabled = true;
 			document.form1.days.disabled = true;
 			document.form1.reverse1[0].disabled = true;
 			document.form1.reverse1[1].disabled = true;
@@ -365,8 +365,8 @@
 			document.form1.city.disabled = false;
 			document.form1.state.disabled = false;
 			document.form1.zip.disabled = false;
-			document.form1.q[0].disabled = false;
-			document.form1.q[1].disabled = false;
+			document.form1.accnt[0].disabled = false;
+			document.form1.accnt[1].disabled = false;
 			document.form1.days.disabled = false;
 			document.form1.reverse1[0].disabled = false;
 			document.form1.reverse1[1].disabled = false;
@@ -829,8 +829,8 @@
 					'Yes' if your institution require additional or different
 					information, such as a random opt-out number or a truncated account
 					number, to implement an opt-out election, otherwise select 'No'.</span> <br>
-				<input type="radio" name="q" value="“[account #]">Yes <br>
-				<input type="radio" name="q" value="No">No <br> <br>
+				<input type="radio" name="accnt" value="“[account #]">Yes <br>
+				<input type="radio" name="accnt" value="No">No <br> <br>
 				<label for="optout">Please enter the number of days after
 					which your institution will begin sharing customer's information
 					from the date of sending privacy notice to a new customer. </label><span
