@@ -192,3 +192,54 @@
 			document.form1.reverse4[1].disabled = false;
 		}
 	}
+	
+	function enabletextarea1() {
+		if (document.form1.q3[1].checked) {
+			document.form1.provision.disabled = true;
+
+			return false;
+		} else if (document.form1.q3[0].checked) {
+			document.form1.provision.disabled = false;
+		}
+	}
+
+	function enabletextarea2() {
+		if (document.form1.q6[0].checked) {
+			document.form1.ta1.disabled = true;
+			document.form1.ta2.disabled = true;
+			document.form1.ta3.disabled = true;
+			document.form1.ta4.disabled = true;
+
+			return false;
+		} else if (document.form1.q6[1].checked) {
+			document.form1.ta1.disabled = true;
+			document.form1.ta2.disabled = true;
+			document.form1.ta3.disabled = true;
+			document.form1.ta4.disabled = true;
+		} else if (document.form1.q6[2].checked) {
+			document.form1.ta1.disabled = false;
+			document.form1.ta2.disabled = false;
+			document.form1.ta3.disabled = false;
+			document.form1.ta4.disabled = false;
+		}
+	}
+
+	function enabletextarea3() {
+		if (document.form1.q7[0].checked) {
+			document.form1.ta5.disabled = true;
+
+			return false;
+		} else if (document.form1.q7[1].checked) {
+			document.form1.ta5.disabled = false;
+		}
+	}
+
+	function enabletextarea4() {
+		if (document.form1.q8[0].checked) {
+			document.form1.ta6.disabled = true;
+
+			return false;
+		} else if (document.form1.q8[1].checked) {
+			document.form1.ta6.disabled = false;
+		}
+	}

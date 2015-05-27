@@ -17,7 +17,7 @@
 <!-- Latest compiled and minified JavaScript -->
 <script
 	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
-
+<script type="text/javascript" src="js/task.js"></script>
 <style>
 .columns {
 	-moz-column-count: 2;
@@ -25,123 +25,7 @@
 	column-count: 2;
 }
 </style>
-
-<script type="text/javascript">
-	function chkcontrol(j) {
-		var total = 0;
-		for (var i = 0; i < document.form1.what.length; i++) {
-			if (document.form1.what[i].checked) {
-				total = total + 1;
-			}
-			if (total > 5) {
-				alert("Please Select only five")
-				document.form1.what[j].checked = false;
-				return false;
-			}
-		}
-	}
-
-	function showpop() {
-		document.getElementById("pop").style.display = "inline";
-	}
-	function showout() {
-		document.getElementById("pop").style.display = "none";
-	}
-
-	function showpop1() {
-		document.getElementById("pop1").style.display = "inline";
-	}
-	function showout1() {
-		document.getElementById("pop1").style.display = "none";
-	}
-
-	function showpop2() {
-		document.getElementById("pop2").style.display = "inline";
-	}
-	function showout2() {
-		document.getElementById("pop2").style.display = "none";
-	}
-
-	function showpop3() {
-		document.getElementById("pop3").style.display = "inline";
-	}
-	function showout3() {
-		document.getElementById("pop3").style.display = "none";
-	}
-
-	function showpop4() {
-		document.getElementById("pop4").style.display = "inline";
-	}
-	function showout4() {
-		document.getElementById("pop4").style.display = "none";
-	}
-
-	function validateForm() {
-		var x = document.forms["form1"]["institution"].value;
-		if (x == null || x == "") {
-			alert("Institution Name is required!");
-			return false;
-		}
-	}
-
-	var countBox = 1;
-	var boxName = 0;
-	function addInput() {
-		var boxName = "textBox" + countBox;
-		document.getElementById('ins').innerHTML += '<br/><input type="text" id="'+boxName+'" value="'+boxName+'" "  /><br/>';
-		countBox += 1;
-	}
-
-	function enabletextarea1() {
-		if (document.form1.q3[1].checked) {
-			document.form1.provision.disabled = true;
-
-			return false;
-		} else if (document.form1.q3[0].checked) {
-			document.form1.provision.disabled = false;
-		}
-	}
-
-	function enabletextarea2() {
-		if (document.form1.q6[0].checked) {
-			document.form1.ta1.disabled = true;
-			document.form1.ta2.disabled = true;
-			document.form1.ta3.disabled = true;
-			document.form1.ta4.disabled = true;
-
-			return false;
-		} else if (document.form1.q6[1].checked) {
-			document.form1.ta1.disabled = true;
-			document.form1.ta2.disabled = true;
-			document.form1.ta3.disabled = true;
-			document.form1.ta4.disabled = true;
-		} else if (document.form1.q6[2].checked) {
-			document.form1.ta1.disabled = false;
-			document.form1.ta2.disabled = false;
-			document.form1.ta3.disabled = false;
-			document.form1.ta4.disabled = false;
-		}
-	}
-
-	function enabletextarea3() {
-		if (document.form1.q7[0].checked) {
-			document.form1.ta5.disabled = true;
-
-			return false;
-		} else if (document.form1.q7[1].checked) {
-			document.form1.ta5.disabled = false;
-		}
-	}
-
-	function enabletextarea4() {
-		if (document.form1.q8[0].checked) {
-			document.form1.ta6.disabled = true;
-
-			return false;
-		} else if (document.form1.q8[1].checked) {
-			document.form1.ta6.disabled = false;
-		}
-	}
+	
 </script>
 </head>
 <body>
@@ -164,8 +48,8 @@
 				<label for="institution">Please enter the name and brief
 					description of the institution(s) providing this notice?</label> <span
 					id="help" style="margin-left: 20px;"><img
-					src="./img/help2.png" onmouseover="showpop();"
-					onmouseout="showout();"></img></span><span id="pop"
+					src="./img/help2.png" onmouseover="showpop('pop');"
+					onmouseout="showout('pop');"></img></span><span id="pop"
 					style="display: none; border: 1px solid; margin-left: 7px; padding: 2px;">Two
 					or more financial institutions that jointly provide the model form
 					must use this question to identify themselves. </span> <br> <br>
@@ -183,7 +67,7 @@
 				<label for="protect">How does your institution protects
 					customer personal information?</label> (Word limit: 30) <span id="help"
 					style="margin-left: 20px;"><img src="./img/help2.png"
-					onmouseover="showpop1();" onmouseout="showout1();"></img></span><span
+					onmouseover="showpop('pop1');" onmouseout="showout('pop1');"></img></span><span
 					id="pop1"
 					style="display: none; border: 1px solid; margin-left: 7px; padding: 2px;">Provide
 					additional information pertaining to your institution's safeguards
@@ -197,7 +81,7 @@
 				<label for="what">How does your institution collect a
 					customer's personal information? (Choose any 5)</label> <span id="help"
 					style="margin-left: 20px;"><img src="./img/help2.png"
-					onmouseover="showpop2();" onmouseout="showout2();"></img></span><span
+					onmouseover="showpop('pop2');" onmouseout="showout2('pop2');"></img></span><span
 					id="pop2"
 					style="display: none; border: 1px solid; margin-left: 7px; padding: 2px;">Provide
 					5 ways in which your institution will collect customer's personal
@@ -292,8 +176,8 @@
 				<label for="q1">Does your institution collect personal
 					information from your affiliates and/or other credit bureaus?</label> <span
 					id="help" style="margin-left: 20px;"><img
-					src="./img/help2.png" onmouseover="showpop3();"
-					onmouseout="showout3();"></img></span><span id="pop3"
+					src="./img/help2.png" onmouseover="showpop('pop3');"
+					onmouseout="showout('pop3');"></img></span><span id="pop3"
 					style="display: none; border: 1px solid; margin-left: 7px; padding: 2px;">Please
 					indicate if your institution collect personal information from
 					their affiliates and/or credit bureaus. </span> <br> <input
@@ -305,7 +189,7 @@
 					if it does not collect personal information from your affiliates
 					and/or other credit bureaus?</label> <span id="help"
 					style="margin-left: 20px;"><img src="./img/help2.png"
-					onmouseover="showpop4();" onmouseout="showout4();"></img></span><span
+					onmouseover="showpop('pop4');" onmouseout="showout('pop4');"></img></span><span
 					id="pop4"
 					style="display: none; border: 1px solid; margin-left: 7px; padding: 2px;">Please
 					indicate if your institution does not collect personal information
@@ -318,7 +202,7 @@
 					your institution describe state privacy law provisions in the
 					Other important information box?</label><span id="help"
 					style="margin-left: 20px;"><img src="./img/help2.png"
-					onmouseover="showpop5();" onmouseout="showout5();"></img></span><span
+					onmouseover="showpop('pop5');" onmouseout="showout5('pop5');"></img></span><span
 					id="pop5"
 					style="display: none; border: 1px solid; margin-left: 7px; padding: 2px;">Please
 					select "Yes" if your institution describe state privacy law
@@ -331,8 +215,8 @@
 				No <br> <br> If you answered YES to the previous question,
 				please enter the state privacy law provisions described by your
 				institution below: </label><span id="help" style="margin-left: 20px;"><img
-					src="./img/help2.png" onmouseover="showpop6();"
-					onmouseout="showout6();"></img></span><span id="pop6"
+					src="./img/help2.png" onmouseover="showpop('pop6');"
+					onmouseout="showout('pop6');"></img></span><span id="pop6"
 					style="display: none; border: 1px solid; margin-left: 7px; padding: 2px;">
 					If your institution describe state privacy law provisions, then add
 					them in the space provided below. This information will appear in
@@ -344,8 +228,8 @@
 				<br> <label for="q1">What happens when a customer limit
 					sharing for an account he/she hold jointly with someone else?</label>
 					<span id="help" style="margin-left: 20px;"><img
-					src="./img/help2.png" onmouseover="showpop7();"
-					onmouseout="showout7();"></img></span><span id="pop7"
+					src="./img/help2.png" onmouseover="showpop('pop7');"
+					onmouseout="showout('pop7');"></img></span><span id="pop7"
 					style="display: none; border: 1px solid; margin-left: 7px; padding: 2px;">
 					Please select one of the options provided below to indicate what will happen when a customer limit
 					sharing for an account he/she hold jointly with someone else. </span> 
@@ -369,8 +253,8 @@
 				for="q6">Does your institution : </label> <br> <input
 				type="radio" name="q6" value="has no affiliates"
 				onclick='enabletextarea2()'> has no affiliates <span id="help" style="margin-left: 20px;"><img
-					src="./img/help2.png" onmouseover="showpop7();"
-					onmouseout="showout8();"></img></span><span id="pop8"
+					src="./img/help2.png" onmouseover="showpop('pop8');"
+					onmouseout="showout('pop8');"></img></span><span id="pop8"
 					style="display: none; border: 1px solid; margin-left: 7px; padding: 2px;">
 					This option will state: “[name of financial institution] has no affiliates” </span> <br> 
 				<input
@@ -379,16 +263,16 @@
 				onclick='enabletextarea2()'> has affiliates but does not
 			share personal information
 			<span id="help" style="margin-left: 20px;"><img
-					src="./img/help2.png" onmouseover="showpop9();"
-					onmouseout="showout9();"></img></span><span id="pop9"
+					src="./img/help2.png" onmouseover="showpop('pop9');"
+					onmouseout="showout('pop9');"></img></span><span id="pop9"
 					style="display: none; border: 1px solid; margin-left: 7px; padding: 2px;">
 					This option will state: “[name of financial institution] does not share with our affiliates”</span>
 			 <br> <input type="radio" name="q6"
 				value="shares with its affiliates" onclick='enabletextarea2()'>
 			shares with its affiliates
 			<span id="help" style="margin-left: 20px;"><img
-					src="./img/help2.png" onmouseover="showpop10();"
-					onmouseout="showout10();"></img></span><span id="pop10"
+					src="./img/help2.png" onmouseover="showpop('pop10');"
+					onmouseout="showout('pop10');"></img></span><span id="pop10"
 					style="display: none; border: 1px solid; margin-left: 7px; padding: 2px;">
 					This option will state: “Our affiliates include companies with a [common corporate identity of financial institution] name; financial companies such as [insert illustrative list of companies]; nonfinancial companies, such as [insert illustrative list of companies;] and others, such as [insert illustrative list].”</span>
 			 <br> <br> Please answer the
@@ -424,8 +308,8 @@
 					onclick='enabletextarea3()'> does not share with
 				nonaffiliated third parties 
 				<span id="help" style="margin-left: 20px;"><img
-					src="./img/help2.png" onmouseover="showpop11();"
-					onmouseout="showout11();"></img></span><span id="pop11"
+					src="./img/help2.png" onmouseover="showpop('pop11');"
+					onmouseout="showout('pop11');"></img></span><span id="pop11"
 					style="display: none; border: 1px solid; margin-left: 7px; padding: 2px;">
 					This option will state: “[name of financial institution] does not share with nonaffiliates so they can market to you”</span>
 				
@@ -434,8 +318,8 @@
 					onclick='enabletextarea3()'> shares with nonaffiliated
 				third parties 
 				<span id="help" style="margin-left: 20px;"><img
-					src="./img/help2.png" onmouseover="showpop12();"
-					onmouseout="showout12();"></img></span><span id="pop12"
+					src="./img/help2.png" onmouseover="showpop('pop12');"
+					onmouseout="showout('pop12');"></img></span><span id="pop12"
 					style="display: none; border: 1px solid; margin-left: 7px; padding: 2px;">
 					This option will state: “Nonaffiliates we share with can include [list categories of companies such as mortgage companies, insurance companies, direct marketing companies, and nonprofit organizations].”</span>
 				<br> <br> Please answer the below question <b><u>ONLY</u></b>
@@ -453,8 +337,8 @@
 					 onclick='enabletextarea4()'> does not engage in
 				joint marketing
 				<span id="help" style="margin-left: 20px;"><img
-					src="./img/help2.png" onmouseover="showpop13();"
-					onmouseout="showout13();"></img></span><span id="pop13"
+					src="./img/help2.png" onmouseover="showpop('pop13');"
+					onmouseout="showout('pop13');"></img></span><span id="pop13"
 					style="display: none; border: 1px solid; margin-left: 7px; padding: 2px;">
 					This option will state: “[name of financial institution] doesn’t jointly market”</span>
 				 <br> <input type="radio" name="q8"
@@ -462,8 +346,8 @@
 					onclick='enabletextarea4()'> shares personal information
 				for joint marketing 
 				<span id="help" style="margin-left: 20px;"><img
-					src="./img/help2.png" onmouseover="showpop14();"
-					onmouseout="showout14();"></img></span><span id="pop14"
+					src="./img/help2.png" onmouseover="showpop('pop14');"
+					onmouseout="showout('pop14');"></img></span><span id="pop14"
 					style="display: none; border: 1px solid; margin-left: 7px; padding: 2px;">
 					This option will state: “Our joint marketing partners include [list categories of companies such as credit card companies].”</span>
 				<br> <br> Please answer the below
@@ -481,8 +365,8 @@
 				<br> <label for="oinfo">Please provide any other
 					important information if any: </label>  
 					<span id="help" style="margin-left: 20px;"><img
-					src="./img/help2.png" onmouseover="showpop15();"
-					onmouseout="showout15();"></img></span><span id="pop15"
+					src="./img/help2.png" onmouseover="showpop('pop15');"
+					onmouseout="showout('pop15');"></img></span><span id="pop15"
 					style="display: none; border: 1px solid; margin-left: 7px; padding: 2px;">
 					Please include only the "Acknowledgment of receipt form" in the text area provided below.</span>
 					<br> <br>
