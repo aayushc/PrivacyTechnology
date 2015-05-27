@@ -184,107 +184,71 @@
 					<img src="./img/help2.png" onmouseover="showpop('pop11');" onmouseout="showout('pop11');"></img>
 				</span>
 				<span id="pop11" style="display: none; border: 1px solid; margin-left: 7px; padding: 2px;">Provide a Yes or No response that accurately reflects its information sharing policies and practices with respect to the reason specified in this question. An institution that shares for this reason may choose to provide an opt-out.</span><br>
-				<input type="radio" name="q9" value="Yes" checked onclick='wds5()'> Yes <br>
-				<input type="radio" name="q9" value="No" onclick='wds5()'>
-				No <br> <br> <label for="q2">Can customers limit
-					the personal information aboout their creditworthiness your
-					institution share for your affiliates' everyday business purposes?</label><span
-					id="help" style="margin-left: 20px;"><img
-					src="./img/help2.png" onmouseover="showpop('pop12');"
-					onmouseout="showout('pop12');"></img></span><span id="pop12"
-					style="display: none; border: 1px solid; margin-left: 7px; padding: 2px;">Provide
-					one of the three responses, as applicable, that reflects whether a
-					consumer can limit sharing for the reason mentioned in the
-					question: Yes if it is required to or voluntarily provides an
-					opt-out; No if it does not provide an opt-out; or We dont
-					share if your institution doesn't share the information for the
-					mentioned reason.</span> <br> <input type="radio" name="q10"
-					value="Yes" checked> Yes <br> <input type="radio"
-					name="q10" value="No"> No <br> <input type="radio"
-					name="q10" value="We don't share"> We don't share <br>
-				<br> <i>For institution's affiliates to market to
-					customers:</i> <br> <label for="q1">Does your institution
-					have affiliates?</label> <span id="help" style="margin-left: 20px;"><img
-					src="./img/help2.png" onmouseover="showpop('pop13');"
-					onmouseout="showout('pop13');"></img></span><span id="pop13"
-					style="display: none; border: 1px solid; margin-left: 7px; padding: 2px;">Please
-					select 'Yes' if your institution has affiliates, select 'No' if
-					your institution does not have affiliates. For our affiliates to
-					market to you- reason may be omitted from the disclosure table when
-					the institution does not have affiliates (or does not disclose
-					personal information to its affiliates); the institutions
-					affiliates do not use personal information in a manner that
-					requires an opt-out; or the institution provides the affiliate
-					marketing notice separately. Institutions that include this reason
-					must provide an opt-out of indefinite duration.</span> <br> <input
-					type="radio" name="q11" value="Yes" checked onclick='wds6()'>
-				Yes <br> <input type="radio" name="q11" value="No"
-					onclick='wds6()'> No <br> <br>Please answer the
-				following question if you answered 'YES' for the previous question.
-				<br> <br> <label for="q1">Does your institution
-					disclose customer's personal information to your affiliates?</label><span
-					id="help" style="margin-left: 20px;"><img
-					src="./img/help2.png" onmouseover="showpop('pop14');"
-					onmouseout="showout('pop14');"></img></span><span id="pop14"
-					style="display: none; border: 1px solid; margin-left: 7px; padding: 2px;">Please
-					select 'Yes' if your institution disclose customer's personal
-					information to your affiliates, select 'No' if your institution
-					does not disclose customer's personal information to your
-					affiliates.</span> <br> <input type="radio" name="q12" value="Yes"
-					onclick='wds7()'> Yes <br> <input type="radio"
-					name="q12" value="No" onclick='wds7()'> No <br> <br>
-				Please answer the following question if you answered 'YES' for the
-				previous question. <br> <br> <label for="q1">Does
-					your institution's affiliate use customer's personal information in
-					a manner that requires an opt-out?</label><span id="help"
-					style="margin-left: 20px;"><img src="./img/help2.png"
-					onmouseover="showpop('pop15');" onmouseout="showout('pop15');"></img></span><span
-					id="pop15"
-					style="display: none; border: 1px solid; margin-left: 7px; padding: 2px;">Please
-					select 'Yes' if your institution's affiliate use customer's
-					personal information in a manner that requires an opt-out,
-					otherwise select 'No'.</span> <br> <input type="radio" name="q13"
-					value="Yes" checked> Yes <br> <input type="radio"
-					name="q13" value="No"> No <br> <br> <label
-					for="q1">Does your institution provides the affiliate
-					marketing notice separately?</label><span id="help"
-					style="margin-left: 20px;"><img src="./img/help2.png"
-					onmouseover="showpop('pop16');" onmouseout="showout('pop16');"></img></span><span
-					id="pop16"
-					style="display: none; border: 1px solid; margin-left: 7px; padding: 2px;">Please
-					select 'Yes' if your institution provides the affiliate marketing
-					notice separately, otherwise select 'No'.</span> <br> <input
-					type="radio" name="q14" value="Yes"> Yes <br> <input
-					type="radio" name="q14" value="No"> No <br> <br>
-				<i>For nonaffiliates to market to customers:</i> <br> <label
-					for="q1">Does your institution share customer's personal
-					information for non-affiliates to market to customers?</label><span
-					id="help" style="margin-left: 20px;"><img
-					src="./img/help2.png" onmouseover="showpop('pop17');"
-					onmouseout="showout('pop17');"></img></span><span id="pop17"
-					style="display: none; border: 1px solid; margin-left: 7px; padding: 2px;">Provide
-					a Yes or No response that accurately reflects its information
-					sharing policies and practices with respect to the reason specified
-					in this question. An institution that shares personal information
-					for this reason must provide an opt-out.</span> <br> <br> <input
-					type="radio" name="q15" value="Yes" checked onclick='wds8()'>
-				Yes <br> <input type="radio" name="q15" value="No"
-					onclick='wds8()'> No <br> <br> <label for="q2">Can
-					customers limit the personal information your institution share for
-					non-affiliates to market to them?</label> <span id="help"
-					style="margin-left: 20px;"><img src="./img/help2.png"
-					onmouseover="showpop('pop18');" onmouseout="showout('pop18');"></img></span><span
-					id="pop18"
-					style="display: none; border: 1px solid; margin-left: 7px; padding: 2px;">Provide
-					one of the three responses, as applicable, that reflects whether a
-					consumer can limit sharing for the reason mentioned in the
-					question: âYesâ if it is required to or voluntarily provides an
-					opt-out; âNoâ if it does not provide an opt-out; or âWe donât
-					shareâ if your institution doesn't share the information for the
-					mentioned reason.</span> <br> <input type="radio" name="q16"
-					value="Yes" checked> Yes <br> <input type="radio"
-					name="q16" value="No"> No <br> <input type="radio"
-					name="q16" value="We don't share"> We don't share <br>
+				<input type="radio" name="q9" value="Yes" checked onclick='wds5()'>Yes<br>
+				<input type="radio" name="q9" value="No" onclick='wds5()'>No<br>
+				<br>
+				<label for="q2">Can customers limit	the personal information aboout their creditworthiness your institution share for your affiliates' everyday business purposes?</label>
+				<span id="help" style="margin-left: 20px;">
+					<img src="./img/help2.png" onmouseover="showpop('pop12');" onmouseout="showout('pop12');"></img>
+				</span>
+				<span id="pop12" style="display: none; border: 1px solid; margin-left: 7px; padding: 2px;">Provide one of the three responses, as applicable, that reflects whether a consumer can limit sharing for the reason mentioned in the question: Yes if it is required to or voluntarily provides an opt-out; No if it does not provide an opt-out; or We dont share if your institution doesn't share the information for the mentioned reason.</span><br>
+				<input type="radio" name="q10" value="Yes" checked>Yes<br>
+				<input type="radio" name="q10" value="No">No<br>
+				<input type="radio" name="q10" value="We don't share">We don't share<br>
+				<br> 
+				<i>For institution's affiliates to market to customers:</i><br>
+				<label for="q1">Does your institution have affiliates?</label>
+				<span id="help" style="margin-left: 20px;">
+					<img src="./img/help2.png" onmouseover="showpop('pop13');" onmouseout="showout('pop13');"></img>
+				</span>
+				<span id="pop13" style="display: none; border: 1px solid; margin-left: 7px; padding: 2px;">Please select 'Yes' if your institution has affiliates, select 'No' if your institution does not have affiliates. For our affiliates to market to you- reason may be omitted from the disclosure table when the institution does not have affiliates (or does not disclose personal information to its affiliates); the institutions affiliates do not use personal information in a manner that requires an opt-out; or the institution provides the affiliate marketing notice separately. Institutions that include this reason must provide an opt-out of indefinite duration.</span><br>
+				<input type="radio" name="q11" value="Yes" checked onclick='wds6()'>Yes<br>
+				<input type="radio" name="q11" value="No" onclick='wds6()'>No<br>
+				<br>Please answer the following question if you answered 'YES' for the previous question.<br> 
+				<br> 
+				<label for="q1">Does your institution disclose customer's personal information to your affiliates?</label>
+				<span id="help" style="margin-left: 20px;">
+					<img src="./img/help2.png" onmouseover="showpop('pop14');" onmouseout="showout('pop14');"></img>
+				</span>
+				<span id="pop14" style="display: none; border: 1px solid; margin-left: 7px; padding: 2px;">Please select 'Yes' if your institution disclose customer's personal information to your affiliates, select 'No' if your institution does not disclose customer's personal information to your affiliates.</span><br>
+				<input type="radio" name="q12" value="Yes" onclick='wds7()'>Yes<br>
+				<input type="radio" name="q12" value="No" onclick='wds7()'>No<br>
+				<br>Please answer the following question if you answered 'YES' for the previous question.<br>
+				<br>
+				<label for="q1">Does your institution's affiliate use customer's personal information in a manner that requires an opt-out?</label>
+				<span id="help" style="margin-left: 20px;">
+					<img src="./img/help2.png" onmouseover="showpop('pop15');" onmouseout="showout('pop15');"></img>
+				</span>
+				<span id="pop15" style="display: none; border: 1px solid; margin-left: 7px; padding: 2px;">Please select 'Yes' if your institution's affiliate use customer's personal information in a manner that requires an opt-out, otherwise select 'No'.</span><br>
+				<input type="radio" name="q13" value="Yes" checked>Yes<br>
+				<input type="radio"	name="q13" value="No">No<br>
+				<br> 
+				<label for="q1">Does your institution provides the affiliate marketing notice separately?</label>
+				<span id="help" style="margin-left: 20px;">
+					<img src="./img/help2.png" onmouseover="showpop('pop16');" onmouseout="showout('pop16');"></img>
+				</span>
+				<span id="pop16" style="display: none; border: 1px solid; margin-left: 7px; padding: 2px;">Please select 'Yes' if your institution provides the affiliate marketing notice separately, otherwise select 'No'.</span><br>
+				<input type="radio" name="q14" value="Yes">Yes<br>
+				<input type="radio" name="q14" value="No">No<br>
+				<br>
+				<i>For nonaffiliates to market to customers:</i><br>
+				<label for="q1">Does your institution share customer's personal information for non-affiliates to market to customers?</label>
+				<span id="help" style="margin-left: 20px;">
+					<img src="./img/help2.png" onmouseover="showpop('pop17');" onmouseout="showout('pop17');"></img>
+				</span>
+				<span id="pop17" style="display: none; border: 1px solid; margin-left: 7px; padding: 2px;">Provide a Yes or No response that accurately reflects its information sharing policies and practices with respect to the reason specified in this question. An institution that shares personal information for this reason must provide an opt-out.</span><br>
+				<br>
+				<input type="radio" name="q15" value="Yes" checked onclick='wds8()'>Yes<br>
+				<input type="radio" name="q15" value="No" onclick='wds8()'>No<br>
+				<br>
+				<label for="q2">Can customers limit the personal information your institution share for non-affiliates to market to them?</label>
+				<span id="help" style="margin-left: 20px;">
+					<img src="./img/help2.png" onmouseover="showpop('pop18');" onmouseout="showout('pop18');"></img>
+				</span>
+				<span id="pop18" style="display: none; border: 1px solid; margin-left: 7px; padding: 2px;">Provide one of the three responses, as applicable, that reflects whether a consumer can limit sharing for the reason mentioned in the question: Yes if it is required to or voluntarily provides an opt-out; No if it does not provide an opt-out; or We dont share if your institution doesn't share the information for the mentioned reason.</span><br>
+				<input type="radio" name="q16" value="Yes" checked>Yes<br>
+				<input type="radio" name="q16" value="No">No<br>
+				<input type="radio" name="q16" value="We don't share">We don't share<br>
 				<br>
 			</div>
 			<br>
@@ -294,39 +258,31 @@
 			</div>
 			<br>
 			<div class="input-group">
-				Please enter details of your institution's applicable <u><i>opt-out</i></u>
-				method(s) below: <br> <br> <label for="optout">Phone
-					Number</label> <br> <input required class="form-control" type="number"
-					placeholder="" name="phone" style="width: 200px;"> <br>
-				<br> <br> <label for="q1">Is the telephone number
-					you provided above a toll-free number? </label> <br> <input
-					type="radio" name="q" value="Toll-free" checked>Yes <br>
+				Please enter details of your institution's applicable <u><i>opt-out</i></u>method(s) below: <br> <br> 
+				<label for="optout">Phone Number</label> <br> 
+				<input required class="form-control" type="number" placeholder="" name="phone" style="width: 200px;"> <br> <br> <br> 
+				<label for="q1">Is the telephone number you provided above a toll-free number? </label> <br>
+				<input type="radio" name="q" value="Toll-free" checked>Yes<br>
 				<input type="radio" name="q" value="No">No <br> <br>
-				<label for="optout">Website URL</label> <span id="help"
-					style="margin-left: 20px;"><img src="./img/help2.png"
-					onmouseover="showpop('pop19');" onmouseout="showout('pop19');"></img></span><span
-					id="pop19"
-					style="display: none; border: 1px solid; margin-left: 7px; padding: 2px;">Please
-					provide either a specific Web address that takes consumers directly
-					to the opt-out page or a general Web address that provides a clear
-					and conspicuous direct link to the opt-out page.</span> <br> <input
-					required class="form-control" type="url" placeholder=""
-					name="website"> <br> <br> <br> <label
-					for="q1">Would your institution like to provide mail-in
-					opt-out form for the customers?</label> <br> <input type="radio"
-					name="q17" value="Yes"  onclick='mailin()'>Yes <br>
+				<label for="optout">Website URL</label> 
+				<span id="help" style="margin-left: 20px;">
+					<img src="./img/help2.png" onmouseover="showpop('pop19');" onmouseout="showout('pop19');"></img>
+				</span>
+				<span id="pop19" style="display: none; border: 1px solid; margin-left: 7px; padding: 2px;">Please provide either a specific Web address that takes consumers directly to the opt-out page or a general Web address that provides a clear and conspicuous direct link to the opt-out page.</span> <br> 
+				<input required class="form-control" type="url" placeholder="" name="website"> <br> <br> <br> 
+				<label for="q1">Would your institution like to provide mail-in opt-out form for the customers?</label> <br> 
+				<input type="radio" name="q17" value="Yes"  onclick='mailin()'>Yes <br>
 				<input type="radio" name="q17" value="No" onclick='mailin()'>No
-				<br> <br>If you answered YES for the previous question,
-				then please enter your institution's address information below: <br>
-				<br> <label for="optout">Address Line 1</label> <br> <input
-					required class="form-control" type="text" placeholder="" name="al1">
+				<br> 
+				<br>If you answered YES for the previous question, then please enter your institution's address information below: <br>
+				<br> <label for="optout">Address Line 1</label> <br> 
+				<input required class="form-control" type="text" placeholder="" name="al1">
 				<br> <br> <label for="optout">Address Line 2</label> <br>
-				<input required class="form-control" type="text" placeholder=""
-					name="al2"> <br> <br> <label for="optout">City</label>
-				<br> <input required class="form-control" type="text"
-					placeholder="" name="city" style="width: 200px;"> <br>
-				<br> <label for="optout">State</label> <br> <select
-					name="state" id="state">
+				<input required class="form-control" type="text" placeholder="" name="al2"> <br> <br> 
+				<label for="optout">City</label> <br> 
+				<input required class="form-control" type="text" placeholder="" name="city" style="width: 200px;"> <br>
+				<br> <label for="optout">State</label> <br> 
+				<select name="state" id="state">
 					<option value="Select">Select</option>
 					<option value="AL">Alabama</option>
 					<option value="AK">Alaska</option>
@@ -379,89 +335,52 @@
 					<option value="WV">West Virginia</option>
 					<option value="WI">Wisconsin</option>
 					<option value="WY">Wyoming</option>
-				</select> <br> <br> <label for="optout">Zipcode</label> <br> <input
-					required class="form-control" type="text" placeholder="" name="zip"
-					style="width: 120px;"> <br> <br> <br> <label
-					for="q1">Please indicate if your institution requires the
-					customers with multiple accounts to identify each account to which
-					the opt-out should apply. </label> <span id="help"
-					style="margin-left: 20px;"><img src="./img/help2.png"
-					onmouseover="showpop('pop20');" onmouseout="showout('pop20');"></img></span><span
-					id="pop20"
-					style="display: none; border: 1px solid; margin-left: 7px; padding: 2px;">Select
-					'Yes' if your institution require additional or different
-					information, such as a random opt-out number or a truncated account
-					number, to implement an opt-out election, otherwise select 'No'.</span> <br>
+				</select> <br> <br> 
+				<label for="optout">Zipcode</label> <br> 
+				<input required class="form-control" type="text" placeholder="" name="zip" style="width: 120px;"> <br> <br> <br> 
+				<label for="q1">Please indicate if your institution requires the customers with multiple accounts to identify each account to which the opt-out should apply. </label> 
+				<span id="help" style="margin-left: 20px;">
+					<img src="./img/help2.png" onmouseover="showpop('pop20');" onmouseout="showout('pop20');"></img>
+				</span>
+				<span id="pop20" style="display: none; border: 1px solid; margin-left: 7px; padding: 2px;">Select 'Yes' if your institution require additional or different information, such as a random opt-out number or a truncated account number, to implement an opt-out election, otherwise select 'No'.</span> <br>
 				<input type="radio" name="accnt" value="â[account #]">Yes <br>
 				<input type="radio" name="accnt" value="No">No <br> <br>
-				<label for="optout">Please enter the number of days after
-					which your institution will begin sharing customer's information
-					from the date of sending privacy notice to a new customer. </label><span
-					id="help" style="margin-left: 20px;"><img
-					src="./img/help2.png" onmouseover="showpop('pop21');"
-					onmouseout="showout('pop21');"></img></span><span id="pop21"
-					style="display: none; border: 1px solid; margin-left: 7px; padding: 2px;">Please
-					insert a number that is 30 or greater in the field below.</span> <br>
-				<input required class="form-control" type="number" min="30" placeholder=""
-					name="days" style="width: 60px;"> <br> <br> <br>
-				<label for="q1">Does your institution provide your joint
-					accountholders the choice to opt out for only one accountholder?</label> <span
-					id="help" style="margin-left: 20px;"><img
-					src="./img/help2.png" onmouseover="showpop('pop22');"
-					onmouseout="showout('pop22');"></img></span><span id="pop22"
-					style="display: none; border: 1px solid; margin-left: 7px; padding: 2px;">Select
-					'Yes' if your institution provide your joint accountholders the
-					choice to opt out for only one accountholder , otherwise select
-					'No'. This will include in the mail-in opt-out form the following
-					statement:âIf you have a joint account, your choice(s) will apply
-					to everyone on your account unless you mark below. â¡ Apply my
-					choice(s) only to me.â</span> <br> <input type="radio"
-					name="reverse1"
-					value="If you have a joint account, your choice(s) will apply to everyone on your account unless you mark below. â¡ Apply my choice(s) only to me.">Yes
+				<label for="optout">Please enter the number of days after which your institution will begin sharing customer's information from the date of sending privacy notice to a new customer. </label>
+				<span id="help" style="margin-left: 20px;">
+					<img src="./img/help2.png" onmouseover="showpop('pop21');" onmouseout="showout('pop21');"></img>
+				</span>
+				<span id="pop21" style="display: none; border: 1px solid; margin-left: 7px; padding: 2px;">Please insert a number that is 30 or greater in the field below.</span> <br>
+				<input required class="form-control" type="number" min="30" placeholder="" name="days" style="width: 60px;"> <br> <br> <br>
+				<label for="q1">Does your institution provide your joint accountholders the choice to opt out for only one accountholder?</label>
+				<span id="help" style="margin-left: 20px;">
+					<img src="./img/help2.png" onmouseover="showpop('pop22');" onmouseout="showout('pop22');"></img>
+				</span>
+				<span id="pop22" style="display: none; border: 1px solid; margin-left: 7px; padding: 2px;">Select 'Yes' if your institution provide your joint accountholders the choice to opt out for only one accountholder , otherwise select 'No'. This will include in the mail-in opt-out form the following statement: If you have a joint account, your choice(s) will apply to everyone on your account unless you mark below. Apply my choice(s) only to me.</span> <br> 
+				<input type="radio" name="reverse1" value="If you have a joint account, your choice(s) will apply to everyone on your account unless you mark below. â¡ Apply my choice(s) only to me.">Yes
 				<br> <input type="radio" name="reverse1" value="">No <br>
-				<br> <br> <label for="q1">Does your institution
-					shares personal information pursuant to section 603(d)(2)(A)(iii)
-					of the FCRA? </label> <span id="help" style="margin-left: 20px;"><img
-					src="./img/help2.png" onmouseover="showpop('pop23');"
-					onmouseout="showout('pop23');"></img></span><span id="pop23"
-					style="display: none; border: 1px solid; margin-left: 7px; padding: 2px;">Select
-					'Yes' if your institution shares personal information pursuant to
-					section 603(d)(2)(A)(iii) of the FCRA, otherwise select 'No'. This
-					will include in the mail-in opt-out form the following statement:
-					ââ¡ Do not share information about my creditworthiness with your
-					affiliates for their everyday business purposes.â</span> <br> <input
-					type="radio" name="reverse2"
-					value="â¡ Do not share
-information about my creditworthiness with your affiliates for
-their everyday business purposes">Yes
+				<br> <br> 
+				<label for="q1">Does your institution shares personal information pursuant to section 603(d)(2)(A)(iii) of the FCRA? </label>
+				<span id="help" style="margin-left: 20px;">
+					<img src="./img/help2.png" onmouseover="showpop('pop23');" onmouseout="showout('pop23');"></img>
+				</span>
+				<span id="pop23" style="display: none; border: 1px solid; margin-left: 7px; padding: 2px;">Select 'Yes' if your institution shares personal information pursuant to section 603(d)(2)(A)(iii) of the FCRA, otherwise select 'No'. This will include in the mail-in opt-out form the following statement: Do not share information about my creditworthiness with your affiliates for their everyday business purposes.â</span> <br> 
+				<input type="radio" name="reverse2" value="Do not share information about my creditworthiness with your affiliates for their everyday business purposes">Yes
 				<br> <input type="radio" name="reverse2" value="">No <br>
-				<br> <br> <label for="q1">Does your institution
-					incorporates section 624 of the FCRA? </label> <span id="help"
-					style="margin-left: 20px;"><img src="./img/help2.png"
-					onmouseover="showpop('pop24');" onmouseout="showout('pop24');"></img></span><span
-					id="pop24"
-					style="display: none; border: 1px solid; margin-left: 7px; padding: 2px;">Select
-					'Yes' if your institution incorporates section 624 of the FCRA,
-					otherwise select 'No'. This will include in the mail-in opt-out
-					form the following statement: ââ¡ Do not allow your affiliates to
-					use my personal information to market to me.â</span> <br> <input
-					type="radio" name="reverse3"
-					value="â¡ Do not allow your affiliates
-to use my personal information to market to me">Yes
+				<br> <br> 
+				<label for="q1">Does your institution incorporates section 624 of the FCRA? </label> 
+				<span id="help" style="margin-left: 20px;">
+					<img src="./img/help2.png" onmouseover="showpop('pop24');" onmouseout="showout('pop24');"></img>
+				</span>
+				<span id="pop24" style="display: none; border: 1px solid; margin-left: 7px; padding: 2px;">Select 'Yes' if your institution incorporates section 624 of the FCRA, otherwise select 'No'. This will include in the mail-in opt-out form the following statement: ââ¡ Do not allow your affiliates to use my personal information to market to me.â</span> <br> 
+				<input type="radio" name="reverse3" value="Do not allow your affiliates to use my personal information to market to me">Yes
 				<br> <input type="radio" name="reverse3" value="">No <br>
-				<br> <br> <label for="q1">Does your financial
-					institution share personal information pursuant to Â§ 313.10(a) of
-					this part? </label> <span id="help" style="margin-left: 20px;"><img
-					src="./img/help2.png" onmouseover="showpop('pop25');"
-					onmouseout="showout('pop25');"></img></span><span id="pop25"
-					style="display: none; border: 1px solid; margin-left: 7px; padding: 2px;">Select
-					'Yes' if your institution shares personal information pursuant to Â§
-					313.10(a), otherwise select 'No'. This will include in the mail-in
-					opt-out form the following statement: ââ¡ Do not share my personal
-					information with nonaffiliates to market their products and
-					services to me."</span> <br> <input type="radio" name="reverse4"
-					value="â¡ Do not share my personal information with
-nonaffiliates to market their products and services to me.">Yes
+				<br> <br> 
+				<label for="q1">Does your financial institution share personal information pursuant to Â§ 313.10(a) of this part? </label>
+				<span id="help" style="margin-left: 20px;">
+					<img src="./img/help2.png" onmouseover="showpop('pop25');" onmouseout="showout('pop25');"></img>
+				</span>
+				<span id="pop25" style="display: none; border: 1px solid; margin-left: 7px; padding: 2px;">Select 'Yes' if your institution shares personal information pursuant to Â§ 313.10(a), otherwise select 'No'. This will include in the mail-in opt-out form the following statement: ââ¡ Do not share my personal information with nonaffiliates to market their products and services to me."</span> <br> 
+				<input type="radio" name="reverse4" value="Do not share my personal information with nonaffiliates to market their products and services to me.">Yes
 				<br> <input type="radio" name="reverse4" value="">No <br>
 				<br>
 			</div>
@@ -472,22 +391,16 @@ nonaffiliates to market their products and services to me.">Yes
 			</div>
 			<br>
 			<div class="input-group">
-				Please enter your institution's <u><i>customer service</i></u>
-				contact information : <br> <br> <label for="optout">Phone
-					Number</label> <br> <input required class="form-control" type="number"
+				Please enter your institution's <u><i>customer service</i></u> contact information : <br> <br> 
+				<label for="optout">Phone Number</label> <br> 
+				<input required class="form-control" type="number"
 					placeholder="" name="phone1" style="width: 200px;"> <br>
-				<br> <label for="optout">Website URL</label> <br> <input
-					required class="form-control" type="url" placeholder=""
-					name="website1"> <br>
+				<br> <label for="optout">Website URL</label> <br> 
+				<input required class="form-control" type="url" placeholder="" name="website1"> <br>
 			</div>
-
 			<br>
-			<button id="fat-btn" class="btn btn-primary"
-				data-loading-text="Loading..." type="button"
-				onclick="form.submit();">Next</button>
-
+			<button id="fat-btn" class="btn btn-primary" data-loading-text="Loading..." type="button" onclick="form.submit();">Next</button>
 		</div>
 	</form>
-
 </body>
 </html>

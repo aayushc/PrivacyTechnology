@@ -25,13 +25,10 @@
 	column-count: 2;
 }
 </style>
-	
-</script>
 </head>
 <body>
 	<div>
 		<h3>Create Privacy Notice</h3>
-
 	</div>
 	<form name="form1" class="bs-example bs-example-form"
 		onsubmit="return validateForm()" role="form" method="post"
@@ -45,14 +42,11 @@
 			</div>
 			<br>
 			<div id="ins" class="input-group">
-				<label for="institution">Please enter the name and brief
-					description of the institution(s) providing this notice?</label> <span
-					id="help" style="margin-left: 20px;"><img
-					src="./img/help2.png" onmouseover="showpop('pop');"
-					onmouseout="showout('pop');"></img></span><span id="pop"
-					style="display: none; border: 1px solid; margin-left: 7px; padding: 2px;">Two
-					or more financial institutions that jointly provide the model form
-					must use this question to identify themselves. </span> <br> <br>
+				<label for="institution">Please enter the name and brief description of the institution(s) providing this notice?</label>
+				<span id="help" style="margin-left: 20px;">
+					<img src="./img/help2.png" onmouseover="showpop('pop');" onmouseout="showout('pop');"></img>
+				</span>
+				<span id="pop" style="display: none; border: 1px solid; margin-left: 7px; padding: 2px;">Two or more financial institutions that jointly provide the model form must use this question to identify themselves. </span> <br> <br>
 				<textarea name="institution" rows="4" cols="50"></textarea>
 				<br>
 			</div>
@@ -60,16 +54,13 @@
 			<div>
 				<b><font size="4">What we do?</font></b>
 			</div>
-
-
 			<br>
 			<div id="protect" class="input-group">
-				<label for="protect">How does your institution protects
-					customer personal information?</label> (Word limit: 30) <span id="help"
-					style="margin-left: 20px;"><img src="./img/help2.png"
-					onmouseover="showpop('pop1');" onmouseout="showout('pop1');"></img></span><span
-					id="pop1"
-					style="display: none; border: 1px solid; margin-left: 7px; padding: 2px;">Provide
+				<label for="protect">How does your institution protects customer personal information?</label> (Word limit: 30) 
+				<span id="help" style="margin-left: 20px;">
+					<img src="./img/help2.png" onmouseover="showpop('pop1');" onmouseout="showout('pop1');"></img>
+				</span>
+				<span id="pop1" style="display: none; border: 1px solid; margin-left: 7px; padding: 2px;">Provide
 					additional information pertaining to your institution's safeguards
 					practices such as information about the institution’s use of
 					cookies or other measures used by your institution to safeguard
