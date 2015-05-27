@@ -35,6 +35,21 @@ public class Page1Form extends FormBean{
 	private String zip;
 	private String phone1;
 	private String website1;
+	private String button;	
+	private String download;
+	
+	public String getButton() {
+		return button;
+	}
+	public void setButton(String button) {
+		this.button = button;
+	}
+	public String getDownload() {
+		return download;
+	}
+	public void setDownload(String download) {
+		this.download = download;
+	}
 	public String getInstitution() {
 		return institution;
 	}

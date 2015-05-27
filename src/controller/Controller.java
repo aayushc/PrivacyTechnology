@@ -17,13 +17,14 @@ public class Controller extends HttpServlet{
 		System.out.println("inside");
 		Action.add(new Page1Action());
 		Action.add(new Page2Action());
+		Action.add(new Download());
 	}
 	
 	@Override
 	protected void doGet(HttpServletRequest req, HttpServletResponse resp)
 			throws ServletException, IOException {
 		// TODO Auto-generated method stub
-		String nextPage = performTheAction(req);
+		String nextPage = performTheAction(req,resp);
         sendToNextPage(nextPage,req,resp);
 	}
 	
@@ -33,24 +34,24 @@ public class Controller extends HttpServlet{
 		doGet(req, resp);
 	}
 	
-	private String performTheAction(HttpServletRequest req) throws IOException, ServletException {
+	private String performTheAction(HttpServletRequest req,HttpServletResponse resp) throws IOException, ServletException {
 		//HttpSession session     = req.getSession(true);
         String      servletPath = req.getServletPath();
         String      action = getActionName(servletPath);
 
         if (action.equals("register.do") || action.equals("login.do")) {
         	// Allow these actions without logging in
-			return Action.perform(action,req);
+			return Action.perform(action,req,resp);
         }
         
-		return Action.perform(action,req);
+		return Action.perform(action,req,resp);
 	}
 	
 
 	private void sendToNextPage(String nextPage, HttpServletRequest req,
 			HttpServletResponse resp) throws IOException, ServletException {
 		if(nextPage ==  null ) {
-			resp.sendError(HttpServletResponse.SC_NOT_FOUND,req.getServletPath());
+			//resp.sendError(HttpServletResponse.SC_NOT_FOUND,req.getServletPath());
 			return;
 		}
 		if (nextPage.endsWith(".do")) {

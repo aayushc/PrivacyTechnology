@@ -6,6 +6,7 @@ import java.util.List;
 
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
 import org.mybeans.form.FormBeanException;
@@ -21,7 +22,7 @@ public class Page2Action extends Action{
 	}
 
 	@Override
-	public String perform(HttpServletRequest request) throws IOException,
+	public String perform(HttpServletRequest request, HttpServletResponse resp) throws IOException,
 			ServletException {
 		// TODO Auto-generated method stub
 		List<String> errors = new ArrayList<String>();

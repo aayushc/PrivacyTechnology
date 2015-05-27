@@ -6,6 +6,7 @@ import java.util.List;
 
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
 import org.mybeans.form.FormBeanException;
@@ -22,14 +23,16 @@ public class Page1Action  extends Action{
 	}
 
 	@Override
-	public String perform(HttpServletRequest request) throws IOException,
+	public String perform(HttpServletRequest request, HttpServletResponse resp) throws IOException,
 			ServletException {
 		// TODO Auto-generated method stub
 		List<String> errors = new ArrayList<String>();
         request.setAttribute("errors",errors);
         try {
+        	System.out.println("dsfsd");
 			Page1Form form= formBeanFactory.create(request);
 			if(!form.isPresent()) {
+				System.out.println("inside4324");
 				return "Page1.jsp";
 			}
 			Page1Bean p1= new Page1Bean();
@@ -66,10 +69,17 @@ public class Page1Action  extends Action{
 			HttpSession session= request.getSession();
 			session.setAttribute("page1", p1);
 			System.out.println(p1.getInstitution());
+			System.out.println("button: "+form.getDownload());
+			System.out.println("button: "+form.getButton());
+			if(form.getDownload().equals("Download")) {
+				return "download.do";
+			}
 		} catch (FormBeanException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
+        //System.out.println(form.g);
+        //if(form.ge)
         return "Page2.jsp";
 	}
 

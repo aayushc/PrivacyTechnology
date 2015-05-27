@@ -13,7 +13,7 @@ public abstract class Action {
     public abstract String getName();
 
     // Returns the name of the jsp used to render the output.
-    public abstract String perform(HttpServletRequest request) throws IOException, ServletException;
+    public abstract String perform(HttpServletRequest request,HttpServletResponse response) throws IOException, ServletException;
 
     //
     // Class methods to manage dispatching to Actions
@@ -30,23 +30,23 @@ public abstract class Action {
     	}
     }
 
-    public static String perform(String name,HttpServletRequest request) throws IOException, ServletException {
+    public static String perform(String name,HttpServletRequest request, HttpServletResponse resp) throws IOException, ServletException {
     	Action a;
         synchronized (hash) {
         	a = hash.get(name);
         }
         
         if (a == null) return null;
-        return a.perform(request);
+        return a.perform(request,resp);
     }
     
     public static String sanitize(String s) {
     	return s.replace("&", "&amp;").replace("<","&lt;").replace(">","&gt;").replace("\"","&quot;");
 	}
 
-	public String perform(HttpServletRequest request,
+	/*public String perform(HttpServletRequest request,
 			HttpServletResponse response) throws IOException, ServletException {
 		// TODO Auto-generated method stub
 		return null;
-	}
+	}*/
 }
