@@ -124,6 +124,7 @@
 			<div class="col-md-12 column">
 				<table class="table table-condensed table-bordered">
 					<tbody>
+					<c:choose>
 						<c:when test="${page1.q15 == Yes}">
 						<tr>
 							<td>To limit our sharing</td>
@@ -135,6 +136,7 @@
 							</td>
 						</tr>
 						</c:when>
+					</c:choose>
 						<tr>
 							<td>Questions?</td>
 							<td>Call <c:out value="${page1.phone1}" /> or go to <c:out value="${page1.website1}" /></td>
