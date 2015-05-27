@@ -10,6 +10,7 @@ public class Page2Form extends FormBean{
 	private String q1;
 	private String q2;
 	private String q3;
+	private String[] provision;
 	private String q4;
 	private String q5;
 	private String q6;
@@ -154,6 +155,12 @@ public class Page2Form extends FormBean{
 	}
 	public void setQ8(String q8) {
 		this.q8 = q8;
+	}
+	public String[] getProvision() {
+		return provision;
+	}
+	public void setProvision(String[] provision) {
+		this.provision = provision;
 	}
 	private String nacomp;
 	private String jmcomp;

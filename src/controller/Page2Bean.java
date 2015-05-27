@@ -8,6 +8,7 @@ public class Page2Bean {
 	private String q1;
 	private String q2;
 	private String q3;
+	private String[] provision;
 	private String q4;
 	private String q5;
 	private String q6;
@@ -134,5 +135,11 @@ public class Page2Bean {
 	}
 	public void setTa3(String ta3) {
 		this.ta3 = ta3;
+	}
+	public String[] getProvision() {
+		return provision;
+	}
+	public void setProvision(String[] provision) {
+		this.provision = provision;
 	}
 }

@@ -320,25 +320,55 @@
 						<tr>
 							<td>Affiliates</td>
 							<td>Companies related by common ownership or control. They can be Financial and nonfinancial companies.
-								<ul>
-									<li><c:out value="${page2.ta1}" /></li>
-								</ul>
+								<br>
+								<ul><li>
+								<c:choose>
+					  				<c:when test="${page2.q6 == 1}">
+										<c:out value="${page1.instution}" /> has no affiliates.
+									</c:when>
+									<c:when test="${page2.q6 == 2}">
+										<c:out value="${page1.instution}" /> does not share with our affiliates.
+									</c:when>
+									<c:when test="${page2.q6 == 3}">
+										Our affiliates include companies with a <c:out value="${page2.ta1}" /> name; 
+										financial companies such as <c:out value="${page2.ta2}" />; 
+										nonfinancial companies, such as <c:out value="${page2.ta3}" />;
+										and others, such as <c:out value="${page2.ta4}" />.
+									</c:when>
+								</c:choose>
+								</li></ul>
 							</td>
 						</tr>
 						<tr>
 							<td>Nonaffiliates</td>
 							<td>Companies not related by common ownership or control. They can be Financial and nonfinancial companies.
-								<ul>
-									<li><c:out value="${page2.ta2}" /></li>
-								</ul>
+								<br>
+								<ul><li>
+								<c:choose>
+					  				<c:when test="${page2.q7 == 1}">
+										<c:out value="${page1.instution}" /> does not share with nonaffiliates so they can market to you.
+									</c:when>
+									<c:when test="${page2.q7 == 2}">
+										Nonaffiliates we share can include <c:out value="${page2.ta5}" />.
+									</c:when>
+								</c:choose>
+								</li></ul>
 							</td>
 						</tr>
 						<tr>
 							<td>Joint Marketing</td>
 							<td>A formal agreement between nonaffiliated financial companies that together market financial products or services to you.
-								<ul>
-									<li><c:out value="${page2.ta3}" /></li>
-								</ul>
+								<br>
+								<ul><li>
+								<c:choose>
+					  				<c:when test="${page2.q8 == 1}">
+										<c:out value="${page1.instution}" /> doesn't jointly market.
+									</c:when>
+									<c:when test="${page2.q7 == 2}">
+										Our joint marketing partners include  <c:out value="${page2.ta6}" />.
+									</c:when>
+								</c:choose>
+								</li></ul>
 							</td>
 						</tr>
 					</tbody> 
@@ -351,6 +381,7 @@
 						</tr>
 						<tr>
 							<td><c:out value="${page2.other}" /></td>
+							<td><c:out value="${page2.provision}" /></td>
 						</tr>
 					</tbody> 
 				</table>

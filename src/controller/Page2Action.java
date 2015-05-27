@@ -39,6 +39,7 @@ public class Page2Action extends Action{
 			p1.setQ1(form.getQ1());
 			p1.setQ2(form.getQ2());
 			p1.setQ3(form.getQ3());
+			p1.setProvision(form.getProvision());
 			p1.setQ4(form.getQ4());
 			p1.setQ5(form.getQ5());
 			p1.setQ6(form.getQ6());
