@@ -51,6 +51,7 @@ public class Page2Action extends Action{
 			/*System.out.println(p1.getInstitution());
 			System.out.println(form.getInstitution());
 			System.out.println(form.getQ1());*/
+			System.out.println(bean1.getInstitution());
 		} catch (FormBeanException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
