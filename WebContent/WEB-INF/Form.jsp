@@ -170,9 +170,10 @@
 					<tbody>
 						<tr>
 							<td>Mail In Form</td>
+							<td></td>
 						</tr>
 						<tr>
-							<td>Leave Blank 
+							<td style="width:30%">Leave Blank 
 							<c:if test="${page1.reverse1 eq 'Yes'}"><b>Or</b><br>
 								If you have a joint account, your choice will apply to everyone on your account unless you mark below<br>
 								<label>
@@ -195,34 +196,36 @@
 	  										</label>											
 										</td>
 									</tr>
+								</table>
+								<table class="table table-condensed table-bordered">
 									<tr>
 										<td>
 											<table class="table table-condensed table-bordered"> 
 												<tr>
 													<td>Name</td>
-													<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+													<td style="width:70%"></td>
 												</tr>
 												<tr>
 													<td>Address</td>
-													<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+													<td style="width:70%"></td>
 												</tr>
 												<tr>
 													<td>&nbsp;</td>
-													<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+													<td style="width:70%"></td>
 												</tr>
 												<tr>
 													<td>City, State, Zip</td>
-													<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+													<td style="width:70%"></td>
 												</tr>
 												<c:if test="${page1.accnt eq 'Yes'}">
 													<tr>
 														<td>Account #</td>
-														<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+														<td style="width:70%"></td>
 													</tr>
 												</c:if>
 											</table>
 										</td>
-										<td>
+										<td style="width:30%">
 											Mail to:
 											<c:out value="${page1.institution}" /><br>
 											<c:out value="${page1.al1}" /><br>
@@ -242,11 +245,11 @@
 				<table class="table table-condensed table-bordered">
 					<tbody>
 						<tr>
-							<td>Who we are</td>
-							<td>&nbsp;</td>
+							<td style="width:30%">Who we are</td>
+							<td></td>
 						</tr>
 						<tr>
-							<td>Who is providing this notice?</td>
+							<td style="width:30%">Who is providing this notice?</td>
 							<td><c:out value="${page2.institution}" /></td>
 						</tr>
 					</tbody> 
@@ -260,14 +263,14 @@
 							<td></td>
 						</tr>
 						<tr>
-							<td>How does <c:out value="${page1.institution}" /> protect my personal information?</td>
+							<td style="width:30%">How does <c:out value="${page1.institution}" /> protect my personal information?</td>
 							<td>To protect your personal information from unauthorized access and use, we use security measures that comply with federal law. These measures include computer safeguards and secured files and buildings. 
 								<br>
 								<c:out value="${page2.protect}" />
 							</td>
 						</tr>
 						<tr>
-							<td>How does <c:out value="${page1.institution}" /> collect my personal information?</td>
+							<td style="width:30%">How does <c:out value="${page1.institution}" /> collect my personal information?</td>
 							<td>We collect your personal information, for example, when you:<br>
 								<ul>
 									<li><c:out value="${page2.what[0]}" /> or <c:out value="${page2.what[1]}" /></li>
@@ -278,7 +281,7 @@
 							</td>
 						</tr>
 						<tr>
-							<td>Why can't I limit all sharing?</td>
+							<td style="width:30%"">Why can't I limit all sharing?</td>
 							<td>Federal law gives you the right to limit some but not all sharing related to:
 								<ul>
 									<li>sharing for affiliates' everyday business purposes information about your creditworthiness</li>
@@ -290,7 +293,7 @@
 							</td>
 						</tr>
 						<tr>
-							<td>What happens when I limit sharing for an account I hold jointly with someone else?</td>
+							<td style="width:30%">What happens when I limit sharing for an account I hold jointly with someone else?</td>
 							<td><c:out value="${page2.q4}" /></td>
 						</tr>
 					</tbody> 
@@ -304,7 +307,7 @@
 							<td></td>
 						</tr>
 						<tr>
-							<td>Affiliates</td>
+							<td style="width:30%">Affiliates</td>
 							<td>Companies related by common ownership or control. They can be Financial and nonfinancial companies.
 								<br>
 								<ul><li>
@@ -326,7 +329,7 @@
 							</td>
 						</tr>
 						<tr>
-							<td>Nonaffiliates</td>
+							<td style="width:30%">Nonaffiliates</td>
 							<td>Companies not related by common ownership or control. They can be Financial and nonfinancial companies.
 								<br>
 								<ul><li>
@@ -342,7 +345,7 @@
 							</td>
 						</tr>
 						<tr>
-							<td>Joint Marketing</td>
+							<td style="width:30%">Joint Marketing</td>
 							<td>A formal agreement between nonaffiliated financial companies that together market financial products or services to you.
 								<br>
 								<ul><li>
