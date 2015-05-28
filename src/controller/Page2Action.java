@@ -41,7 +41,7 @@ public class Page2Action extends Action{
 			p1.setQ3(form.getQ3());
 			p1.setProvision(form.getProvision());
 			p1.setQ4(form.getQ4());
-			p1.setQ5(form.getQ5());
+			//p1.setQ5(form.getQ5());
 			p1.setQ6(form.getQ6());
 			p1.setTa1(form.getTa1());
 			p1.setTa2(form.getTa2());
@@ -58,6 +58,9 @@ public class Page2Action extends Action{
 			request.setAttribute("page2", p1);
 			HttpSession session= request.getSession();
 			session.setAttribute("page2", p1);
+			if(form.getDownload()!=null && form.getDownload().equals("Download")) {
+				return "download.do";
+			}
 		} catch (FormBeanException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();

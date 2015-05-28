@@ -215,6 +215,142 @@ public class Download extends Action {
 				checkboxvalues.appendChild(doc.createTextNode(what[i]));
 				staff.appendChild(checkboxvalues);
 			}
+			
+			if(request.getSession().getAttribute("page2")!=null ) {
+				Page2Bean bean2= (Page2Bean)request.getSession().getAttribute("page2");
+				
+				if(bean2.getInstitution()!=null) {
+					Element page2institution = doc.createElement("page2institution");
+					page2institution.appendChild(doc.createTextNode(bean2.getInstitution()));
+					staff.appendChild(page2institution);
+				}
+				
+				if(bean2.getProtect()!=null) {
+					Element page2protect = doc.createElement("page2protect");
+					page2protect.appendChild(doc.createTextNode(bean2.getProtect()));
+					staff.appendChild(page2protect);
+				}
+				
+				if(bean2.getProvision()!=null) {
+					Element page2provision = doc.createElement("page2provision");
+					page2provision.appendChild(doc.createTextNode(bean2.getProvision()));
+					staff.appendChild(page2provision);
+				}
+				
+				if(bean2.getQ1()!=null) {
+					Element page2q1 = doc.createElement("page2q1");
+					page2q1.appendChild(doc.createTextNode(bean2.getQ1()));
+					staff.appendChild(page2q1);
+				}
+				
+				if(bean2.getQ2()!=null) {
+				Element page2q2 = doc.createElement("page2q2");
+				page2q2.appendChild(doc.createTextNode(bean2.getQ2()));
+				staff.appendChild(page2q2);
+				}
+				
+				if(bean2.getQ3()!=null) {
+				Element page2q3 = doc.createElement("page2q3");
+				page2q3.appendChild(doc.createTextNode(bean2.getQ3()));
+				staff.appendChild(page2q3);
+				}
+				
+				if(bean2.getQ4()!=null) {
+				Element page2q4 = doc.createElement("page2q4");
+				page2q4.appendChild(doc.createTextNode(bean2.getQ4()));
+				staff.appendChild(page2q4);
+				}
+				/*
+				Element page2q5 = doc.createElement("page2q5");
+				page2q5.appendChild(doc.createTextNode(bean2.getQ5()));
+				staff.appendChild(page2q5);*/
+				
+				if(bean2.getQ6()!=null) {
+				Element page2q6 = doc.createElement("page2q6");
+				page2q6.appendChild(doc.createTextNode(bean2.getQ6()));
+				staff.appendChild(page2q6);
+				}
+				
+				
+				if(bean2.getQ7()!=null) {
+				Element page2q7 = doc.createElement("page2q7");
+				page2q7.appendChild(doc.createTextNode(bean2.getQ7()));
+				staff.appendChild(page2q7);
+				}
+				
+				if(bean2.getQ8()!=null) {
+				Element page2q8 = doc.createElement("page2q8");
+				page2q8.appendChild(doc.createTextNode(bean2.getQ8()));
+				staff.appendChild(page2q8);
+				}
+				
+				if(bean2.getTa1()!=null) {				
+				Element page2ta1 = doc.createElement("page2ta1");
+				page2ta1.appendChild(doc.createTextNode(bean2.getTa1()));
+				staff.appendChild(page2ta1);
+				}
+				
+				if(bean2.getTa2()!=null) {				
+				Element page2ta2 = doc.createElement("page2ta2");
+				page2ta2.appendChild(doc.createTextNode(bean2.getTa2()));
+				staff.appendChild(page2ta2);
+				}
+				
+				if(bean2.getTa3()!=null) {
+				Element page2ta3 = doc.createElement("page2ta3");
+				page2ta3.appendChild(doc.createTextNode(bean2.getTa3()));
+				staff.appendChild(page2ta3);
+				}
+				
+				if(bean2.getTa4()!=null) {
+				Element page2ta4 = doc.createElement("page2ta4");
+				page2ta4.appendChild(doc.createTextNode(bean2.getTa4()));
+				staff.appendChild(page2ta4);
+				}
+				
+				if(bean2.getTa5()!=null) {
+				Element page2ta5 = doc.createElement("page2ta5");
+				page2ta5.appendChild(doc.createTextNode(bean2.getTa5()));
+				staff.appendChild(page2ta5);
+				}
+				
+				if(bean2.getTa6()!=null) {
+				Element page2ta6= doc.createElement("page2ta6");
+				page2ta6.appendChild(doc.createTextNode(bean2.getTa6()));
+				staff.appendChild(page2ta6);
+				}
+				
+				if(bean2.getOther()!=null) {
+				Element page2other= doc.createElement("page2tother");
+				page2other.appendChild(doc.createTextNode(bean2.getOther()));
+				staff.appendChild(page2other);
+				}
+				
+				if(bean2.getCorpid()!=null) {				
+				Element page2corpid= doc.createElement("page2corpid");
+				page2corpid.appendChild(doc.createTextNode(bean2.getCorpid()));
+				staff.appendChild(page2corpid);
+				}
+				
+				if(bean2.getFcomp()!=null) {
+				Element page2fcomp= doc.createElement("page2fcomp");
+				page2fcomp.appendChild(doc.createTextNode(bean2.getFcomp()));
+				staff.appendChild(page2fcomp);
+				}
+				
+				if(bean2.getNfcomp()!=null) {
+				Element page2nfcomp= doc.createElement("page2nfcomp");
+				page2nfcomp.appendChild(doc.createTextNode(bean2.getNfcomp()));
+				staff.appendChild(page2nfcomp);
+				}
+				String[] page2what = bean2.getWhat();
+				for (int i = 0; i < page2what.length; i++) {
+					Element page2checkboxvalues = doc.createElement("page2checkboxvalues");
+					page2checkboxvalues.appendChild(doc.createTextNode(what[i]));
+					staff.appendChild(page2checkboxvalues);
+				}
+				
+			}
 			// income elements
 			
 			// write the content into xml file

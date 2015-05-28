@@ -12,7 +12,7 @@ public class Page2Form extends FormBean{
 	private String q3;
 	private String provision;
 	private String q4;
-	private String q5;
+	//private String q5;
 	private String q6;
 	private String ta1;
 	private String ta2;
@@ -26,6 +26,14 @@ public class Page2Form extends FormBean{
 	private String corpid;
 	private String fcomp;
 	private String nfcomp;	
+	private String download;
+	
+	public String getDownload() {
+		return download;
+	}
+	public void setDownload(String download) {
+		this.download = download;
+	}
 	public String getInstitution() {
 		return institution;
 	}
@@ -68,12 +76,12 @@ public class Page2Form extends FormBean{
 	public void setQ4(String q4) {
 		this.q4 = q4;
 	}
-	public String getQ5() {
+	/*public String getQ5() {
 		return q5;
 	}
 	public void setQ5(String q5) {
 		this.q5 = q5;
-	}
+	}*/
 	public String getQ6() {
 		return q6;
 	}
