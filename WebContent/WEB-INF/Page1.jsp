@@ -337,7 +337,7 @@
 					<option value="WY">Wyoming</option>
 				</select> <br> <br> 
 				<label for="optout">Zipcode</label> <br> 
-				<input required class="form-control" type="text" placeholder="" name="zip" style="width: 120px;"> <br> <br> <br> 
+				<input required class="form-control" type="number" placeholder="" name="zip" style="width: 120px;"> <br> <br> <br> 
 				<label for="q1">Please indicate if your institution requires the customers with multiple accounts to identify each account to which the opt-out should apply. </label> 
 				<span id="help" style="margin-left: 20px;">
 					<img src="./img/help2.png" onmouseover="showpop('pop20');" onmouseout="showout('pop20');"></img>
