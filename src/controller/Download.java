@@ -54,7 +54,7 @@ public class Download extends Action {
 			doc.appendChild(rootElement);
 
 			// staff elements
-			Element staff = doc.createElement("institute");
+			Element staff = doc.createElement("Staff");
 			rootElement.appendChild(staff);
 
 			// set attribute to staff element
@@ -74,11 +74,6 @@ public class Download extends Action {
 			Element revdate = doc.createElement("revdate");
 			revdate.appendChild(doc.createTextNode(bean1.getRevdate()));
 			staff.appendChild(revdate);
-
-			// surname elements
-			/*Element what = doc.createElement("what");
-			what.appendChild(doc.createTextNode(bean1.getWhat()));
-			staff.appendChild(what);*/
 
 			// phone elements
 			Element q1 = doc.createElement("q1");
@@ -118,10 +113,10 @@ public class Download extends Action {
 			q9.appendChild(doc.createTextNode(bean1.getQ9()));
 			staff.appendChild(q9);
 			
-			Element q10 = doc.createElement("q10");
+			/*Element q10 = doc.createElement("q10");
 			q10.appendChild(doc.createTextNode(bean1.getQ10()));
 			staff.appendChild(q10);
-			
+			*/
 			Element q11 = doc.createElement("q11");
 			q11.appendChild(doc.createTextNode(bean1.getQ11()));
 			staff.appendChild(q11);
@@ -129,7 +124,7 @@ public class Download extends Action {
 			Element q12 = doc.createElement("q12");
 			q12.appendChild(doc.createTextNode(bean1.getQ12()));
 			staff.appendChild(q12);
-			
+			System.out.println(bean1.getQ12());
 			Element q13 = doc.createElement("q13");
 			q13.appendChild(doc.createTextNode(bean1.getQ13()));
 			staff.appendChild(q13);
@@ -142,13 +137,17 @@ public class Download extends Action {
 			q15.appendChild(doc.createTextNode(bean1.getQ15()));
 			staff.appendChild(q15);
 			
-			Element q16 = doc.createElement("q16");
+			/*Element q16 = doc.createElement("q16");
 			q16.appendChild(doc.createTextNode(bean1.getQ16()));
-			staff.appendChild(q16);
+			staff.appendChild(q16);*/
 			
 			Element q17 = doc.createElement("q17");
 			q17.appendChild(doc.createTextNode(bean1.getQ17()));
 			staff.appendChild(q17);
+			
+			Element q = doc.createElement("q");
+			q.appendChild(doc.createTextNode(bean1.getQ()));
+			staff.appendChild(q);
 			
 			Element phone = doc.createElement("phone");
 			phone.appendChild(doc.createTextNode(bean1.getPhone()));
@@ -163,7 +162,7 @@ public class Download extends Action {
 			staff.appendChild(website);
 			
 			Element website1 = doc.createElement("website1");
-			website1.appendChild(doc.createTextNode(bean1.getWebsite()));
+			website1.appendChild(doc.createTextNode(bean1.getWebsite1()));
 			staff.appendChild(website1);
 			
 			Element al1 = doc.createElement("al1");
@@ -185,6 +184,30 @@ public class Download extends Action {
 			Element zip = doc.createElement("zip");
 			zip.appendChild(doc.createTextNode(bean1.getZip()));
 			staff.appendChild(zip);
+			
+			Element accnt = doc.createElement("accnt");
+			accnt.appendChild(doc.createTextNode(bean1.getAccnt()));
+			staff.appendChild(accnt);
+			
+			Element days = doc.createElement("days");
+			days.appendChild(doc.createTextNode(bean1.getDays()));
+			staff.appendChild(days);
+			
+			Element reverse1 = doc.createElement("reverse1");
+			reverse1.appendChild(doc.createTextNode(bean1.getReverse1()));
+			staff.appendChild(reverse1);
+			
+			Element reverse2 = doc.createElement("reverse2");
+			reverse2.appendChild(doc.createTextNode(bean1.getReverse2()));
+			staff.appendChild(reverse2);
+			
+			Element reverse3 = doc.createElement("reverse3");
+			reverse3.appendChild(doc.createTextNode(bean1.getReverse3()));
+			staff.appendChild(reverse3);
+			
+			Element reverse4 = doc.createElement("reverse4");
+			reverse4.appendChild(doc.createTextNode(bean1.getReverse4()));
+			staff.appendChild(reverse4);
 			
 			String[] what = bean1.getWhat();
 			for (int i = 0; i < what.length; i++) {

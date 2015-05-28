@@ -341,7 +341,7 @@
 				<label for="optout">Phone Number</label> <br> 
 				<input class="form-control" type="number" placeholder="" name="phone" value="${page1.phone}" style="width: 200px;"> <br> <br> <br> 
 				<label for="q1">Is the telephone number you provided above a toll-free number? </label> <br>
-				<input type="radio" name="q" value="Toll-free"  <c:if test="${page1.q eq 'Toll-free'}">checked</c:if> >Yes<br>
+				<input type="radio" name="q" value="Toll-free"  <c:if test="${page1.q eq 'Yes'}">checked</c:if> >Yes<br>
 				<input type="radio" name="q" value="No" <c:if test="${page1.q eq 'No'}">checked</c:if> >No <br> <br>
 				<label for="optout">Website URL</label> 
 				<span id="help" style="margin-left: 20px;">
