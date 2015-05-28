@@ -14,7 +14,8 @@
 	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
 
 <!-- Latest compiled and minified JavaScript -->
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
 <script type="text/javascript" src="js/task.js"></script>	
 <style>
 .columns {
@@ -145,7 +146,7 @@
 				<label for="q1">Will your institution share customer's personal information for joint marketing with other financial companies?</label>
 				<span id="help" style="margin-left: 20px;">
 					<img src="./img/help2.png" onmouseover="showpop('pop7');" onmouseout="showout('pop7');"></img>
-				</span>\
+				</span>
 				<span id="pop7" style="display: none; border: 1px solid; margin-left: 7px; padding: 2px;">Provide a Yes or No response that accurately reflects its information sharing policies and practices with respect to the reason specified in this question. An institution that shares for this reason may choose to provide an opt-out.</span><br>
 				<input type="radio" name="q5" value="Yes" checked onclick='wds3()'>Yes<br>
 				<input type="radio" name="q5" value="No" onclick='wds3()'>No<br>
@@ -278,7 +279,7 @@
 				<br> <label for="optout">Address Line 1</label> <br> 
 				<input required class="form-control" type="text" placeholder="" name="al1">
 				<br> <br> <label for="optout">Address Line 2</label> <br>
-				<input required class="form-control" type="text" placeholder="" name="al2"> <br> <br> 
+				<input class="form-control" type="text" placeholder="" name="al2"> <br> <br> 
 				<label for="optout">City</label> <br> 
 				<input required class="form-control" type="text" placeholder="" name="city" style="width: 200px;"> <br>
 				<br> <label for="optout">State</label> <br> 
