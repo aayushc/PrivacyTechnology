@@ -48,13 +48,13 @@ public class Page1Action  extends Action{
 			p1.setQ7(form.getQ7());
 			p1.setQ8(form.getQ8());
 			p1.setQ9(form.getQ9());
-			p1.setQ10(form.getQ10());
+			//p1.setQ10(form.getQ10());
 			p1.setQ11(form.getQ11());
 			p1.setQ12(form.getQ12());
 			p1.setQ13(form.getQ13());
 			p1.setQ14(form.getQ14());
 			p1.setQ15(form.getQ15());
-			p1.setQ16(form.getQ16());
+			//p1.setQ16(form.getQ16());
 			p1.setQ(form.getQ());
 			p1.setQ17(form.getQ17());
 			p1.setPhone(form.getPhone());			

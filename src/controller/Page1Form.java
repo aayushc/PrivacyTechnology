@@ -18,13 +18,13 @@ public class Page1Form extends FormBean{
 	private String q7;
 	private String q8;
 	private String q9;
-	private String q10;
+	//private String q10;
 	private String q11;
 	private String q12;
 	private String q13;
 	private String q14;
 	private String q15;
-	private String q16;
+	//private String q16;
 	private String phone;
 	private String q;
 	private String website;
@@ -129,12 +129,12 @@ public class Page1Form extends FormBean{
 	public void setQ9(String q9) {
 		this.q9 = q9;
 	}
-	public String getQ10() {
+	/*public String getQ10() {
 		return q10;
 	}
 	public void setQ10(String q10) {
 		this.q10 = q10;
-	}
+	}*/
 	public String getQ11() {
 		return q11;
 	}
@@ -165,12 +165,12 @@ public class Page1Form extends FormBean{
 	public void setQ15(String q15) {
 		this.q15 = q15;
 	}
-	public String getQ16() {
+	/*public String getQ16() {
 		return q16;
 	}
 	public void setQ16(String q16) {
 		this.q16 = q16;
-	}
+	}*/
 	public String getPhone() {
 		return phone;
 	}
