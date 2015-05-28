@@ -271,7 +271,7 @@
 				<span id="pop19" style="display: none; border: 1px solid; margin-left: 7px; padding: 2px;">Please provide either a specific Web address that takes consumers directly to the opt-out page or a general Web address that provides a clear and conspicuous direct link to the opt-out page.</span> <br> 
 				<input class="form-control" type="url" placeholder="" name="website"> <br> <br> <br> 
 				<label for="q1">Would your institution like to provide mail-in opt-out form for the customers?</label> <br> 
-				<input type="radio" name="q17" value="Yes"  onclick='mailin()'>Yes <br>
+				<input type="radio" name="q17" value="Yes"  onclick='mailin()' checked>Yes <br>
 				<input type="radio" name="q17" value="No" onclick='mailin()'>No
 				<br> 
 				<br>If you answered YES for the previous question, then please enter your institution's address information below: <br>
