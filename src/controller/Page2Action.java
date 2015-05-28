@@ -47,6 +47,8 @@ public class Page2Action extends Action{
 			p1.setTa2(form.getTa2());
 			p1.setTa3(form.getTa3());
 			p1.setTa4(form.getTa4());
+			p1.setTa5(form.getTa5());
+			p1.setTa6(form.getTa6());
 			p1.setQ7(form.getQ7());
 			p1.setQ8(form.getQ8());
 			p1.setOther(form.getOther());

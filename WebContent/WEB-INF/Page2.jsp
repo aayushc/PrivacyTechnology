@@ -7,16 +7,14 @@
 <title>Privacy Notice</title>
 
 <!-- Latest compiled and minified CSS -->
-<link rel="stylesheet"
-	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
 
 <!-- Optional theme -->
-<link rel="stylesheet"
-	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
 
 <!-- Latest compiled and minified JavaScript -->
-<script
-	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
 <script type="text/javascript" src="js/task.js"></script>
 <style>
 .columns {
@@ -47,7 +45,7 @@
 					<img src="./img/help2.png" onmouseover="showpop('pop');" onmouseout="showout('pop');"></img>
 				</span>
 				<span id="pop" style="display: none; border: 1px solid; margin-left: 7px; padding: 2px;">Two or more financial institutions that jointly provide the model form must use this question to identify themselves. </span> <br> <br>
-				<textarea name="institution" rows="4" cols="50" required onkeyup="limitTextarea(this, 4, 50)"></textarea>
+				<textarea name="institution" rows="4" cols="70" required onkeyup="limitTextarea(this, 4, 50)"></textarea>
 				<br>
 			</div>
 			<br>

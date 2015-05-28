@@ -108,13 +108,13 @@
 							<td><c:out value="${page1.q9}" /></td>
 							<td>
 								<c:choose>
-									<c:when test="${page1.q9 == Yes}">Yes</c:when>
+									<c:when test="${page1.q9 eq 'Yes'}">Yes</c:when>
 									<c:otherwise>We don't share</c:otherwise>
 								</c:choose>
 							</td>
 						</tr>
 						<c:choose>
-						<c:when test="${(page1.q11 == Yes) || (page1.q12 == Yes) || (page1.q13 == Yes) || (page1.q14 == No)}">
+						<c:when test="${(page1.q11 eq 'Yes') || (page1.q12 eq 'Yes') || (page1.q13 eq 'Yes') || (page1.q14 eq 'No')}">
 						<tr>
 							<td>For our affiliates to market to you</td>
 							<td>Yes</td>
@@ -127,7 +127,7 @@
 							<td><c:out value="${page1.q15}" /></td>
 							<td>
 								<c:choose>
-									<c:when test="${page1.q15 == Yes}">Yes</c:when>
+									<c:when test="${page1.q15 eq 'Yes'}">Yes</c:when>
 									<c:otherwise>We don't share</c:otherwise>
 								</c:choose>
 							</td>
@@ -139,14 +139,14 @@
 				<table class="table table-condensed table-bordered">
 					<tbody>
 					<c:choose>
-					  <c:when test="${(page1.q2 == Yes) || page1.q4 == Yes || page1.q6 == Yes || page1.q8 == Yes || page1.q11 == Yes || page1.q12 == Yes || page1.q13 == Yes || page1.q14 == No || page1.q15 == Yes}">
+					  <c:when test="${(page1.q2 eq 'Yes') || (page1.q4 eq 'Yes') || (page1.q6 eq 'Yes') || (page1.q8 eq 'Yes') || (page1.q11 eq 'Yes') || (page1.q12 eq 'Yes') || (page1.q13 eq 'Yes') || (page1.q14 eq 'No') || (page1.q15 eq 'Yes')}">
 						<tr>
 							<td>To limit our sharing</td>
 							<td>
 								<ul>
-									<li>Call <c:if test="${page1.q == Yes}">toll-free&nbsp;</c:if><c:out value="${page1.phone}" /> - our menu will prompt you through your choice(s) or</li>
+									<li>Call <c:if test="${page1.q eq 'Yes'}">toll-free&nbsp;</c:if><c:out value="${page1.phone}" /> - our menu will prompt you through your choice(s) or</li>
 									<li>Visit us online: <a href="<c:out value="${page1.website}" />"><c:out value="${page1.website}" /></a></li>
-									<c:if test="${page1.q17 == Yes}"><li>Mail the <b>form</b> below</li></c:if>
+									<c:if test="${page1.q17 eq 'Yes'}"><li>Mail the <b>form</b> below</li></c:if>
 								</ul>
 								Please note: <br>
 								If you are a new customer, we can begin sharing your information <c:out value="${page1.days}" /> days from the date we sent this notice. When you are no longer our customer, we continue to share your information as described in this notice. 
@@ -163,7 +163,7 @@
 					</tbody> 
 				</table>
 			</div>
-			<c:if test="${page1.q17 == Yes}">
+			<c:if test="${page1.q17 eq 'Yes'}">
 			<hr>
 			<div class="col-md-12 column">
 				<table class="table table-condensed table-bordered">
@@ -173,7 +173,7 @@
 						</tr>
 						<tr>
 							<td>Leave Blank 
-							<c:if test="${page1.reverse1 == Yes}"><b>Or</b><br>
+							<c:if test="${page1.reverse1 eq 'Yes'}"><b>Or</b><br>
 								If you have a joint account, your choice will apply to everyone on your account unless you mark below<br>
 								<label>
     								<input type="checkbox" value=""> Apply my choices only to me
@@ -199,39 +199,25 @@
 										<td>
 											<table class="table table-condensed table-bordered"> 
 												<tr>
-													<td>Name
-													</td>
-													<td>
-													</td>
+													<td>Name</td>
+													<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
 												</tr>
 												<tr>
-													<td>
-														Address
-													</td>
-													<td>
-													</td>
+													<td>Address</td>
+													<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
 												</tr>
 												<tr>
-													<td>&nbsp;
-													</td>
-													<td>
-													</td>
+													<td>&nbsp;</td>
+													<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
 												</tr>
 												<tr>
-													<td>
-														City, State, Zip
-													</td>
-													<td>
-													</td>
+													<td>City, State, Zip</td>
+													<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
 												</tr>
-												<c:if test="${page1.accnt == Yes}">
+												<c:if test="${page1.accnt eq 'Yes'}">
 													<tr>
-														<td>
-															[Account #]
-														</td>
-														<td>
-														
-														</td>
+														<td>Account #</td>
+														<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
 													</tr>
 												</c:if>
 											</table>
@@ -382,12 +368,14 @@
 						</tr>
 						<tr>
 							<td><c:out value="${page2.other}" /></td>
+						</tr>
+						<tr>
 							<td><c:out value="${page2.provision}" /></td>
 						</tr>
 					</tbody> 
 				</table>
 			</div>
+		</div>
 	</div>
-</div>
 </body>
 </html>

@@ -1,9 +1,9 @@
 	$(document).ready(function() {
-	    $("#protect").on('keyup', function() {
+	    $("textarea[name='protect']").on('keyup', function() {
 	        var words = this.value.match(/\S+/g).length;
 	        if (words > 30) {
-	            // Split the string on first 200 words and rejoin on spaces
-	            var trimmed = $(this).val().split(/\s+/, 200).join(" ");
+	            // Split the string on first 30 words and rejoin on spaces
+	            var trimmed = $(this).val().split(/\s+/, 30).join(" ");
 	            // Add a space at the end to keep new typing making new words
 	            $(this).val(trimmed + " ");
 	        }
