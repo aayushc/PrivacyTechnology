@@ -11,30 +11,28 @@
 	<meta name="description" content="">
 	<meta name="author" content="">
 
-	<!--link rel="stylesheet/less" href="less/bootstrap.less" type="text/css" /-->
-	<!--link rel="stylesheet/less" href="less/responsive.less" type="text/css" /-->
-	<!--script src="js/less-1.3.3.min.js"></script-->
-	<!--append â#!watchâ to the browser URL, then refresh the page. -->
-
-	<link href="css/bootstrap.min.css" rel="stylesheet">
-	<link href="css/style.css" rel="stylesheet">
-	<link rel="stylesheet" type="text/css" href="css/form.css">
-
-	<!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
-	<!--[if lt IE 9]>
-	<script src="js/html5shiv.js"></script>
-	<![endif]-->
-
-	<!-- Fav and touch icons -->
-	<link rel="apple-touch-icon-precomposed" sizes="144x144" href="img/apple-touch-icon-144-precomposed.png">
-	<link rel="apple-touch-icon-precomposed" sizes="114x114" href="img/apple-touch-icon-114-precomposed.png">
-	<link rel="apple-touch-icon-precomposed" sizes="72x72" href="img/apple-touch-icon-72-precomposed.png">
-	<link rel="apple-touch-icon-precomposed" href="img/apple-touch-icon-57-precomposed.png">
-	<link rel="shortcut icon" href="img/favicon.png">
-
-	<script type="text/javascript" src="js/jquery.min.js"></script>
-	<script type="text/javascript" src="js/bootstrap.min.js"></script>
-	<script type="text/javascript" src="js/scripts.js"></script>
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+	
+	<!-- Optional theme -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+	
+	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+	    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+	
+	<style>
+		caption { 
+			display: table-caption;
+		    text-align: right;
+		}
+		
+		th {
+			background : linear-gradient(180deg, rgb(255,255,255), rgb(192,192,192));
+			color : rgb(0,0,0);
+		}
+	</style>
 </head>
 
 <body>
@@ -168,7 +166,7 @@
 				</table>
 			</div>
 			<c:if test="${page1.q17 eq 'Yes'}">
-			<hr>
+			<hr style="width: 100%; color: black; height: 1px; background-color:black;" />
 			<div class="col-md-12 column">
 				<table class="table table-condensed table-bordered">
 					<tbody>
@@ -243,7 +241,7 @@
 					</tbody> 
 				</table>
 			</div>
-			<hr>
+			<hr style="width: 100%; color: black; height: 1px; background-color:black;" />
 			</c:if>
 			<!-- Page 2 -->
 			<div class="col-md-12 column">
@@ -382,6 +380,12 @@
 						</tr>
 					</tbody> 
 				</table>
+			</div>
+			<div>				
+				<p><a onclick="this.href='data:text/html;charset=UTF-8,'+encodeURIComponent(document.documentElement.outerHTML)" href="#" download="us privacy notice.html">
+						<input type="button" value="Save this privacy notice">
+					</a>
+				</p>
 			</div>
 		</div>
 	</div>
