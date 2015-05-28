@@ -47,15 +47,15 @@
 				<caption><span>Rev. <fmt:formatDate pattern="MM/yy" value="${parsedDate}" /></span></caption>
 					<tbody>
 						<tr>
-							<td>FACTS</td>
+							<th>FACTS</th>
 							<td>WHAT DOES <c:out value="${page1.institution}" /> DO WITH YOUR PERSONAL INFORMATION?</td>
 						</tr>
 						<tr>
-							<td>Why?</td>
+							<th>Why?</th>
 							<td>Financial companies choose how they share your personal information. Under federal law, that means personally identifiable information. Federal law gives consumers the right to limit some but not all sharing. Federal law also requires us to tell you how we collect, share, and protect your personal information. Please read this notice carefully to understand what we do.</td>
 						</tr>
 						<tr>
-							<td>What?</td>
+							<th>What?</th>
 							<td>The types of personal information we collect and share depend on the product or service you have 	with us.
 								This information can include:
 								<ul>
@@ -66,7 +66,7 @@
 							</td>
 						</tr>
 						<tr>
-							<td>How?</td>
+							<th>How?</th>
 							<td>All financial companies need to share customers personal information to run their everyday business. In the section below, we list the reasons financial companies can share their customersâ personal information; the reasons  <c:out value="${page1.institution}" /> chooses to share; and whether you can limit this sharing.
 							</td>
 						</tr>
@@ -77,9 +77,9 @@
 				<table class="table table-condensed table-bordered">
 					<thead>
 						<tr>
-							<td>Reasons we can share your personal information</td>
-							<td>Does <c:out value="${page1.institution}" /> share?</td>
-							<td>Can you limit this sharing?</td>
+							<th>Reasons we can share your personal information</th>
+							<th>Does <c:out value="${page1.institution}" /> share?</th>
+							<th>Can you limit this sharing?</th>
 						</tr>
 					</thead>
 					<tbody>
@@ -141,7 +141,7 @@
 					<c:choose>
 					  <c:when test="${(page1.q2 eq 'Yes') || (page1.q4 eq 'Yes') || (page1.q6 eq 'Yes') || (page1.q8 eq 'Yes') || (page1.q11 eq 'Yes') || (page1.q12 eq 'Yes') || (page1.q13 eq 'Yes') || (page1.q14 eq 'No') || (page1.q15 eq 'Yes')}">
 						<tr>
-							<td>To limit our sharing</td>
+							<th>To limit our sharing</th>
 							<td>
 								<ul>
 									<li>Call <c:if test="${page1.q eq 'Yes'}">toll-free&nbsp;</c:if><c:out value="${page1.phone}" /> - our menu will prompt you through your choice(s) or</li>
@@ -156,8 +156,9 @@
 						</tr>
 					  </c:when>
 					</c:choose>
+						<tr><td></td></tr>
 						<tr>
-							<td>Questions?</td>
+							<th>Questions?</th>
 							<td>Call <c:out value="${page1.phone1}" /> or go to <a href="<c:out value="${page1.website1}" />"><c:out value="${page1.website1}" /></a></td>
 						</tr>
 					</tbody> 
@@ -169,8 +170,8 @@
 				<table class="table table-condensed table-bordered">
 					<tbody>
 						<tr>
-							<td>Mail In Form</td>
-							<td></td>
+							<th>Mail In Form</th>
+							<th></th>
 						</tr>
 						<tr>
 							<td style="width:30%">Leave Blank 
@@ -202,31 +203,31 @@
 										<td>
 											<table class="table table-condensed table-bordered"> 
 												<tr>
-													<td>Name</td>
+													<th>Name</th>
 													<td style="width:70%"></td>
 												</tr>
 												<tr>
-													<td>Address</td>
+													<th>Address</th>
 													<td style="width:70%"></td>
 												</tr>
 												<tr>
-													<td>&nbsp;</td>
+													<th>&nbsp;</th>
 													<td style="width:70%"></td>
 												</tr>
 												<tr>
-													<td>City, State, Zip</td>
+													<th>City, State, Zip</th>
 													<td style="width:70%"></td>
 												</tr>
 												<c:if test="${page1.accnt eq 'Yes'}">
 													<tr>
-														<td>Account #</td>
+														<th>Account #</th>
 														<td style="width:70%"></td>
 													</tr>
 												</c:if>
 											</table>
 										</td>
 										<td style="width:30%">
-											Mail to:
+											Mail to:<br>
 											<c:out value="${page1.institution}" /><br>
 											<c:out value="${page1.al1}" /><br>
 											<c:out value="${page1.al2}" /><br>
@@ -239,14 +240,15 @@
 					</tbody> 
 				</table>
 			</div>
+			<hr>
 			</c:if>
 			<!-- Page 2 -->
 			<div class="col-md-12 column">
 				<table class="table table-condensed table-bordered">
 					<tbody>
 						<tr>
-							<td style="width:30%">Who we are</td>
-							<td></td>
+							<th style="width:30%">Who we are</th>
+							<th></th>
 						</tr>
 						<tr>
 							<td style="width:30%">Who is providing this notice?</td>
@@ -259,8 +261,8 @@
 				<table class="table table-condensed table-bordered">
 					<tbody>
 						<tr>
-							<td>What we do</td>
-							<td></td>
+							<th>What we do</th>
+							<th></th>
 						</tr>
 						<tr>
 							<td style="width:30%">How does <c:out value="${page1.institution}" /> protect my personal information?</td>
@@ -303,8 +305,8 @@
 				<table class="table table-condensed table-bordered">
 					<tbody>
 						<tr>
-							<td>Definitions</td>
-							<td></td>
+							<th>Definitions</th>
+							<th></th>
 						</tr>
 						<tr>
 							<td style="width:30%">Affiliates</td>
@@ -367,7 +369,7 @@
 				<table class="table table-condensed table-bordered">
 					<tbody>
 						<tr>
-							<td>Other important information</td>
+							<th>Other important information</th>
 						</tr>
 						<tr>
 							<td><c:out value="${page2.other}" /></td>

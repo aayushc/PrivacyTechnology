@@ -2,3 +2,8 @@ caption {
     display: table-caption;
     text-align: right;
 }
+
+th {
+	background : linear-gradient(180deg, rgb(255,255,255), rgb(192,192,192));
+	color : rgb(0,0,0);
+}
