@@ -90,73 +90,239 @@ public class Upload extends HttpServlet {
 				if (nNode.getNodeType() == Node.ELEMENT_NODE) {
 
 					Element eElement = (Element) nNode;
+					
+					try {
 					bean.setInstitution(eElement.getElementsByTagName("institution")
 							.item(0).getTextContent());
+					} catch (Exception e) {
+						// TODO Auto-generated catch block
+					}
+					
+					try {
 					bean.setRevdate(eElement.getElementsByTagName("revdate")
 							.item(0).getTextContent());
+					} catch (Exception e) {
+						// TODO Auto-generated catch block
+					}
+					
+					try {
 					bean.setQ1(eElement.getElementsByTagName("q1")
 							.item(0).getTextContent());
+					} catch (Exception e) {
+						// TODO Auto-generated catch block
+					}
+					
+					try {
 					bean.setQ2(eElement.getElementsByTagName("q2")
 							.item(0).getTextContent());
+					} catch (Exception e) {
+						// TODO Auto-generated catch block
+					}
+					
+					try {
 					bean.setQ3(eElement.getElementsByTagName("q3")
 							.item(0).getTextContent());
+					} catch (Exception e) {
+						// TODO Auto-generated catch block
+					}
+					
+					try {
 					bean.setQ4(eElement.getElementsByTagName("q4")
 							.item(0).getTextContent());
+					} catch (Exception e) {
+						// TODO Auto-generated catch block
+					}
 					
+					try {
 					bean.setQ5(eElement.getElementsByTagName("q5")
 							.item(0).getTextContent());
+					} catch (Exception e) {
+						// TODO Auto-generated catch block
+					}
+					
+					try {
 					bean.setQ6(eElement.getElementsByTagName("q6")
 							.item(0).getTextContent());
+					} catch (Exception e) {
+						// TODO Auto-generated catch block
+					}
+					
+					try {
 					bean.setQ7(eElement.getElementsByTagName("q7")
 							.item(0).getTextContent());
+					} catch (Exception e) {
+						// TODO Auto-generated catch block
+					}
+					
+					try {
 					bean.setQ8(eElement.getElementsByTagName("q8")
 							.item(0).getTextContent());
+					} catch (Exception e) {
+						// TODO Auto-generated catch block
+					}
+					
+					try {
 					bean.setQ9(eElement.getElementsByTagName("q9")
 							.item(0).getTextContent());
+					} catch (Exception e) {
+						// TODO Auto-generated catch block
+					}
+					
+					try {
 					bean.setQ11(eElement.getElementsByTagName("q11")
 							.item(0).getTextContent());
+					} catch (Exception e) {
+						// TODO Auto-generated catch block
+					}
+					
+					try {
 					bean.setQ12(eElement.getElementsByTagName("q12")
 							.item(0).getTextContent());
+					} catch (Exception e) {
+						// TODO Auto-generated catch block
+					}
+					
+					try {
 					bean.setQ13(eElement.getElementsByTagName("q13")
 							.item(0).getTextContent());
+					} catch (Exception e) {
+						// TODO Auto-generated catch block
+					}
+					
+					try {
 					bean.setQ14(eElement.getElementsByTagName("q14")
 							.item(0).getTextContent());
+					} catch (Exception e) {
+						// TODO Auto-generated catch block
+					}
+					
+					try {
 					bean.setQ15(eElement.getElementsByTagName("q15")
 							.item(0).getTextContent());
+					} catch (Exception e) {
+						// TODO Auto-generated catch block
+					}
+					
+					try {
 					bean.setQ17(eElement.getElementsByTagName("q17")
 							.item(0).getTextContent());
+					} catch (Exception e) {
+						// TODO Auto-generated catch block
+					}
+					
+					try {
 					bean.setPhone(eElement.getElementsByTagName("phone")
 							.item(0).getTextContent());
+					} catch (Exception e) {
+						// TODO Auto-generated catch block
+					}
+					
+					try {
 					bean.setPhone1(eElement.getElementsByTagName("phone1")
 							.item(0).getTextContent());
+					} catch (Exception e) {
+						// TODO Auto-generated catch block
+					}
+					
+					try {
 					bean.setWebsite(eElement.getElementsByTagName("website")
 							.item(0).getTextContent());
+					} catch (Exception e) {
+						// TODO Auto-generated catch block
+					}
+					
+					try {
 					bean.setWebsite1(eElement.getElementsByTagName("website1")
 							.item(0).getTextContent());
+					} catch (Exception e) {
+						// TODO Auto-generated catch block
+					}
+					
+					try {
 					bean.setAl1(eElement.getElementsByTagName("al1")
 							.item(0).getTextContent());
+					} catch (Exception e) {
+						// TODO Auto-generated catch block
+					}
+					
+					try {
 					bean.setAl2(eElement.getElementsByTagName("al2")
 							.item(0).getTextContent());
+					} catch (Exception e) {
+						// TODO Auto-generated catch block
+					}
+					
+					try {
 					bean.setCity(eElement.getElementsByTagName("city")
 							.item(0).getTextContent());
+					} catch (Exception e) {
+						// TODO Auto-generated catch block
+					}
+					
+					try {
 					bean.setState(eElement.getElementsByTagName("state")
 							.item(0).getTextContent());
+					} catch (Exception e) {
+						// TODO Auto-generated catch block
+					}
+					
+					try {
 					bean.setZip(eElement.getElementsByTagName("zip")
 							.item(0).getTextContent());
+					} catch (Exception e) {
+						// TODO Auto-generated catch block
+					}
+					
+					try {
 					bean.setAccnt(eElement.getElementsByTagName("accnt")
 							.item(0).getTextContent());
+					} catch (Exception e) {
+						// TODO Auto-generated catch block
+					}
+					
+					try {
 					bean.setDays(eElement.getElementsByTagName("days")
 							.item(0).getTextContent());
+					} catch (Exception e) {
+						// TODO Auto-generated catch block
+					}
+					
+					try {
 					bean.setReverse1(eElement.getElementsByTagName("reverse1")
 							.item(0).getTextContent());
+					} catch (Exception e) {
+						// TODO Auto-generated catch block
+					}
+					
+					try {
 					bean.setReverse2(eElement.getElementsByTagName("reverse2")
 							.item(0).getTextContent());
+					} catch (Exception e) {
+						// TODO Auto-generated catch block
+					}
+					
+					try {
 					bean.setReverse3(eElement.getElementsByTagName("reverse3")
 							.item(0).getTextContent());
+					} catch (Exception e) {
+						// TODO Auto-generated catch block
+					}
+					
+					try {
 					bean.setReverse4(eElement.getElementsByTagName("reverse4")
 							.item(0).getTextContent());
+					} catch (Exception e) {
+						// TODO Auto-generated catch block
+					}
+					
+					try {
 					bean.setQ(eElement.getElementsByTagName("q")
 							.item(0).getTextContent());
+					} catch (Exception e) {
+						// TODO Auto-generated catch block
+					}
+					
+					try {
 					NodeList SingleOptionNode = (NodeList) eElement
 							.getElementsByTagName("checkboxvalues");
 					int nodeLen = SingleOptionNode.getLength();
@@ -171,53 +337,156 @@ public class Upload extends HttpServlet {
 						//System.out.println(Arrays.toString(field));
 						bean.setWhat(field);
 					}
+					} catch (Exception e) {
+						// TODO Auto-generated catch block
+					}
 					
 					System.out.println("allset");
 					System.out.println("upppp:  "+request.getAttribute("UploadPage1"));
 					//bean2
+					
 					try {
 					bean2.setCorpid(eElement.getElementsByTagName("page2corpid")
 							.item(0).getTextContent());
+					} catch (Exception e) {
+						// TODO Auto-generated catch block
+					}
+					
+					try {
 					bean2.setFcomp(eElement.getElementsByTagName("page2fcomp")
 							.item(0).getTextContent());
+					} catch (Exception e) {
+						// TODO Auto-generated catch block
+					}
+					
+					try {
 					bean2.setNfcomp(eElement.getElementsByTagName("page2nfcomp")
 							.item(0).getTextContent());
+					} catch (Exception e) {
+						// TODO Auto-generated catch block
+					}
+					
+					try {
 					bean2.setOther(eElement.getElementsByTagName("page2other")
 							.item(0).getTextContent());
+					} catch (Exception e) {
+						// TODO Auto-generated catch block
+					}
+					
+					try {
 					bean2.setInstitution(eElement.getElementsByTagName("page2institution")
 							.item(0).getTextContent());
+					} catch (Exception e) {
+						// TODO Auto-generated catch block
+					}
+					
+					try {
 					bean2.setProtect(eElement.getElementsByTagName("page2protect")
 							.item(0).getTextContent());
+					} catch (Exception e) {
+						// TODO Auto-generated catch block
+					}
+					
+					try {
 					bean2.setProvision(eElement.getElementsByTagName("page2provision")
 							.item(0).getTextContent());
+					} catch (Exception e) {
+						// TODO Auto-generated catch block
+					}
+					
+					try {
 					bean2.setQ1(eElement.getElementsByTagName("page2q1")
 							.item(0).getTextContent());
+					} catch (Exception e) {
+						// TODO Auto-generated catch block
+					}
+					
+					try {
 					bean2.setQ2(eElement.getElementsByTagName("page2q2")
 							.item(0).getTextContent());
+					} catch (Exception e) {
+						// TODO Auto-generated catch block
+					}
+					
+					try {
 					bean2.setQ3(eElement.getElementsByTagName("page2q3")
 							.item(0).getTextContent());
+					} catch (Exception e) {
+						// TODO Auto-generated catch block
+					}
+					
+					try {
 					bean2.setQ4(eElement.getElementsByTagName("page2q4")
 							.item(0).getTextContent());
+					} catch (Exception e) {
+						// TODO Auto-generated catch block
+					}
+					
+					try {
 					bean2.setQ7(eElement.getElementsByTagName("page2q7")
 							.item(0).getTextContent());
+					} catch (Exception e) {
+						// TODO Auto-generated catch block
+					}
+					
+					try {
 					bean2.setQ6(eElement.getElementsByTagName("page2q6")
 							.item(0).getTextContent());
+					} catch (Exception e) {
+						// TODO Auto-generated catch block
+					}
+					
+					try {
 					bean2.setQ8(eElement.getElementsByTagName("page2q8")
 							.item(0).getTextContent());
+					} catch (Exception e) {
+						// TODO Auto-generated catch block
+					}
+					
+					try {
 					bean2.setTa1(eElement.getElementsByTagName("page2ta1")
 							.item(0).getTextContent());
+					} catch (Exception e) {
+						// TODO Auto-generated catch block
+					}
+					
+					try {
 					bean2.setTa2(eElement.getElementsByTagName("page2ta2")
 							.item(0).getTextContent());
+					} catch (Exception e) {
+						// TODO Auto-generated catch block
+					}
+					
+					try {
 					bean2.setTa3(eElement.getElementsByTagName("page2ta3")
 							.item(0).getTextContent());
+					} catch (Exception e) {
+						// TODO Auto-generated catch block
+					}
+					
+					try {
 					bean2.setTa4(eElement.getElementsByTagName("page2ta4")
 							.item(0).getTextContent());
+					} catch (Exception e) {
+						// TODO Auto-generated catch block
+					}
+					
+					try {
 					bean2.setTa5(eElement.getElementsByTagName("page2ta5")
 							.item(0).getTextContent());
+					} catch (Exception e) {
+						// TODO Auto-generated catch block
+					}
+					
+					try {
 					bean2.setTa6(eElement.getElementsByTagName("page2ta6")
 							.item(0).getTextContent());
+					} catch (Exception e) {
+						// TODO Auto-generated catch block
+					}					
 					
-					System.out.println("wahtset");
+					try {
+						System.out.println("wahtset");
 					NodeList SingleOptionNode2 = (NodeList) eElement
 							.getElementsByTagName("page2checkboxvalues");
 					int nodeLen2 = SingleOptionNode2.getLength();
@@ -232,7 +501,6 @@ public class Upload extends HttpServlet {
 						//System.out.println(Arrays.toString(field));
 						bean2.setWhat(field);
 					}
-					
 				} catch (Exception e) {
 					// TODO Auto-generated catch block
 				}
