@@ -489,7 +489,7 @@
 	<form method="post" action="UploadServlet"
         enctype="multipart/form-data">
         Select file to upload: <input type="file" name="file" size="60" /><br />
-        <br /> <input type="submit" name="UploadPage1" value="Upload" />
+        <br /> <input type="submit" value="Upload" />
     </form>
 </body>
 </html>

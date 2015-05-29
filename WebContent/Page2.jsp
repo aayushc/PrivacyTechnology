@@ -342,5 +342,10 @@
 				data-loading-text="Loading..." type="submit" name= "download" value="Download"></input></div>
 		</div>
 	</form>
+	<form method="post" action="UploadServlet"
+        enctype="multipart/form-data">
+        Select file to upload: <input type="file" name="file" size="60" /><br />
+        <br /> <input type="submit" value="Upload" />
+    </form>
 </body>
 </html>

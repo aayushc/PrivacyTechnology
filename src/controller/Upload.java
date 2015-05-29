@@ -45,26 +45,27 @@ public class Upload extends HttpServlet {
 			String fileName = "";
 			// gets absolute path of the web application
 			String appPath = request.getServletContext().getRealPath("");
-			System.out.println("dd "+appPath);
+			//System.out.println("dd "+appPath);
 			// constructs path of the directory to save uploaded file
 			String savePath = appPath + File.separator + SAVE_DIR;
 
-			System.out.println("Saved Path:" + savePath);
+			//System.out.println("Saved Path:" + savePath);
 
 			// creates the save directory if it does not exists
 			File fileSaveDir = new File(savePath);
 			if (!fileSaveDir.exists()) {
 				fileSaveDir.mkdir();
 			}
-			System.out.println("r::"+request.getParts());
+			//System.out.println("r::"+request.getParts());
 			for (Part part : request.getParts()) {
 				fileName = extractFileName(part);
+				System.out.println("filename: "+fileName);
+				System.out.println("write to: "+savePath + File.separator + fileName);
 				part.write(savePath + File.separator + fileName);
-				
 			}
 
-			System.out.println(fileName);
-			System.out.println("adas: "+savePath + File.separator + fileName);
+			//System.out.println(fileName);
+			//System.out.println("adas: "+savePath + File.separator + fileName);
 			File fXmlFile = new File(savePath + File.separator + fileName);
 			DocumentBuilderFactory dbFactory = DocumentBuilderFactory
 					.newInstance();
@@ -174,7 +175,7 @@ public class Upload extends HttpServlet {
 					System.out.println("allset");
 					System.out.println("upppp:  "+request.getAttribute("UploadPage1"));
 					//bean2
-					if(eElement.getElementsByTagName("page2institution").item(0).getTextContent()!=null) {
+					try {
 					bean2.setCorpid(eElement.getElementsByTagName("page2corpid")
 							.item(0).getTextContent());
 					bean2.setFcomp(eElement.getElementsByTagName("page2fcomp")
@@ -232,7 +233,9 @@ public class Upload extends HttpServlet {
 						bean2.setWhat(field);
 					}
 					
-					}
+				} catch (Exception e) {
+					// TODO Auto-generated catch block
+				}
 					
 					
 					/*
@@ -248,6 +251,8 @@ public class Upload extends HttpServlet {
 				System.out.println("forwarding");
 				request.setAttribute("page1", bean);
 				request.setAttribute("page2", bean2);
+				request.getSession().setAttribute("page1", bean);
+				request.getSession().setAttribute("page2", bean2);
 				
 				//if(request.getAttribute("").equals(""))
 				RequestDispatcher rd = getServletContext()
