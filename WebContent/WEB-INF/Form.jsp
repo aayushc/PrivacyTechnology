@@ -42,8 +42,8 @@
 			</div>
 			<div class="col-md-12 column">				
 				<table class="table table-condensed table-bordered">
-				<fmt:parseDate value="${page1.revdate}" var="parsedDate" pattern="yyyy-MM" />
-				<caption><span>Rev. <fmt:formatDate pattern="MM/yy" value="${parsedDate}" /></span></caption>
+				<%-- <fmt:parseDate value="${page1.revdate}" var="parsedDate" pattern="yyyy-MM" /> --%>
+				<caption><span>Rev. <%-- <fmt:formatDate pattern="MM/yy" value=" --%>${page1.revdate}<!-- " /> --></span></caption>
 					<tbody>
 						<tr>
 							<th><h2>FACTS</h2></th>

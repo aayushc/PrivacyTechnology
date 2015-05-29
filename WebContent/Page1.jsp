@@ -187,7 +187,7 @@
 					<label for="q1">Will your institution share customer's personal information for your everday business purposes?</label> 
 					<span id="help" style="margin-left: 20px;">
 					<img src="./img/help2.png" onmouseover="showpop('pop3');" onmouseout="showout('pop3');"></img></span>
-					<span id="pop3" style="display: none; border: 1px solid; margin-left: 7px; padding: 2px;">Provide a Yes€ or €œNo€ response that accurately reflects its information sharing policies and practices with respect to the reason specified in this question.</span>
+					<span id="pop3" style="display: none; border: 1px solid; margin-left: 7px; padding: 2px;">Provide a Yes or No response that accurately reflects its information sharing policies and practices with respect to the reason specified in this question.</span>
 				</div>
 
 				<input type="radio" name="q1" value="Yes" <c:if test="${page1.q1 eq 'Yes'}">checked</c:if> onclick='wds1()'>Yes<br>
@@ -195,7 +195,7 @@
 				<label for="q2">Can	customers limit the personal information your institution share for your everyday business purposes?</label>
 				<span id="help" style="margin-left: 20px;">
 					<img src="./img/help2.png" onmouseover="showpop('pop4');" onmouseout="showout('pop4');"></img></span>
-				<span id="pop4" style="display: none; border: 1px solid; margin-left: 7px; padding: 2px;">Provide one of the three responses, as applicable, that reflects whether a consumer can limit sharing for the reason mentioned in the question: €œYes€ if it is required to or voluntarily provides an opt-out; €œNo if it does not provide an opt-out; or €œWe dont share if your institution doesn't share the information for the mentioned reason.</span><br>
+				<span id="pop4" style="display: none; border: 1px solid; margin-left: 7px; padding: 2px;">Provide one of the three responses, as applicable, that reflects whether a consumer can limit sharing for the reason mentioned in the question: Yes if it is required to or voluntarily provides an opt-out; No if it does not provide an opt-out; or €œWe dont share if your institution doesn't share the information for the mentioned reason.</span><br>
 				<input type="radio" name="q2" value="Yes" <c:if test="${page1.q2 eq 'Yes'}">checked</c:if> >Yes<br>
 				<input type="radio" name="q2" value="No" <c:if test="${page1.q2 eq 'No'}">checked</c:if> >No<br>
 				<input type="radio" name="q2" value="We don&#39;t share" <c:if test='${page1.q2 eq "We don\'t share"}'>checked</c:if> >We don&#39;t share<br>
@@ -233,7 +233,7 @@
 				<span id="help" style="margin-left: 20px;">
 					<img src="./img/help2.png" onmouseover="showpop('pop8');" onmouseout="showout('pop8');"></img>
 				</span>
-				<span id="pop8" style="display: none; border: 1px solid; margin-left: 7px; padding: 2px;">Provide one of the three responses, as applicable, that reflects whether a consumer can limit sharing for the reason mentioned in the question: Yes if it is required to or voluntarily provides an opt-out; €œNo if it does not provide an opt-out; or €œWe dont share if your institution doesn't share the information for the mentioned reason.</span><br>
+				<span id="pop8" style="display: none; border: 1px solid; margin-left: 7px; padding: 2px;">Provide one of the three responses, as applicable, that reflects whether a consumer can limit sharing for the reason mentioned in the question: Yes if it is required to or voluntarily provides an opt-out; €œNo if it does not provide an opt-out; or €œWe don't share if your institution doesn't share the information for the mentioned reason.</span><br>
 				<input type="radio" name="q6" value="Yes"  <c:if test="${page1.q6 eq 'Yes'}">checked</c:if> >Yes<br>
 				<input type="radio" name="q6" value="No" <c:if test="${page1.q6 eq 'No'}">checked</c:if> >No<br>
 				<input type="radio" name="q6" value="We don&#39;t share" <c:if test='${page1.q6  eq "We don\'t share"}'>checked</c:if> >We don&#39;t share<br>
