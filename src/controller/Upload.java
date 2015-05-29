@@ -85,6 +85,7 @@ public class Upload extends HttpServlet {
 
 				System.out.println("\nCurrent Element :" + nNode.getNodeName());
 				Page1Bean bean = new Page1Bean();
+				Page2Bean bean2 = new Page2Bean();
 				if (nNode.getNodeType() == Node.ELEMENT_NODE) {
 
 					Element eElement = (Element) nNode;
@@ -156,6 +157,50 @@ public class Upload extends HttpServlet {
 					bean.setQ(eElement.getElementsByTagName("q")
 							.item(0).getTextContent());
 					System.out.println("allset");
+					System.out.println("upppp:  "+request.getAttribute("UploadPage1"));
+					//bean2
+					bean2.setCorpid(eElement.getElementsByTagName("page2corpid")
+							.item(0).getTextContent());
+					bean2.setFcomp(eElement.getElementsByTagName("page2fcomp")
+							.item(0).getTextContent());
+					bean2.setNfcomp(eElement.getElementsByTagName("page2nfcomp")
+							.item(0).getTextContent());
+					bean2.setOther(eElement.getElementsByTagName("page2other")
+							.item(0).getTextContent());
+					bean2.setInstitution(eElement.getElementsByTagName("page2institution")
+							.item(0).getTextContent());
+					bean2.setProtect(eElement.getElementsByTagName("page2protect")
+							.item(0).getTextContent());
+					bean2.setProvision(eElement.getElementsByTagName("page2provision")
+							.item(0).getTextContent());
+					bean2.setQ1(eElement.getElementsByTagName("page2q1")
+							.item(0).getTextContent());
+					bean2.setQ2(eElement.getElementsByTagName("page2q2")
+							.item(0).getTextContent());
+					bean2.setQ3(eElement.getElementsByTagName("page2q3")
+							.item(0).getTextContent());
+					bean2.setQ4(eElement.getElementsByTagName("page2q4")
+							.item(0).getTextContent());
+					bean2.setQ7(eElement.getElementsByTagName("page2q7")
+							.item(0).getTextContent());
+					bean2.setQ6(eElement.getElementsByTagName("page2q6")
+							.item(0).getTextContent());
+					bean2.setQ8(eElement.getElementsByTagName("page2q8")
+							.item(0).getTextContent());
+					bean2.setTa1(eElement.getElementsByTagName("page2ta1")
+							.item(0).getTextContent());
+					bean2.setTa2(eElement.getElementsByTagName("page2ta2")
+							.item(0).getTextContent());
+					bean2.setTa3(eElement.getElementsByTagName("page2ta3")
+							.item(0).getTextContent());
+					bean2.setTa4(eElement.getElementsByTagName("page2ta4")
+							.item(0).getTextContent());
+					bean2.setTa5(eElement.getElementsByTagName("page2ta5")
+							.item(0).getTextContent());
+					bean2.setTa6(eElement.getElementsByTagName("page2ta6")
+							.item(0).getTextContent());
+					
+					
 					NodeList SingleOptionNode = (NodeList) eElement
 							.getElementsByTagName("checkboxvalues");
 					int nodeLen = SingleOptionNode.getLength();
@@ -171,6 +216,20 @@ public class Upload extends HttpServlet {
 						bean.setWhat(field);
 					}
 					System.out.println("wahtset");
+					NodeList SingleOptionNode2 = (NodeList) eElement
+							.getElementsByTagName("page2checkboxvalues");
+					int nodeLen2 = SingleOptionNode2.getLength();
+					if (SingleOptionNode2 != null && nodeLen2 > 0) {
+						String[] field = new String[nodeLen2]; 
+						for (int i = 0; i < nodeLen2; i++) {
+							Element el1 = (Element) SingleOptionNode2.item(i);
+							String xxx = el1.getTextContent();
+							System.out.println(xxx);
+								field[i] = xxx;
+						}
+						//System.out.println(Arrays.toString(field));
+						bean2.setWhat(field);
+					}
 					/*
 					 * NodeList list =
 					 * eElement.getElementsByTagName("income").item(0).;
@@ -183,6 +242,9 @@ public class Upload extends HttpServlet {
 				}
 				System.out.println("forwarding");
 				request.setAttribute("page1", bean);
+				request.setAttribute("page2", bean2);
+				
+				//if(request.getAttribute("").equals(""))
 				RequestDispatcher rd = getServletContext()
 						.getRequestDispatcher("/Page1.jsp");
 				rd.forward(request, response);
