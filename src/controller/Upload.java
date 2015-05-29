@@ -156,9 +156,25 @@ public class Upload extends HttpServlet {
 							.item(0).getTextContent());
 					bean.setQ(eElement.getElementsByTagName("q")
 							.item(0).getTextContent());
+					NodeList SingleOptionNode = (NodeList) eElement
+							.getElementsByTagName("checkboxvalues");
+					int nodeLen = SingleOptionNode.getLength();
+					if (SingleOptionNode != null && nodeLen > 0) {
+						String[] field = new String[nodeLen]; 
+						for (int i = 0; i < nodeLen; i++) {
+							Element el1 = (Element) SingleOptionNode.item(i);
+							String xxx = el1.getTextContent();
+							System.out.println(xxx);
+								field[i] = xxx;
+						}
+						//System.out.println(Arrays.toString(field));
+						bean.setWhat(field);
+					}
+					
 					System.out.println("allset");
 					System.out.println("upppp:  "+request.getAttribute("UploadPage1"));
 					//bean2
+					if(eElement.getElementsByTagName("page2institution").item(0).getTextContent()!=null) {
 					bean2.setCorpid(eElement.getElementsByTagName("page2corpid")
 							.item(0).getTextContent());
 					bean2.setFcomp(eElement.getElementsByTagName("page2fcomp")
@@ -200,21 +216,6 @@ public class Upload extends HttpServlet {
 					bean2.setTa6(eElement.getElementsByTagName("page2ta6")
 							.item(0).getTextContent());
 					
-					
-					NodeList SingleOptionNode = (NodeList) eElement
-							.getElementsByTagName("checkboxvalues");
-					int nodeLen = SingleOptionNode.getLength();
-					if (SingleOptionNode != null && nodeLen > 0) {
-						String[] field = new String[nodeLen]; 
-						for (int i = 0; i < nodeLen; i++) {
-							Element el1 = (Element) SingleOptionNode.item(i);
-							String xxx = el1.getTextContent();
-							System.out.println(xxx);
-								field[i] = xxx;
-						}
-						//System.out.println(Arrays.toString(field));
-						bean.setWhat(field);
-					}
 					System.out.println("wahtset");
 					NodeList SingleOptionNode2 = (NodeList) eElement
 							.getElementsByTagName("page2checkboxvalues");
@@ -230,6 +231,10 @@ public class Upload extends HttpServlet {
 						//System.out.println(Arrays.toString(field));
 						bean2.setWhat(field);
 					}
+					
+					}
+					
+					
 					/*
 					 * NodeList list =
 					 * eElement.getElementsByTagName("income").item(0).;
