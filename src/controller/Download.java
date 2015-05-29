@@ -276,12 +276,13 @@ public class Download extends Action {
 				reverse4.appendChild(doc.createTextNode(bean1.getReverse4()));
 				staff.appendChild(reverse4);
 			}
-			
-			String[] what = bean1.getWhat();
-			for (int i = 0; i < what.length; i++) {
-				Element checkboxvalues = doc.createElement("checkboxvalues");
-				checkboxvalues.appendChild(doc.createTextNode(what[i]));
-				staff.appendChild(checkboxvalues);
+			if (bean1.getWhat()!=null && bean1.getWhat().length!=0){
+				String[] what = bean1.getWhat();
+				for (int i = 0; i < what.length; i++) {
+					Element checkboxvalues = doc.createElement("checkboxvalues");
+					checkboxvalues.appendChild(doc.createTextNode(what[i]));
+					staff.appendChild(checkboxvalues);
+				}
 			}
 			
 			if(request.getSession().getAttribute("page2")!=null ) {
@@ -416,7 +417,7 @@ public class Download extends Action {
 				
 				for (int i = 0; i < page2what.length; i++) {
 					Element page2checkboxvalues = doc.createElement("page2checkboxvalues");
-					page2checkboxvalues.appendChild(doc.createTextNode(what[i]));
+					page2checkboxvalues.appendChild(doc.createTextNode(page2what[i]));
 					staff.appendChild(page2checkboxvalues);
 				}				
 			}

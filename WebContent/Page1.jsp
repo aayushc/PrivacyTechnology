@@ -1,6 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
 	pageEncoding="ISO-8859-1"%>
-	<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
 <!DOCTYPE html>
 
@@ -172,9 +172,9 @@
 				</c:forEach> 
 				>Wire Transfer Instructions<br>
 			</div>
-			<c:forEach var="check" items="${page1.what}">
+			<%-- <c:forEach var="check" items="${page1.what}">
 			<c:if test="${check eq 'income'}">checked</c:if>
-			</c:forEach>
+			</c:forEach> --%>
 			<br>
 			<div>
 				<b><font size="4">Disclosure Table</font></b>
@@ -198,7 +198,7 @@
 				<span id="pop4" style="display: none; border: 1px solid; margin-left: 7px; padding: 2px;">Provide one of the three responses, as applicable, that reflects whether a consumer can limit sharing for the reason mentioned in the question: €œYes€ if it is required to or voluntarily provides an opt-out; €œNo if it does not provide an opt-out; or €œWe dont share if your institution doesn't share the information for the mentioned reason.</span><br>
 				<input type="radio" name="q2" value="Yes" <c:if test="${page1.q2 eq 'Yes'}">checked</c:if> >Yes<br>
 				<input type="radio" name="q2" value="No" <c:if test="${page1.q2 eq 'No'}">checked</c:if> >No<br>
-				<input type="radio" name="q2" value="We do not share" <c:if test="${page1.q2 eq 'We do not share'}">checked</c:if> >We do not share<br>
+				<input type="radio" name="q2" value="We don&#39;t share" <c:if test='${page1.q2 eq "We don\'t share"}'>checked</c:if> >We don&#39;t share<br>
 				<br> 
 				<i>For institution's marketing purposes:</i>
 				<br> 
@@ -217,7 +217,7 @@
 				<span id="pop6" style="display: none; border: 1px solid; margin-left: 7px; padding: 2px;">Provide one of the three responses, as applicable, that reflects whether a consumer can limit sharing for the reason mentioned in the question: Yes if it is required to or voluntarily provides an opt-out; No if it does not provide an opt-out; or We don€™t share€ if your institution doesn't share the information for the mentioned reason.</span><br>
 				<input type="radio" name="q4" value="Yes"  <c:if test="${page1.q4 eq 'Yes'}">checked</c:if> >Yes<br>
 				<input type="radio" name="q4" value="No" <c:if test="${page1.q4 eq 'No'}">checked</c:if> >No<br>
-				<input type="radio" name="q4" value="We do not share" <c:if test="${page1.q4 eq 'We do not share'}">checked</c:if> >We do not share<br>
+				<input type="radio" name="q4" value="We don&#39;t share" <c:if test='${page1.q4  eq "We don\'t share"}'>checked</c:if> >We don&#39;t share<br>
 				<br> 
 				<i>For joint marketing with other financial companies:</i>
 				<br>
@@ -236,7 +236,7 @@
 				<span id="pop8" style="display: none; border: 1px solid; margin-left: 7px; padding: 2px;">Provide one of the three responses, as applicable, that reflects whether a consumer can limit sharing for the reason mentioned in the question: Yes if it is required to or voluntarily provides an opt-out; €œNo if it does not provide an opt-out; or €œWe dont share if your institution doesn't share the information for the mentioned reason.</span><br>
 				<input type="radio" name="q6" value="Yes"  <c:if test="${page1.q6 eq 'Yes'}">checked</c:if> >Yes<br>
 				<input type="radio" name="q6" value="No" <c:if test="${page1.q6 eq 'No'}">checked</c:if> >No<br>
-				<input type="radio" name="q6" value="We do not share" <c:if test="${page1.q6 eq 'We do not share'}">checked</c:if> >We do not share<br>
+				<input type="radio" name="q6" value="We don&#39;t share" <c:if test='${page1.q6  eq "We don\'t share"}'>checked</c:if> >We don&#39;t share<br>
 				<br> 
 				<i>For your institution's affiliates' everyday business purposes- information about transactions and experiences:</i>
 				<br> 
@@ -255,7 +255,7 @@
 				<span id="pop10" style="display: none; border: 1px solid; margin-left: 7px; padding: 2px;">Provide one of the three responses, as applicable, that reflects whether a consumer can limit sharing for the reason mentioned in the question: €œYes€ if it is required to or voluntarily provides an opt-out; No if it does not provide an opt-out; or €œWe don€™t share if your institution doesn't share the information for the mentioned reason.</span><br>
 				<input type="radio" name="q8" value="Yes"  <c:if test="${page1.q8 eq 'Yes'}">checked</c:if> >Yes<br>
 				<input type="radio" name="q8" value="No" <c:if test="${page1.q8 eq 'No'}">checked</c:if> >No<br>
-				<input type="radio" name="q8" value="We do not share" <c:if test="${page1.q8 eq 'We do not share'}">checked</c:if> >We do not share<br>
+				<input type="radio" name="q8" value="We don&#39;t share" <c:if test='${page1.q8  eq "We don\'t share"}'>checked</c:if> >We don&#39;t share<br>
 				<br>
 				<i>For your institution's affiliates' everyday business purposes- information about creditworthiness:</i><br>
 				<label for="q1">Will your institution share customer's personal information about their creditworthiness for your affiliates' everday business purposes?</label>
@@ -273,7 +273,7 @@
 				<span id="pop12" style="display: none; border: 1px solid; margin-left: 7px; padding: 2px;">Provide one of the three responses, as applicable, that reflects whether a consumer can limit sharing for the reason mentioned in the question: €œYes if it is required to or voluntarily provides an opt-out; €œNo if it does not provide an opt-out; or €œWe dont share if your institution doesn't share the information for the mentioned reason.</span><br>
 				<input type="radio" name="q10" value="Yes" checked>Yes<br>
 				<input type="radio" name="q10" value="No">No<br>
-				<input type="radio" name="q10" value="We do not share">We do not share<br>
+				<input type="radio" name="q10" value="We don&#39;t share">We don&#39;t share<br>
 				<br>  -->
 				<i>For institution's affiliates to market to customers:</i><br>
 				<label for="q1">Does your institution have affiliates?</label>
@@ -327,7 +327,7 @@
 				<span id="pop18" style="display: none; border: 1px solid; margin-left: 7px; padding: 2px;">Provide one of the three responses, as applicable, that reflects whether a consumer can limit sharing for the reason mentioned in the question: Yes€ if it is required to or voluntarily provides an opt-out; œNo if it does not provide an opt-out; or €œWe dont share if your institution doesn't share the information for the mentioned reason.</span><br>
 				<input type="radio" name="q16" value="Yes" checked>Yes<br>
 				<input type="radio" name="q16" value="No">No<br>
-				<input type="radio" name="q16" value="We do not share">We do not share<br>
+				<input type="radio" name="q16" value="We don&#39;t share">We don&#39;t share<br>
 				<br> -->
 			</div>
 			<br>
@@ -337,11 +337,11 @@
 			</div>
 			<br>
 			<div class="input-group">
-				Please enter details of your institution's applicable <u><i>opt-out</i></u>method(s) below: <br> <br> 
+				Please enter details of your institution's applicable <ins><em>opt-out</em></ins> method(s) below: <br> <br> 
 				<label for="optout">Phone Number</label> <br> 
 				<input class="form-control" type="number" placeholder="" name="phone" value="${page1.phone}" style="width: 200px;"> <br> <br> <br> 
 				<label for="q1">Is the telephone number you provided above a toll-free number? </label> <br>
-				<input type="radio" name="q" value="Toll-free"  <c:if test="${page1.q eq 'Yes'}">checked</c:if> >Yes<br>
+				<input type="radio" name="q" value="Toll-free"  <c:if test="${page1.q eq 'Toll-free'}">checked</c:if> >Yes<br>
 				<input type="radio" name="q" value="No" <c:if test="${page1.q eq 'No'}">checked</c:if> >No <br> <br>
 				<label for="optout">Website URL</label> 
 				<span id="help" style="margin-left: 20px;">
@@ -470,7 +470,7 @@
 			</div>
 			<br>
 			<div class="input-group">
-				Please enter your institution's <u><i>customer service</i></u> contact information : <br> <br> 
+				Please enter your institution's <ins><em>customer service</em></ins> contact information : <br> <br> 
 				<label for="optout">Phone Number</label> <br> 
 				<input required class="form-control" type="number"
 					placeholder="" name="phone1" value="${page1.phone1}" style="width: 200px;"> <br>

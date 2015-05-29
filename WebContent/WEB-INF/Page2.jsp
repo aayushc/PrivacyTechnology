@@ -233,7 +233,7 @@
 				<span id="pop5" style="display: none; border: 1px solid; margin-left: 7px; padding: 2px;">Please select "Yes" if your institution describe state privacy law provisions, otherwise select "No". This will add a bracketed sentence: “See below for more on your rights under state law.” </span> <br>
 				<input type="radio" name="q3" value="See below for more on your rights under state law." <c:if test="${page2.q1 eq 'See below for more on your rights under state law.'}">checked</c:if> onclick='enabletextarea1()'> Yes <br> 
 				<input type="radio" name="q3" value="" <c:if test="${page2.q3 eq ''}">checked</c:if> onclick='enabletextarea1()'> No <br> 
-				<br> If you answered YES to the previous question, please enter the state privacy law provisions described by your institution below: </label>
+				<br> <label>If you answered YES to the previous question, please enter the state privacy law provisions described by your institution below: </label>
 				<span id="help" style="margin-left: 20px;">
 					<img src="./img/help2.png" onmouseover="showpop('pop6');" onmouseout="showout('pop6');"></img
 				></span>
@@ -254,7 +254,7 @@
 			<div>
 				<b><font size="4">Definitions</font></b>
 			</div>
-			<br> <i><u>Affiliates</u></i> <br> <br> 
+			<br> <ins><em>Affiliates</em></ins> <br> <br> 
 			<label for="q6">Does your institution : </label> <br> 
 			<input type="radio" name="q6" value="1" <c:if test="${page2.q6 eq '1'}">checked</c:if>onclick='enabletextarea2()'> has no affiliates 
 			<span id="help" style="margin-left: 20px;">
@@ -271,17 +271,17 @@
 				<img src="./img/help2.png" onmouseover="showpop('pop10');" onmouseout="showout('pop10');"></img>
 			</span>
 			<span id="pop10" style="display: none; border: 1px solid; margin-left: 7px; padding: 2px;"> This option will state: “Our affiliates include companies with a [common corporate identity of financial institution] name; financial companies such as [insert illustrative list of companies]; nonfinancial companies, such as [insert illustrative list of companies;] and others, such as [insert illustrative list].”</span>
-			<br> <br> Please answer the below questions marked [1], [2], [3], [4] <b><u>ONLY</u></b> if your institution share with its affiliates. <br> <br>
+			<br> <br> Please answer the below questions marked [1], [2], [3], [4] <strong><ins>ONLY</ins></strong> if your institution share with its affiliates. <br> <br>
 			<div>
 				<label for="def">[1]. Enter the common corporate identity of financial institution.</label> <br> <br>
 				<textarea name="ta1" rows="1" cols="80">${page2.ta1}</textarea>
-				<br> <br> <label for="def">[2]. Enter the names of <u>financial</u> companies which are your affiliates. </label> <br> <br>
+				<br> <br> <label for="def">[2]. Enter the names of <ins>financial</ins> companies which are your affiliates. </label> <br> <br>
 				<textarea name="ta2" rows="4" cols="50">${page2.ta2}</textarea>
-				<br> <br> <label for="def">[3]. Enter the names of <u>non-financial</u> companies which are your affiliates. </label> &nbsp; <br> <br>
+				<br> <br> <label for="def">[3]. Enter the names of <ins>non-financial</ins> companies which are your affiliates. </label> &nbsp; <br> <br>
 				<textarea name="ta3" rows="4" cols="50">${page2.ta3}</textarea>
-				<br> <br> <label for="def">[4]. Enter the name of <u>other</u> companies which are your affiliates. </label> &nbsp; <br> <br>
+				<br> <br> <label for="def">[4]. Enter the name of <ins>other</ins> companies which are your affiliates. </label> &nbsp; <br> <br>
 				<textarea name="ta4" rows="4" cols="50">${page2.ta4}</textarea>
-				<br> <br> <i><u>Nonaffiliates</u></i> <br> <br> Please select an appropriate choice: <br> <br> 
+				<br> <br> <em><ins>Nonaffiliates</ins></em> <br> <br> Please select an appropriate choice: <br> <br> 
 				<label for="q6">Our financial institution : </label> <br> 
 				<input type="radio" name="q7" value="1" <c:if test="${page2.q7 eq '1'}">checked</c:if> onclick='enabletextarea3()'> does not share with nonaffiliated third parties 
 				<span id="help" style="margin-left: 20px;">
@@ -293,10 +293,10 @@
 					<img src="./img/help2.png" onmouseover="showpop('pop12');" onmouseout="showout('pop12');"></img>
 				</span>
 				<span id="pop12" style="display: none; border: 1px solid; margin-left: 7px; padding: 2px;"> This option will state: “Nonaffiliates we share with can include [list categories of companies such as mortgage companies, insurance companies, direct marketing companies, and nonprofit organizations].”</span> 
-				<br> <br> Please answer the below question <b><u>ONLY</u></b> if your institution shares with nonaffiliated third parties. <br> <br> 
+				<br> <br> Please answer the below question <strong><ins>ONLY</ins></strong> if your institution shares with nonaffiliated third parties. <br> <br> 
 				<label for="def"> Please enter the names of nonaffiliate companies such as mortgage companies, insurance companies, direct marketing companies, and nonprofit organizations with whom you share information.</label> <br> <br>
 				<textarea name="ta5" rows="4" cols="50">${page2.ta5}</textarea>
-				<br> <br> <i><u>Joint Marketing</u></i> <br> <br> Please select an appropriate choice: <br> <br> 
+				<br> <br> <em><ins>Joint Marketing</ins></em> <br> <br> Please select an appropriate choice: <br> <br> 
 				<label for="q6">Our financial institution : </label> <br> 
 				<input type="radio" name="q8" value="1" <c:if test="${page2.q8 eq '1'}">checked</c:if> onclick='enabletextarea4()'> does not engage in joint marketing
 				<span id="help" style="margin-left: 20px;">
@@ -308,7 +308,7 @@
 					<img src="./img/help2.png" onmouseover="showpop('pop14');" onmouseout="showout('pop14');"></img>
 				</span>
 				<span id="pop14" style="display: none; border: 1px solid; margin-left: 7px; padding: 2px;">This option will state: “Our joint marketing partners include [list categories of companies such as credit card companies].”</span>
-				<br> <br> Please answer the below question <b><u>ONLY</u></b> if your institution shares shares personal information for joint marketing. <br> <br> 
+				<br> <br> Please answer the below question <strong><ins>ONLY</ins></strong> if your institution shares shares personal information for joint marketing. <br> <br> 
 				<label for="def"> Please enter the names of your joint marketing partners such as credit card companies.</label> &nbsp; <br> <br>
 				<textarea name="ta6" rows="4" cols="50">${page2.ta6}</textarea>
 				<br> <br>
@@ -327,9 +327,9 @@
 			</div>
 			<br>
 			<button id="fat-btn" class="btn btn-primary" data-loading-text="Loading..." type="button" onclick="history.back(-1)">Previous</button>
-			<td valign="top">&nbsp; &nbsp; &nbsp;</td>
+			<span>&nbsp; &nbsp; &nbsp;</span>
 			<button id="fat-btn" class="btn btn-primary" data-loading-text="Loading..." type="button" onclick="form.submit();">Preview Form</button>
-			<td valign="top"></td>
+			<span></span>
 		</div>
 	</form>
 </body>

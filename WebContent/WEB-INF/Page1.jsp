@@ -337,7 +337,7 @@
 			</div>
 			<br>
 			<div class="input-group">
-				Please enter details of your institution's applicable <u><i>opt-out</i></u>method(s) below: <br> <br> 
+				Please enter details of your institution's applicable <ins><em>opt-out</em></ins> method(s) below: <br> <br> 
 				<label for="optout">Phone Number</label> <br> 
 				<input class="form-control" type="number" placeholder="" name="phone" value="${page1.phone}" style="width: 200px;"> <br> <br> <br> 
 				<label for="q1">Is the telephone number you provided above a toll-free number? </label> <br>
@@ -470,7 +470,7 @@
 			</div>
 			<br>
 			<div class="input-group">
-				Please enter your institution's <u><i>customer service</i></u> contact information : <br> <br> 
+				Please enter your institution's <ins><em>customer service</em></ins> contact information : <br> <br> 
 				<label for="optout">Phone Number</label> <br> 
 				<input required class="form-control" type="number"
 					placeholder="" name="phone1" value="${page1.phone1}" style="width: 200px;"> <br>
